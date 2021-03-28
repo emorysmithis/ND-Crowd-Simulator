@@ -1,9 +1,15 @@
+#!/usr/bin/env python
 import sys 
 import pandas as pd
 import os
+def usage(exitcode): 
+    print(f"Usage: {sys.argv[0]} [data file]")
+    exit(exitcode)
 
 # get input file 
-args = sys.argv 
+args = sys.argv
+if len(args) < 2: 
+    usage(0)
 inputfile = args[1] 
 print(f"input file: {inputfile}") 
 
