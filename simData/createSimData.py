@@ -12,17 +12,43 @@ def usage(exitcode=0):
     -o output_data_path     Output data file''')
     sys.exit(exitcode)
 
-def adjust_when(df): # TODO: need to account for sections () 
+def parse_sections(orig, index, df): 
+    sections = orig.split('(')
+    dup = df.loc[index]
+    for i,section in enumerate(sections[1:]): 
+        if i == 0: 
+            df.loc[index, 'When'] = section[3:]
+            df.loc[index, 'Days'] = get_days(section[3:])
+            
+        else: 
+            dup['When'] = section[3:]
+            try: 
+                dup['Days'] = get_days(section[3:])[0]
+            except: # ignore cases where there are no days 
+                pass
+            df = df.append(dup, ignore_index=True)
+    return df 
+
+def adjust_when(df):  
     # add a day column 
     df['Days'] = ""
     for index,row in df.iterrows():
         if row['When'][0:3] != "TBA":
             orig = row['When']
-            noSpaces = orig.replace(" ", "")
-            regex = r'([A-Z]+)-.*'  # get the days from the When col 
-            days = re.findall(regex,noSpaces)
-            df.loc[index, 'Days'] = days # set the days in the Days col 
+            # account for When with sections 
+            regex1 = r'\('
+            section_rows = re.findall(regex1, orig)
+            if len(section_rows) > 0:
+                df = parse_sections(orig, index, df)
+            else: 
+                df.loc[index, 'Days'] = get_days(orig)
     return df 
+
+def get_days(orig): 
+    noSpaces = orig.replace(" ", "")
+    regex = r'([A-Z]+)-.*'  # get the days from the When col 
+    days = re.findall(regex,noSpaces)
+    return days 
 
 
 def main(): 
@@ -63,7 +89,8 @@ def main():
     # adjust when col 
     df = adjust_when(df) 
     
-    print(df) 
+    #print(df)
+    df.to_excel(output_data_path)
 
 if __name__ == '__main__': 
     main() 
