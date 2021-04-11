@@ -19,11 +19,17 @@ def parse_sections(orig, index, df):
         if i == 0: 
             df.loc[index, 'When'] = section[3:]
             df.loc[index, 'Days'] = get_days(section[3:])
+            df.loc[index, 'Start Time'] = get_times(section[3:])[0]
+            df.loc[index, 'End Time'] = get_times(section[3:])[1]
+
             
         else: 
             dup['When'] = section[3:]
-            try: 
+            try: # TODO: these following 3 lines cause warnings 
                 dup['Days'] = get_days(section[3:])[0]
+                dup['Start Time'] = get_times(section[3:])[0]
+                dup['End Time'] = get_times(section[3:])[1]
+
             except: # ignore cases where there are no days 
                 pass
             df = df.append(dup, ignore_index=True)
@@ -32,6 +38,8 @@ def parse_sections(orig, index, df):
 def adjust_when(df):  
     # add a day column 
     df['Days'] = ""
+    df['Start Time'] = ""
+    df['End Time'] = ""
     for index,row in df.iterrows():
         if row['When'][0:3] != "TBA":
             orig = row['When']
@@ -42,7 +50,29 @@ def adjust_when(df):
                 df = parse_sections(orig, index, df)
             else: 
                 df.loc[index, 'Days'] = get_days(orig)
+                df.loc[index, 'Start Time'] = get_times(orig)[0]
+                df.loc[index, 'End Time'] = get_times(orig)[1]
     return df 
+
+def get_times(orig): 
+    noSpaces = orig.replace(" ", "")
+    regex = r'([0-9]+:[0-9]+[AP])-([0-9]+:[0-9]+[AP])'
+    times = re.search(regex, noSpaces)
+    if len(times.groups()) != 2: 
+        print("ERROR, When does not include 2 times")
+    else: 
+        start,end = times.groups()
+        start = convert24(start)
+        end = convert24(end)
+    return (start,end)
+
+def convert24(time): 
+    regex = r'([0-9]+):([0-9]+)[AP]'
+    hourMin = re.search(regex, time)
+    hours,mins = hourMin.groups() 
+    if time[-1] == 'P' and int(hours) != 12: 
+        hours = str(int(hours) + 12)  
+    return (f"{hours}:{mins}")
 
 def get_days(orig): 
     noSpaces = orig.replace(" ", "")
