@@ -35,6 +35,10 @@ def parse_sections(orig, index, df):
             df = df.append(dup, ignore_index=True)
     return df 
 
+def adjust_where(df): 
+    df['Where'] = df['Where'].str.replace('\d+', '') # TODO: FutureWarning 
+    return df
+
 def adjust_when(df):  
     # add a day column 
     df['Days'] = ""
@@ -119,6 +123,9 @@ def main():
     # adjust when col 
     df = adjust_when(df) 
     
+    # adjust where col 
+    df = adjust_where(df)
+
     #print(df)
     df.to_excel(output_data_path)
 
