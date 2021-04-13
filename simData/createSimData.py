@@ -36,7 +36,7 @@ def parse_sections(orig, index, df):
             df = df.append(dup, ignore_index=True)
     return df 
 
-def adjust_where(df):
+def adjust_where(df, bdf):
     # remove edge cases 
     df['Where'] = df['Where'].str.replace('\d+', '') # TODO: FutureWarning
     df['Where'] = df['Where'].str.replace('ALTERNATING ATTEND ', '')
@@ -44,17 +44,63 @@ def adjust_where(df):
     df['Where'] = df['Where'].str.replace('ONLINE COURSE ', '')
     df['Where'] = df['Where'].str.replace(' ONLINE COURSE', '')
     for index,row in df.iterrows(): 
-        df.loc[index, 'Where'] = adjust_building(df.loc[index, 'Where'])
+        df.loc[index, 'Where'] = adjust_building(df.loc[index, 'Where'], bdf)
     return df 
 
-def adjust_building(where): 
+def adjust_building(where, bdf): 
     # remove repeating phrases and single letters 
     words = [] 
     for word in where.split(): 
         if word not in words and len(word) > 1: 
             words.append(word)
     new_building = " ".join(words)
-    #print(f"old: {where}, new: {new_building}")
+    # adjust building names to match osmnx 
+    if 'Jenkins' in new_building: 
+        new_building = 'Jenkins-Nonovic Hall'
+    elif 'Stayer' in new_building: 
+        new_building = 'Stayer Center for Executive Education'
+    elif 'Performing' in new_building: 
+        new_building = 'DeBartolo Performing Arts Center'
+    elif 'Eck ND Visitors' in new_building: 
+        new_building = 'Eck Visitors Center'
+    elif 'Hayes' in new_building: 
+        new_building = 'Hayes-Healy Center'
+    elif 'Walsh Hall of Architecture' in new_building: 
+        new_building = 'Walsh Family Hall of Architecture'
+    elif 'Stinson' in new_building: 
+        new_building = 'Stinson-Remick Hall'
+    elif 'Snite' in new_building: 
+        new_building = 'Snite Museum'
+    elif 'Hesburgh Ctr.' in new_building: 
+        new_building = 'Hesburgh Center for International Studies'
+    elif 'Duncan Student Center' in new_building: 
+        new_building = 'Duncan Student Center'
+    elif 'Ricci' in new_building: 
+        new_building = 'Ricci Band Rehearsal Hall'
+    elif 'Eck Hall of Law' in new_building or 'Biolchini' in new_building: 
+        new_building = 'Law School'
+    elif 'Joyce' in new_building: 
+        new_building = 'Joyce Athletic Center'
+    elif 'Morris Inn' in new_building: 
+        new_building = 'Morris Inn'
+    elif 'Geddes' in new_building: 
+        new_building = 'Geddes Hall'
+    elif 'Corbett' in new_building: 
+        new_building = 'Corbett Family Hall'
+    elif 'Mendoza' in new_building: 
+        new_building = 'Mendoza College of Business'
+    elif 'West Lake' in new_building: 
+        new_building = 'West Lake Hall'
+    elif 'Pasquerilla Center' in new_building: 
+        new_building = 'Pasquerilla Center'
+    elif "O'Neill Hall of Music" in new_building: 
+        new_building = "O'Neill Hall" # not sure if this is music call or family dorm 
+    elif 'DEPARTMENTAL' in new_building: 
+        new_building = 'DEPARTMENTAL' # might want to change this 
+    if bdf['Name'].str.contains(new_building).any(): 
+        pass
+    elif new_building != 'TBA' and new_building != 'ONLINE COURSE' and new_building != 'DEPARTMENTAL': # change DEPARTMENTAL to something  
+        print(f"{new_building}| not found")
     return new_building 
 
 def create_buildings_df(buildings_data_path): 
@@ -156,10 +202,9 @@ def main():
     
     # create buildings data path 
     bdf = create_buildings_df(buildings_data_path)
-    print(bdf)
 
     # adjust where col 
-    df = adjust_where(df)
+    df = adjust_where(df, bdf)
 
     #print(df)
     df.to_excel(output_data_path)
