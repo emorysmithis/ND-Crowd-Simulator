@@ -35,8 +35,31 @@ def parse_sections(orig, index, df):
             df = df.append(dup, ignore_index=True)
     return df 
 
-def adjust_where(df): 
-    df['Where'] = df['Where'].str.replace('\d+', '') # TODO: FutureWarning 
+def adjust_where(df):
+    # remove edge cases 
+    df['Where'] = df['Where'].str.replace('\d+', '') # TODO: FutureWarning
+    df['Where'] = df['Where'].str.replace('ALTERNATING ATTEND ', '')
+    df['Where'] = df['Where'].str.replace(' ALTERNATING ATTEND', '')
+    df['Where'] = df['Where'].str.replace('ONLINE COURSE ', '')
+    df['Where'] = df['Where'].str.replace(' ONLINE COURSE', '')
+    # remove repeating phrases  
+    uniq_where = df['Where'].unique()
+    uniq_where.sort()
+    new_uniq = [] 
+    for u in uniq_where: 
+        words = [] 
+        for word in u.split(): 
+            if word not in words: 
+                words.append(word)
+        print(f"u: {u}")
+        print(f'words: {" ".join(words)}')
+        u = " ".join(words)
+        new_uniq.append(u)
+        # need to uniq them again 
+
+
+    wdf = pd.DataFrame(new_uniq)
+    wdf.to_excel('where_cols.xlsx')
     return df
 
 def adjust_when(df):  
