@@ -7,9 +7,10 @@ import re
 
 def usage(exitcode=0): 
     progname = os.path.basename(sys.argv[0])
-    print(f'''Usage: {progname} -d data_file.xlsx -o output_data.xlsx []
+    print(f'''Usage: {progname} -d data_file.xlsx -o output_data.xlsx -b building_name.xlsx []
     -d input_data_path      Data file to use as base 
-    -o output_data_path     Output data file''')
+    -o output_data_path     Output data file
+    -b buildings_data path  List of buildings names from osmnx''')
     sys.exit(exitcode)
 
 def parse_sections(orig, index, df): 
@@ -42,25 +43,30 @@ def adjust_where(df):
     df['Where'] = df['Where'].str.replace(' ALTERNATING ATTEND', '')
     df['Where'] = df['Where'].str.replace('ONLINE COURSE ', '')
     df['Where'] = df['Where'].str.replace(' ONLINE COURSE', '')
-    # remove repeating phrases  
-    uniq_where = df['Where'].unique()
-    uniq_where.sort()
-    new_uniq = [] 
-    for u in uniq_where: 
-        words = [] 
-        for word in u.split(): 
-            if word not in words: 
-                words.append(word)
-        print(f"u: {u}")
-        print(f'words: {" ".join(words)}')
-        u = " ".join(words)
-        new_uniq.append(u)
-        # need to uniq them again 
+    for index,row in df.iterrows(): 
+        df.loc[index, 'Where'] = adjust_building(df.loc[index, 'Where'])
+    return df 
 
+def adjust_building(where): 
+    # remove repeating phrases and single letters 
+    words = [] 
+    for word in where.split(): 
+        if word not in words and len(word) > 1: 
+            words.append(word)
+    new_building = " ".join(words)
+    #print(f"old: {where}, new: {new_building}")
+    return new_building 
 
-    wdf = pd.DataFrame(new_uniq)
-    wdf.to_excel('where_cols.xlsx')
-    return df
+def create_buildings_df(buildings_data_path): 
+    # create data frame 
+    bdf = pd.DataFrame() 
+    bdf = bdf.append(pd.read_excel(buildings_data_path), ignore_index=True)
+    # delete unneeded cols 
+    bdf = bdf.drop('Unnamed: 0', 1)
+    print(bdf.columns)
+    # change names 
+    bdf = bdf.rename(columns={0:'Name'})
+    return bdf 
 
 def adjust_when(df):  
     # add a day column 
@@ -111,7 +117,7 @@ def get_days(orig):
 def main(): 
     # command line parsing 
     arguments = sys.argv[1:]
-    if len(arguments) < 4: 
+    if len(arguments) < 6: 
         usage(0)
     while arguments and arguments[0].startswith('-'):
         argument = arguments.pop(0)
@@ -119,13 +125,15 @@ def main():
             input_data_path = arguments.pop(0)
         elif argument == '-o':
             output_data_path = arguments.pop(0)
+        elif argument == '-b': 
+            buildings_data_path = arguments.pop(0)
         elif argument == '-h':
             usage(0)
         else:
             usage(1)
     
     # ensure input data file exists 
-    if not os.path.exists(input_data_path):
+    if not os.path.exists(input_data_path) or not os.path.exists(buildings_data_path):
         usage(1)
     
     # create data frame 
@@ -146,6 +154,10 @@ def main():
     # adjust when col 
     df = adjust_when(df) 
     
+    # create buildings data path 
+    bdf = create_buildings_df(buildings_data_path)
+    print(bdf)
+
     # adjust where col 
     df = adjust_where(df)
 
