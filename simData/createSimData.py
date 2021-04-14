@@ -94,13 +94,15 @@ def adjust_building(where, bdf):
     elif 'Pasquerilla Center' in new_building: 
         new_building = 'Pasquerilla Center'
     elif "O'Neill Hall of Music" in new_building: 
-        new_building = "O'Neill Hall" # not sure if this is music call or family dorm 
-    elif 'DEPARTMENTAL' in new_building: 
-        new_building = 'DEPARTMENTAL' # might want to change this 
+        new_building = "O'Neill Hall" 
+    elif 'DEPARTMENTAL' in new_building or 'TBA' in new_building or 'ONLINE' in new_building: 
+        new_building = 'DORM'
+    elif 'Innovation' in new_building: 
+        new_building = 'Compton Family Ice Arena'
     if bdf['Name'].str.contains(new_building).any(): 
         pass
-    elif new_building != 'TBA' and new_building != 'ONLINE COURSE' and new_building != 'DEPARTMENTAL': # change DEPARTMENTAL to something  
-        print(f"{new_building}| not found")
+    elif new_building != 'DORM':
+        print(f"{new_building}| not found")  
     return new_building 
 
 def create_buildings_df(buildings_data_path): 
