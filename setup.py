@@ -8,7 +8,8 @@ from datetime import datetime
 
 def usage(exitcode=0): 
     progname = os.path.basename(sys.argv[0])
-    print(f'''Usage: {progname} -c class_search.xlsx
+    print(f'''Usage: {progname} -c class_search.xlsx 
+                -d dorms.xlsx
     ''')
     sys.exit(exitcode)
 
@@ -106,9 +107,15 @@ def get_classes(cdf, numClasses, totalNumClasses):
                     c += 1 
                     cdf.at[num, 'Opn'] =  cdf.at[num, 'Opn'] - 1 # decrease number of open seats 
     #print(classes)
-    return classes
+    return classes 
 
-def create_students(ugrads, grads, cdf): 
+def get_dorm(ddf): 
+    numDorms = len(ddf.axes[0])
+    num = random.randint(0, numDorms-1)
+    dorm = ddf.loc[num]['Dorm']
+    return dorm 
+
+def create_students(ugrads, grads, cdf, ddf): 
     students = []
     for grad in range(ugrads+grads):
         print(grad)
@@ -122,12 +129,14 @@ def create_students(ugrads, grads, cdf):
             "edge_index": -1, 
             "journey": journey
         } # end of student dict 
+        # get classes for student 
         totalNumClasses = len(cdf.axes[0])
         if grad > ugrads: 
             myClasses = get_classes(cdf, 2, totalNumClasses)
         else: 
             myClasses = get_classes(cdf, 7, totalNumClasses)
-        #print(myClasses)
+        # get dorm for student 
+        dorm = get_dorm(ddf)    
         students.append(student)
     #print(students)
     return students 
@@ -135,19 +144,21 @@ def create_students(ugrads, grads, cdf):
 def main(): 
     # command line parsing 
     arguments = sys.argv[1:]
-    if len(arguments) < 2: 
+    if len(arguments) < 4: 
         usage(0)
     while arguments and arguments[0].startswith('-'):
         argument = arguments.pop(0)
         if argument == '-c':
             class_search_path = arguments.pop(0)
+        elif argument == '-d': 
+            dorms_path = arguments.pop(0)
         elif argument == '-h':
             usage(0)
         else:
             usage(1)
 
     # ensure input data files exist 
-    if not os.path.exists(class_search_path): 
+    if not os.path.exists(class_search_path) or not os.path.exists(dorms_path): 
         usage(1)
     
     # create class_search data frame 
@@ -155,14 +166,19 @@ def main():
     cdf = cdf.append(pd.read_excel(class_search_path), ignore_index=True)  
     if cdf['Max'].all() != cdf['Opn'].all(): 
         print(f"Max seats and Open seats not equal!")
-        
+    
+    # create dorms data frame 
+    ddf = pd.DataFrame() 
+    ddf = ddf.append(pd.read_excel(dorms_path), ignore_index=True)
+    ddf = ddf.drop('Unnamed: 0', 1)
+    ddf = ddf.rename(columns={0: 'Dorm'})
+    #print(ddf)
     # create students
-    #ugrads = 500 
-    #grads  = 400 
-    ugrads = 8000 
-    grads  = 4000
-
-    students = create_students(ugrads, grads, cdf)
+    ugrads = 50 
+    grads  = 2 
+    #ugrads = 8000 
+    #grads  = 4000
+    students = create_students(ugrads, grads, cdf, ddf)
     print(students, file=open("students.txt", "a"))
     cdf.to_excel('full_classes.xlsx')
 
