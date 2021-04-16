@@ -28,7 +28,7 @@ def remove_files():
 if __name__ == '__main__':
 
     # Initialize parameters
-    students_file = 'test.json'             # TODO: commandline argument
+    students_file = 'm_students.txt'        # TODO: commandline argument
     curr_time = time(7, 45, 0)              # TODO: determine start time -> 8 am
     end_time = time(12, 5, 0)               # TODO: determine end time -> 8 pm
     N = 3                                   # TODO: set N accordingly
