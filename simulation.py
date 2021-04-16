@@ -9,7 +9,6 @@ def load_students(students_file):
 
     with open(students_file) as data:
         table = json.load(data)
-
     return table
 
 def add_edgeid(D, edge_id):
@@ -28,9 +27,9 @@ def remove_files():
 if __name__ == '__main__':
 
     # Initialize parameters
-    students_file = 'm_students.txt'        # TODO: commandline argument
+    students_file = 't_students.txt'        # TODO: commandline argument
     curr_time = time(7, 45, 0)              # TODO: determine start time -> 8 am
-    end_time = time(12, 5, 0)               # TODO: determine end time -> 8 pm
+    end_time = time(20, 5, 0)               # TODO: determine end time -> 8 pm
     N = 3                                   # TODO: set N accordingly
     crowding_dict = {}
     table = load_students(students_file)
@@ -89,7 +88,7 @@ if __name__ == '__main__':
     
         # Update curr_time
         curr_time = (datetime.combine(date(1,1,1),curr_time) + timedelta(seconds=1)).time()
-    
+   
     # Print N most crowded edges 
     crowding_dict = {k: v for k, v in sorted(crowding_dict.items(), key=lambda item: item[1], reverse=True)}
     for i, (key, value) in enumerate(crowding_dict.items()):
