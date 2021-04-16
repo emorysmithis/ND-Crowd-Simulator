@@ -168,7 +168,13 @@ def get_dorm(ddf):
 def setup_osm(place_name): 
     graph = ox.graph_from_place(place_name)
     buildings = ox.geometries_from_place(place_name, tags={'building':True})
-    return graph,buildings
+	buildings_dict = {}
+	for index, row in buildings.iterrows():
+    	if row['name'] not in buildings_dict:
+        	buildings_dict[row['name']] = {}
+        	buildings_dict[row['name']]['x'] = float('-' + str(row['geometry']).split('-')[1].split(' ')[0])
+        	buildings_dict[row['name']]['y'] = float(str(row['geometry']).split('-')[1].split(' ')[1].split(',')[0][:-1])
+    return graph,buildings_dict
 
 def generate_segments(graph, orig_buildings, s_building, t_building):
     # Make sure source != target 
@@ -181,15 +187,13 @@ def generate_segments(graph, orig_buildings, s_building, t_building):
     #print(f"{s_building} in buildings: {buildings.loc[buildings['name'] == s_building]}")
     try: 
         #print(f"the thing messing me up: {buildings.loc[buildings['name'] == s_building].iloc[0]}")
-        building = buildings.loc[buildings['name'] == s_building].iloc[0]
-        x = float('-' + str(building['geometry']).split('-')[1].split(' ')[0])
-        y = float(str(building['geometry']).split('-')[1].split(' ')[1].split(',')[0])
-        orig_node = ox.get_nearest_node(graph, (y, x))
+  		x = buildings_dict[s_building]['x']
+  		y = buildings_dict[s_building]['y']        
+		orig_node = ox.get_nearest_node(graph, (y, x))
 
         # Get destination node
-        building = buildings.loc[buildings['name'] == t_building].iloc[0]
-        x = float('-' + str(building['geometry']).split('-')[1].split(' ')[0])
-        y = float(str(building['geometry']).split('-')[1].split(' ')[1].split(',')[0])
+  		x = buildings_dict[t_building]['x']
+  		y = buildings_dict[t_building]['y']        
         target_node = ox.get_nearest_node(graph, (y, x))
 
         # Create path
