@@ -219,8 +219,8 @@ def generate_segments(graph, buildings_dict, s_building, t_building):
     except Exception as e: 
         print(f"ERROR DURING |{s_building}| {e}")
         
-    return [] 
-    #return segments
+    #return [] 
+    return segments
 
 def create_students(ugrads, grads, cdf, ddf, graph, buildings): 
     #students = []
