@@ -69,23 +69,21 @@ def get_journey(graph, buildings, classes, day, dorm):
     #print(f"by following {segments}")
     if len(segments) > 0: 
         #print("adding path to journey")
-        source_time = day_classes[0]['Start']
-        journey = {"time": source_time, "segments": segments}
+        target_time = day_classes[0]['Start']
+        journey = {"time": target_time, "segments": segments}
         journeys.append(journey)
     # rest of paths for day 
     for i,c in enumerate(day_classes): 
         #print(f"{i}. {c}")
         source = get_dest(c['Where'], dorm)
-        if i == (len(day_classes)-1): # if on last class, target is dorm
-            target = dorm # go back home!  
-        else: 
+        if i != (len(day_classes)-1): # if not on last class, create journey # TODO: change if to be before 
             target = get_dest(day_classes[i+1]['Where'], dorm) 
-        #print(f"{source} -> {target}")
-        segments = generate_segments(graph, buildings, source, target)
-        if len(segments) > 0: 
-            source_time = c['Start']
-            journey = {"time": source_time, "segments": segments}
-            journeys.append(journey)
+            #print(f"{source} -> {target}")
+            segments = generate_segments(graph, buildings, source, target)
+            if len(segments) > 0: 
+                target_time = day_classes[i+1]['Start']
+                journey = {"time": target_time, "segments": segments}
+                journeys.append(journey)
 
     return journeys 
 
@@ -200,7 +198,7 @@ def generate_segments(graph, buildings_dict, s_building, t_building):
             edge = graph.get_edge_data(u, v)
 
             # Find dictionary parameters
-            path_index = i + 1
+            path_index = i + 1 #TODO: change this to zero indexing 
             edge_id = edge[0]['osmid']
             if isinstance(edge_id, list):
                 edge_id = edge_id[0]
