@@ -170,53 +170,57 @@ def setup_osm(place_name):
     buildings = ox.geometries_from_place(place_name, tags={'building':True})
     return graph,buildings
 
-def generate_segments(graph, buildings, s_building, t_building):
+def generate_segments(graph, orig_buildings, s_building, t_building):
     # Make sure source != target 
     if s_building == t_building: 
         return [] 
+    buildings = orig_buildings 
     nodes, edges = ox.graph_to_gdfs(graph)
     # Get starting node
-    
+    #print(f"THIS IS A NEW GENERATE CALL") 
     #print(f"{s_building} in buildings: {buildings.loc[buildings['name'] == s_building]}")
-    #print(f"the thing messing me up: {buildings.loc[buildings['name'] == s_building].iloc[0]}")
-    building = buildings.loc[buildings['name'] == s_building].iloc[0]
-    x = float('-' + str(building['geometry']).split('-')[1].split(' ')[0])
-    y = float(str(building['geometry']).split('-')[1].split(' ')[1].split(',')[0])
-    orig_node = ox.get_nearest_node(graph, (y, x))
+    try: 
+        #print(f"the thing messing me up: {buildings.loc[buildings['name'] == s_building].iloc[0]}")
+        building = buildings.loc[buildings['name'] == s_building].iloc[0]
+        x = float('-' + str(building['geometry']).split('-')[1].split(' ')[0])
+        y = float(str(building['geometry']).split('-')[1].split(' ')[1].split(',')[0])
+        orig_node = ox.get_nearest_node(graph, (y, x))
 
-    # Get destination node
-    building = buildings.loc[buildings['name'] == t_building].iloc[0]
-    x = float('-' + str(building['geometry']).split('-')[1].split(' ')[0])
-    y = float(str(building['geometry']).split('-')[1].split(' ')[1].split(',')[0])
-    target_node = ox.get_nearest_node(graph, (y, x))
+        # Get destination node
+        building = buildings.loc[buildings['name'] == t_building].iloc[0]
+        x = float('-' + str(building['geometry']).split('-')[1].split(' ')[0])
+        y = float(str(building['geometry']).split('-')[1].split(' ')[1].split(',')[0])
+        target_node = ox.get_nearest_node(graph, (y, x))
 
-    # Create path
-    node_list = ox.distance.shortest_path(graph, orig_node, target_node)
+        # Create path
+        node_list = ox.distance.shortest_path(graph, orig_node, target_node)
 
-    # Create segments list
-    segments = []
-    for i, (u, v) in enumerate(list(zip(node_list[:-1], node_list[1:]))):
-        edge = graph.get_edge_data(u, v)
+        # Create segments list
+        segments = []
+        for i, (u, v) in enumerate(list(zip(node_list[:-1], node_list[1:]))):
+            edge = graph.get_edge_data(u, v)
 
-        # Find dictionary parameters
-        path_index = i + 1
-        edge_id = edge[0]['osmid']
-        if isinstance(edge_id, list):
-            edge_id = edge_id[0]
-        edge_length = math.ceil(edge[0]['length'])
+            # Find dictionary parameters
+            path_index = i + 1
+            edge_id = edge[0]['osmid']
+            if isinstance(edge_id, list):
+                edge_id = edge_id[0]
+            edge_length = math.ceil(edge[0]['length'])
 
-        # Set dictionary parameters
-        segment = {}
-        segment['path_index'] = path_index
-        segment['edge_id'] = edge_id
-        segment['edge_length'] = edge_length
-        segments.append(segment)
-    
-    return segments
+            # Set dictionary parameters
+            segment = {}
+            segment['path_index'] = path_index
+            segment['edge_id'] = edge_id
+            segment['edge_length'] = edge_length
+            segments.append(segment)
+    except: 
+        print(f"ERROR DURING {s_building}")
+        
+    return [] 
+    #return segments
 
 def create_students(ugrads, grads, cdf, ddf, graph, buildings): 
     #students = []
-    # TODO: still need to print as a list please
     m_file = 'm_students.txt'
     t_file = 't_students.txt'
     w_file = 'w_students.txt'
@@ -342,7 +346,7 @@ def main():
     #print(segments)
 
     # create students
-    ugrads = 2 
+    ugrads = 5 
     grads  = 1 
     #ugrads = 8000 
     #grads  = 4000
