@@ -7,6 +7,7 @@ import random
 from datetime import datetime 
 import osmnx as ox
 import math 
+import json
 
 def usage(exitcode=0): 
     progname = os.path.basename(sys.argv[0])
@@ -130,9 +131,6 @@ def check_time_overlap(classes, start, end, days):
         
 def check_class_full(cdf, num):  
     spec_row = cdf.loc[num]
-    #print(f"ROW: {spec_row}")
-    #print(f"OPEN SEATS: {spec_row['Opn']}")
-    #print(f"TYPE: {type(spec_row['Opn'].item())}")
     if spec_row['Opn'].item() == 0: 
         #print(f"{spec_row['Course - Sec']} is FULL") 
         return True # class is full :( 
@@ -182,8 +180,6 @@ def generate_segments(graph, buildings_dict, s_building, t_building):
         return [] 
     nodes, edges = ox.graph_to_gdfs(graph)
     # Get starting node
-    #print(f"THIS IS A NEW GENERATE CALL") 
-    #print(f"{s_building} in buildings: {buildings.loc[buildings['name'] == s_building]}")
     try: 
         #print(f"the thing messing me up: {buildings.loc[buildings['name'] == s_building].iloc[0]}")
         x = buildings_dict[s_building]['x']
@@ -293,7 +289,7 @@ def write_char(file_name, mychar):
     with open(file_name, 'a') as f: 
         f.write(mychar)
 
-def write_student(written, file_name, sid, speed, journey):
+def write_student(written, file_name, sid, speed, journey): # TODO: convert single quotes to double quotes 
     if len(journey) > 0:
         with open(file_name, 'a') as f:
             if written: # file already has student  
@@ -306,7 +302,7 @@ def write_student(written, file_name, sid, speed, journey):
                 "edge_index": -1, 
                 "journey" : journey
             }  
-            f.write(str(student)) 
+            f.write(str(json.dumps(student))) 
     return written 
 
 def main(): 
@@ -345,8 +341,6 @@ def main():
     place_name = 'Notre Dame, Indiana, United States'
     graph, buildings = setup_osm(place_name)
     
-    #segments = generate_segments(graph, buildings, 'Hesburgh Library', 'Hammes Bookstore')   
-    #print(segments)
 
     # create students
     ugrads = 10 
@@ -356,8 +350,6 @@ def main():
 
     #students = create_students(ugrads, grads, cdf, ddf, graph, buildings)
     create_students(ugrads, grads, cdf, ddf, graph, buildings)
-    #with open('students.txt', "a") as f: 
-        #f.write(str(students)) 
     cdf.to_excel('full_classes.xlsx')
 
 if __name__ == '__main__': 
