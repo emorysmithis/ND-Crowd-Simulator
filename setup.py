@@ -58,7 +58,7 @@ def get_journey(graph, buildings, classes, day, dorm):
     day_classes = sort_classes(day_classes)
     if len(day_classes) < 1: # no classes today, no journey 
         return [] 
-    print(day)
+   # print(day)
     journeys = []
     # need journey for dorm -> first class 
     first_source = dorm 
@@ -168,32 +168,31 @@ def get_dorm(ddf):
 def setup_osm(place_name): 
     graph = ox.graph_from_place(place_name)
     buildings = ox.geometries_from_place(place_name, tags={'building':True})
-	buildings_dict = {}
-	for index, row in buildings.iterrows():
-    	if row['name'] not in buildings_dict:
-        	buildings_dict[row['name']] = {}
-        	buildings_dict[row['name']]['x'] = float('-' + str(row['geometry']).split('-')[1].split(' ')[0])
-        	buildings_dict[row['name']]['y'] = float(str(row['geometry']).split('-')[1].split(' ')[1].split(',')[0][:-1])
+    buildings_dict = {}
+    for index, row in buildings.iterrows():
+        if row['name'] not in buildings_dict:
+            buildings_dict[row['name']] = {}
+            buildings_dict[row['name']]['x'] = float('-' + str(row['geometry']).split('-')[1].split(' ')[0])
+            buildings_dict[row['name']]['y'] = float(str(row['geometry']).split('-')[1].split(' ')[1].split(',')[0][:-1])
     return graph,buildings_dict
 
-def generate_segments(graph, orig_buildings, s_building, t_building):
+def generate_segments(graph, buildings_dict, s_building, t_building):
     # Make sure source != target 
     if s_building == t_building: 
         return [] 
-    buildings = orig_buildings 
     nodes, edges = ox.graph_to_gdfs(graph)
     # Get starting node
     #print(f"THIS IS A NEW GENERATE CALL") 
     #print(f"{s_building} in buildings: {buildings.loc[buildings['name'] == s_building]}")
     try: 
         #print(f"the thing messing me up: {buildings.loc[buildings['name'] == s_building].iloc[0]}")
-  		x = buildings_dict[s_building]['x']
-  		y = buildings_dict[s_building]['y']        
-		orig_node = ox.get_nearest_node(graph, (y, x))
+        x = buildings_dict[s_building]['x']
+        y = buildings_dict[s_building]['y']        
+        orig_node = ox.get_nearest_node(graph, (y, x))
 
         # Get destination node
-  		x = buildings_dict[t_building]['x']
-  		y = buildings_dict[t_building]['y']        
+        x = buildings_dict[t_building]['x']
+        y = buildings_dict[t_building]['y']        
         target_node = ox.get_nearest_node(graph, (y, x))
 
         # Create path
@@ -217,8 +216,8 @@ def generate_segments(graph, orig_buildings, s_building, t_building):
             segment['edge_id'] = edge_id
             segment['edge_length'] = edge_length
             segments.append(segment)
-    except: 
-        print(f"ERROR DURING {s_building}")
+    except Exception as e: 
+        print(f"ERROR DURING |{s_building}| {e}")
         
     return [] 
     #return segments
@@ -350,8 +349,8 @@ def main():
     #print(segments)
 
     # create students
-    ugrads = 5 
-    grads  = 1 
+    ugrads = 10 
+    grads  = 2
     #ugrads = 8000 
     #grads  = 4000
 
