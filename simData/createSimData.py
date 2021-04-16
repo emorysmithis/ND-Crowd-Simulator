@@ -207,7 +207,10 @@ def main():
 
     # adjust where col 
     df = adjust_where(df, bdf)
-
+    
+    # change num open seats to Max (all seats open)
+    df['Opn'] = df['Max'] # idk if this works
+    
     #print(df)
     df.to_excel(output_data_path)
 
