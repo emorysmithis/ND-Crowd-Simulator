@@ -56,16 +56,22 @@ def get_journey(graph, buildings, classes, day, dorm):
             day_classes.append(c)
     #print(f"{day_classes} classes are on {day}")
     day_classes = sort_classes(day_classes)
+    if len(day_classes) < 1: # no classes today, no journey 
+        return [] 
     print(day)
     journeys = []
-    # TODO: account for no classes today 
-    # TODO: account for A -> A 
+    # TODO: account for A -> A (if len(segments)> 0, append, otherwise, don't)
     # need journey for dorm -> first class 
     first_source = dorm 
     first_target = get_dest(day_classes[0]['Where'], dorm)
-    print(f"Go from {first_source} to {first_target}")
+    #print(f"Go from {first_source} to {first_target}")
     segments = generate_segments(graph, buildings, first_source, first_target)
-    print(f"by following {segments}")
+    #print(f"by following {segments}")
+    if len(segments) > 0: 
+        #print("adding path to journey")
+        source_time = day_classes[0]['Start']
+        journey = {"time": source_time, "segments": segments}
+        journeys.append(journey)
     # rest of paths for day 
     for i,c in enumerate(day_classes): 
         #print(f"{i}. {c}")
@@ -75,36 +81,13 @@ def get_journey(graph, buildings, classes, day, dorm):
         else: 
             target = get_dest(day_classes[i+1]['Where'], dorm) 
         #print(f"{source} -> {target}")
+        segments = generate_segments(graph, buildings, source, target)
+        if len(segments) > 0: 
+            source_time = c['Start']
+            journey = {"time": source_time, "segments": segments}
+            journeys.append(journey)
 
-    journey = [
-        {
-            "time": "8:00",
-            "segments": [
-                {
-                    "path_index": 1,
-                    "edge_id": 1001,
-                    "edge_length": 20
-                },
-                {
-                    "path_index": 2,
-                    "edge_id": 1100,
-                    "edge_length": 3
-                }
-            ]
-        },
-        {
-            "time": "9:00",
-            "segments": [
-                {
-                    "path_index": 1,
-                    "edge_id": 765,
-                    "edge_length": 90
-                }
-            ]
-    
-        }
-    ]   
-    return journey 
+    return journeys 
 
 def get_speed(): 
     return 1 
@@ -189,10 +172,14 @@ def setup_osm(place_name):
     return graph,buildings
 
 def generate_segments(graph, buildings, s_building, t_building):
+    # Make sure source != target 
+    if s_building == t_building: 
+        return [] 
     nodes, edges = ox.graph_to_gdfs(graph)
-
     # Get starting node
+    
     #print(f"{s_building} in buildings: {buildings.loc[buildings['name'] == s_building]}")
+    #print(f"the thing messing me up: {buildings.loc[buildings['name'] == s_building].iloc[0]}")
     building = buildings.loc[buildings['name'] == s_building].iloc[0]
     x = float('-' + str(building['geometry']).split('-')[1].split(' ')[0])
     y = float(str(building['geometry']).split('-')[1].split(' ')[1].split(',')[0])
@@ -229,7 +216,8 @@ def generate_segments(graph, buildings, s_building, t_building):
     return segments
 
 def create_students(ugrads, grads, cdf, ddf, graph, buildings): 
-    students = []
+    #students = []
+    # TODO: still need to print as a list please 
     for grad in range(ugrads+grads):
         print(grad)
         # create dicts
@@ -251,6 +239,7 @@ def create_students(ugrads, grads, cdf, ddf, graph, buildings):
         w_journey = get_journey(graph, buildings, myClasses, "W", dorm)
         r_journey = get_journey(graph, buildings, myClasses, "R", dorm)
         f_journey = get_journey(graph, buildings, myClasses, "F", dorm)
+        '''
         student = { 
             "id": sid,
             "speed": speed,
@@ -260,9 +249,19 @@ def create_students(ugrads, grads, cdf, ddf, graph, buildings):
             "w_journey": w_journey, 
             "r_journey": r_journey, 
             "f_journey": f_journey, 
-        } # end of student dict 
-        students.append(student)
-    return students 
+        } # end of student dict
+        '''
+        #students.append(student)
+        with open('m_students.txt', "a") as f: # TODO: if journey empty, don't print to file  
+            m_student = {  
+                "id": sid,
+                "speed": speed,
+                "edge_index": -1, 
+                "journey" : m_journey
+            }  
+            f.write(str(m_student)) 
+
+    #return students 
 
 def main(): 
     # command line parsing 
@@ -308,9 +307,11 @@ def main():
     grads  = 1 
     #ugrads = 8000 
     #grads  = 4000
-    students = create_students(ugrads, grads, cdf, ddf, graph, buildings)
-    with open('students.txt', "a") as f: 
-        f.write(str(students)) 
+
+    #students = create_students(ugrads, grads, cdf, ddf, graph, buildings)
+    create_students(ugrads, grads, cdf, ddf, graph, buildings)
+    #with open('students.txt', "a") as f: 
+        #f.write(str(students)) 
     cdf.to_excel('full_classes.xlsx')
 
 if __name__ == '__main__': 
