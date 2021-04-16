@@ -60,7 +60,6 @@ def get_journey(graph, buildings, classes, day, dorm):
         return [] 
     print(day)
     journeys = []
-    # TODO: account for A -> A (if len(segments)> 0, append, otherwise, don't)
     # need journey for dorm -> first class 
     first_source = dorm 
     first_target = get_dest(day_classes[0]['Where'], dorm)
@@ -217,7 +216,25 @@ def generate_segments(graph, buildings, s_building, t_building):
 
 def create_students(ugrads, grads, cdf, ddf, graph, buildings): 
     #students = []
-    # TODO: still need to print as a list please 
+    # TODO: still need to print as a list please
+    m_file = 'm_students.txt'
+    t_file = 't_students.txt'
+    w_file = 'w_students.txt'
+    r_file = 'r_students.txt'
+    f_file = 'f_students.txt'
+    
+    write_char(m_file, '[')
+    write_char(t_file, '[')
+    write_char(w_file, '[')
+    write_char(r_file, '[')
+    write_char(f_file, '[')
+    
+    m_written = False 
+    t_written = False 
+    w_written = False 
+    r_written = False 
+    f_written = False 
+    
     for grad in range(ugrads+grads):
         print(grad)
         # create dicts
@@ -252,16 +269,38 @@ def create_students(ugrads, grads, cdf, ddf, graph, buildings):
         } # end of student dict
         '''
         #students.append(student)
-        with open('m_students.txt', "a") as f: # TODO: if journey empty, don't print to file  
-            m_student = {  
+        m_written = write_student(m_written, m_file, sid, speed, m_journey)
+        t_written = write_student(t_written, t_file, sid, speed, t_journey)
+        w_written = write_student(w_written, w_file, sid, speed, w_journey)
+        r_written = write_student(r_written, r_file, sid, speed, r_journey)
+        f_written = write_student(f_written, f_file, sid, speed, f_journey)
+
+    #return students 
+    write_char(m_file, ']')
+    write_char(t_file, ']')
+    write_char(w_file, ']')
+    write_char(r_file, ']')
+    write_char(f_file, ']')
+
+def write_char(file_name, mychar): 
+    with open(file_name, 'a') as f: 
+        f.write(mychar)
+
+def write_student(written, file_name, sid, speed, journey):
+    if len(journey) > 0:
+        with open(file_name, 'a') as f:
+            if written: # file already has student  
+                f.write(',')
+            else: # file has no students 
+                written = True 
+            student = {  
                 "id": sid,
                 "speed": speed,
                 "edge_index": -1, 
-                "journey" : m_journey
+                "journey" : journey
             }  
-            f.write(str(m_student)) 
-
-    #return students 
+            f.write(str(student)) 
+    return written 
 
 def main(): 
     # command line parsing 
@@ -303,7 +342,7 @@ def main():
     #print(segments)
 
     # create students
-    ugrads = 3 
+    ugrads = 2 
     grads  = 1 
     #ugrads = 8000 
     #grads  = 4000
