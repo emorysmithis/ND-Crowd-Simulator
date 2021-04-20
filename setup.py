@@ -287,7 +287,7 @@ def write_char(file_name, mychar):
     with open(file_name, 'a') as f: 
         f.write(mychar)
 
-def write_student(written, file_name, sid, speed, journey): # TODO: convert single quotes to double quotes 
+def write_student(written, file_name, sid, speed, journey):  
     if len(journey) > 0:
         with open(file_name, 'a') as f:
             if written: # file already has student  
@@ -341,10 +341,10 @@ def main():
     
 
     # create students
-    ugrads = 10 
-    grads  = 2
-    #ugrads = 8000 
-    #grads  = 4000
+    #ugrads = 10 
+    #grads  = 2
+    ugrads = 8000 
+    grads  = 4000
 
     #students = create_students(ugrads, grads, cdf, ddf, graph, buildings)
     create_students(ugrads, grads, cdf, ddf, graph, buildings)
