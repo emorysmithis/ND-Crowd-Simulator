@@ -13,34 +13,33 @@ def usage(exitcode=0):
     progname = os.path.basename(sys.argv[0])
     print(f'''Usage: {progname} -c class_search.xlsx 
                 -d dorms.xlsx
+                [-ugrads num_ugrads (ex: 8000)] 
+                [-grads num_grads (ex: 4000)] 
+                [-walk walking_speed (ex: 1)] 
+                [-bike biking_speed (ex: 3)]
+                [-per percent_walking (ex: 80)]
     ''')
     sys.exit(exitcode)
 
 def get_earliest(classes):
     earliest = timeStr2Num("23:59")
-    #print(f"original earliest: {earliest}")
     index = -1 
     for i,c in enumerate(classes): 
         start = c['Start'] 
         start = timeStr2Num(start)
-        #print(f"comparing {start} and {earliest}")
         if start < earliest: 
-            #print(f"{start} < {earliest}")
             earliest = start 
             index = i 
     if not earliest: 
         print(f"ERROR: NO EARLIEST CLASS FOUND")
-    #print(f"earliest: {classes[index]}")
     return index 
 
 def sort_classes(classes): 
     sorted_classes = []
-    #print(f"original classes: {classes}")
     while len(classes) > 0: 
         index = get_earliest(classes)
         sorted_classes.append(classes[index])
         del classes[index] 
-    #print(f"sorted classes: {sorted_classes}")
     return sorted_classes
 
         
@@ -50,35 +49,28 @@ def get_dest(dest, dorm):
     return dest 
 
 def get_journey(graph, buildings, classes, day, dorm): 
-    #print(f"CHECKING  which classes in: {classes} are on day: {day}\n")
     day_classes = []
     for c in classes: 
         if day in c['Days']: 
             day_classes.append(c)
-    #print(f"{day_classes} classes are on {day}")
     day_classes = sort_classes(day_classes)
     if len(day_classes) < 1: # no classes today, no journey 
         return [] 
-   # print(day)
+    # create journey 
     journeys = []
     # need journey for dorm -> first class 
     first_source = dorm 
     first_target = get_dest(day_classes[0]['Where'], dorm)
-    #print(f"Go from {first_source} to {first_target}")
     segments = generate_segments(graph, buildings, first_source, first_target)
-    #print(f"by following {segments}")
     if len(segments) > 0: 
-        #print("adding path to journey")
         target_time = day_classes[0]['Start']
         journey = {"time": target_time, "segments": segments}
         journeys.append(journey)
     # rest of paths for day 
     for i,c in enumerate(day_classes): 
-        #print(f"{i}. {c}")
         source = get_dest(c['Where'], dorm)
         if i != (len(day_classes)-1): # if not on last class, create journey # TODO: change if to be before 
             target = get_dest(day_classes[i+1]['Where'], dorm) 
-            #print(f"{source} -> {target}")
             segments = generate_segments(graph, buildings, source, target)
             if len(segments) > 0: 
                 target_time = day_classes[i+1]['Start']
@@ -87,11 +79,13 @@ def get_journey(graph, buildings, classes, day, dorm):
 
     return journeys 
 
-def get_speed(): 
-    return 1 
+def get_speed(mode, walking_speed, biking_speed):
+    if mode == 0: # walking 
+        return walking_speed 
+    elif mode == 1: # biking 
+        return biking_speed
 
 def timeStr2Num(orig):
-    #print(orig)
     hour, mins = orig.split(':')
     return ((int(hour)*60) + int(mins))
 
@@ -102,7 +96,6 @@ def check_days_overlap(days1, days2):
     return False 
 
 def check_time_overlap(classes, start, end, days):
-    #print(f"in check time overlap")
     start = timeStr2Num(start)
     end = timeStr2Num(end)
     for c in classes: 
@@ -110,27 +103,20 @@ def check_time_overlap(classes, start, end, days):
         c_end = timeStr2Num(c['End']) 
         c_days = c['Days']
         if check_days_overlap(days, c_days): 
-            #print(f"days same!")
             # since days are the same, need to check times  
             if start >= c_start and start <= c_end: 
-                #print(f"{start} in between {c['Start']} and {c['End']}")
                 return True
             elif end >= c_start and end <= c_end: 
-                #print(f"{end} in between {c['Start']} and {c['End']}")
                 return True
             elif c_start >= start and c_end <= end: 
-                #print(f"{start} {end} contained in {c_start} {c_end}")
                 return True
             #else: #, does not overlap 
-                #print(f"{start} {end} does not overlap {c_start} {c_end}")
         #else: 
-            #print("days not the same, moving on to next class")
     return False 
         
 def check_class_full(cdf, num):  
     spec_row = cdf.loc[num]
     if spec_row['Opn'].item() == 0: 
-        #print(f"{spec_row['Course - Sec']} is FULL") 
         return True # class is full :( 
     else: 
         return False # class is not full :) 
@@ -148,11 +134,9 @@ def get_classes(cdf, numClasses, totalNumClasses):
             course = {"crn": course['Course - Sec'], "Days": course['Days'], "Start": course['Start Time'], "End": course['End Time'], "Where": course['Where']}
             if type(course["Start"]) != float: 
                 if not check_time_overlap(classes, course["Start"], course["End"], course['Days']) and not check_class_full(cdf, num): # make sure classes not at same time/day and not full
-                    #print(f"adding {course}")
                     classes.append(course)
                     c += 1 
                     cdf.at[num, 'Opn'] =  cdf.at[num, 'Opn'] - 1 # decrease number of open seats 
-    #print(classes)
     return classes 
 
 def get_dorm(ddf): 
@@ -179,7 +163,6 @@ def generate_segments(graph, buildings_dict, s_building, t_building):
     nodes, edges = ox.graph_to_gdfs(graph)
     # Get starting node
     try: 
-        #print(f"the thing messing me up: {buildings.loc[buildings['name'] == s_building].iloc[0]}")
         x = buildings_dict[s_building]['x']
         y = buildings_dict[s_building]['y']        
         orig_node = ox.get_nearest_node(graph, (y, x))
@@ -213,11 +196,18 @@ def generate_segments(graph, buildings_dict, s_building, t_building):
     except Exception as e: 
         print(f"ERROR DURING |{s_building}| {e}")
         
-    #return [] 
     return segments
 
-def create_students(ugrads, grads, cdf, ddf, graph, buildings): 
-    #students = []
+def get_mode(ugrads, grads, grad, percent_walking): 
+    ugrads_walking = math.ceil(ugrads * (int(percent_walking)/100))
+    grads_walking = math.ceil(grads * (int(percent_walking)/100))
+    if grad < ugrads_walking or (grad >= ugrads and grad < ugrads+grads_walking):
+        return 0 # walking 
+    else: 
+        return 1 # biking  
+
+
+def create_students(ugrads, grads, cdf, ddf, graph, buildings, walking_speed, biking_speed, percent_walking): 
     m_file = 'm_students.txt'
     t_file = 't_students.txt'
     w_file = 'w_students.txt'
@@ -238,17 +228,16 @@ def create_students(ugrads, grads, cdf, ddf, graph, buildings):
     
     for grad in range(ugrads+grads):
         print(grad)
-        # create dicts
         sid = grad
-        speed = get_speed() 
+        # get speed    
+        mode = get_mode(ugrads, grads, grad, percent_walking)  
+        speed = get_speed(mode, walking_speed, biking_speed) 
         # get classes for student 
         totalNumClasses = len(cdf.axes[0])
         if grad > ugrads-1: 
             myClasses = get_classes(cdf, 2, totalNumClasses)
-            #print(myClasses)
         else: 
             myClasses = get_classes(cdf, 7, totalNumClasses)
-            #print(myClasses)
         # get dorm for student 
         dorm = get_dorm(ddf)   
         # create journey 
@@ -257,26 +246,13 @@ def create_students(ugrads, grads, cdf, ddf, graph, buildings):
         w_journey = get_journey(graph, buildings, myClasses, "W", dorm)
         r_journey = get_journey(graph, buildings, myClasses, "R", dorm)
         f_journey = get_journey(graph, buildings, myClasses, "F", dorm)
-        '''
-        student = { 
-            "id": sid,
-            "speed": speed,
-            "edge_index": -1, 
-            "m_journey": m_journey, 
-            "t_journey": t_journey, 
-            "w_journey": w_journey, 
-            "r_journey": r_journey, 
-            "f_journey": f_journey, 
-        } # end of student dict
-        '''
-        #students.append(student)
+        # write student to file  
         m_written = write_student(m_written, m_file, sid, speed, m_journey)
         t_written = write_student(t_written, t_file, sid, speed, t_journey)
         w_written = write_student(w_written, w_file, sid, speed, w_journey)
         r_written = write_student(r_written, r_file, sid, speed, r_journey)
         f_written = write_student(f_written, f_file, sid, speed, f_journey)
-
-    #return students 
+    # end list 
     write_char(m_file, ']')
     write_char(t_file, ']')
     write_char(w_file, ']')
@@ -303,22 +279,49 @@ def write_student(written, file_name, sid, speed, journey):
             f.write(str(json.dumps(student))) 
     return written 
 
+def check_type(var): 
+    try: 
+        var = int(var) 
+        return var 
+    except: 
+        var = float(var) 
+        print(f"WARNING: you input {var} instead of an integer. Rounding {var} to {math.ceil(var)}") 
+        return math.ceil(var) 
+
 def main(): 
-    # command line parsing 
+    # make sure num arguments is correct 
     arguments = sys.argv[1:]
     if len(arguments) < 4: 
         usage(0)
+    # set defaults 
+    ugrads = 8000 
+    grads = 4000
+    walking_speed = 1 
+    biking_speed = 3 
+    percent_walking = 100 
+    # command line parsing 
     while arguments and arguments[0].startswith('-'):
         argument = arguments.pop(0)
         if argument == '-c':
             class_search_path = arguments.pop(0)
         elif argument == '-d': 
             dorms_path = arguments.pop(0)
+        elif argument == '-ugrads': 
+            ugrads = int(arguments.pop(0)) 
+        elif argument == '-grads': 
+            grads = int(arguments.pop(0))  
+        elif argument == '-walk': 
+            walking_speed = check_type(arguments.pop(0)) 
+        elif argument == '-bike': 
+            biking_speed = check_type(arguments.pop(0)) 
+        elif argument == '-per': 
+            percent_walking = check_type(arguments.pop(0)) 
         elif argument == '-h':
             usage(0)
         else:
             usage(1)
-
+    print(f"ugrads: {ugrads} grads: {grads}") 
+    print(f"walking speed: {walking_speed} biking speed: {biking_speed} percent walking: {percent_walking}")
     # ensure input data files exist 
     if not os.path.exists(class_search_path) or not os.path.exists(dorms_path): 
         usage(1)
@@ -339,15 +342,7 @@ def main():
     place_name = 'Notre Dame, Indiana, United States'
     graph, buildings = setup_osm(place_name)
     
-
-    # create students
-    #ugrads = 10 
-    #grads  = 2
-    ugrads = 8000 
-    grads  = 4000
-
-    #students = create_students(ugrads, grads, cdf, ddf, graph, buildings)
-    create_students(ugrads, grads, cdf, ddf, graph, buildings)
+    create_students(ugrads, grads, cdf, ddf, graph, buildings, walking_speed, biking_speed, percent_walking)
     cdf.to_excel('full_classes.xlsx')
 
 if __name__ == '__main__': 
