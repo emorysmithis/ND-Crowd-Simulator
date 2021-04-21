@@ -18,6 +18,7 @@ def usage(exitcode=0):
                 [-walk walking_speed (ex: 1)] 
                 [-bike biking_speed (ex: 3)]
                 [-per percent_walking (ex: 80)]
+                [-dir output_directory] 
     ''')
     sys.exit(exitcode)
 
@@ -207,12 +208,12 @@ def get_mode(ugrads, grads, grad, percent_walking):
         return 1 # biking  
 
 
-def create_students(ugrads, grads, cdf, ddf, graph, buildings, walking_speed, biking_speed, percent_walking): 
-    m_file = 'm_students.txt'
-    t_file = 't_students.txt'
-    w_file = 'w_students.txt'
-    r_file = 'r_students.txt'
-    f_file = 'f_students.txt'
+def create_students(ugrads, grads, cdf, ddf, graph, buildings, walking_speed, biking_speed, percent_walking, setup_dir): 
+    m_file = setup_dir + '/m_students.txt'
+    t_file = setup_dir + '/t_students.txt'
+    w_file = setup_dir + '/w_students.txt'
+    r_file = setup_dir + '/r_students.txt'
+    f_file = setup_dir + '/f_students.txt'
     
     write_char(m_file, '[')
     write_char(t_file, '[')
@@ -299,6 +300,8 @@ def main():
     walking_speed = 1 
     biking_speed = 3 
     percent_walking = 100 
+    setup_dir = str(datetime.now()).replace(' ', ':')
+    
     # command line parsing 
     while arguments and arguments[0].startswith('-'):
         argument = arguments.pop(0)
@@ -316,16 +319,23 @@ def main():
             biking_speed = check_type(arguments.pop(0)) 
         elif argument == '-per': 
             percent_walking = check_type(arguments.pop(0)) 
+        elif argument == '-dir': 
+            setup_dir = arguments.pop(0) 
         elif argument == '-h':
             usage(0)
         else:
             usage(1)
-    print(f"ugrads: {ugrads} grads: {grads}") 
-    print(f"walking speed: {walking_speed} biking speed: {biking_speed} percent walking: {percent_walking}")
+    
     # ensure input data files exist 
     if not os.path.exists(class_search_path) or not os.path.exists(dorms_path): 
         usage(1)
-    
+    print(f"will save output to '{setup_dir}'") 
+    if not os.path.exists(setup_dir): 
+        try: 
+            os.mkdir(setup_dir)  
+        except Error as e: 
+            print(f"ERROR: cannot create directory '{setup_dir}': {e}") 
+
     # create class_search data frame 
     cdf = pd.DataFrame() 
     cdf = cdf.append(pd.read_excel(class_search_path), ignore_index=True)  
@@ -342,7 +352,7 @@ def main():
     place_name = 'Notre Dame, Indiana, United States'
     graph, buildings = setup_osm(place_name)
     
-    create_students(ugrads, grads, cdf, ddf, graph, buildings, walking_speed, biking_speed, percent_walking)
+    create_students(ugrads, grads, cdf, ddf, graph, buildings, walking_speed, biking_speed, percent_walking, setup_dir)
     cdf.to_excel('full_classes.xlsx')
 
 if __name__ == '__main__': 
