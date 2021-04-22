@@ -1,65 +1,31 @@
 [
     {
         "id": 0,
-        "speed": 1,
-        "edge_index": -1,
         "journey": [
             {
                 "time": "8:00",
-                "segments": [
-                    {
-                        "path_index": 0,
-                        "edge_id": 1001,
-                        "edge_length": 20
-                    },
-                    {
-                        "path_index": 1,
-                        "edge_id": 1100,
-                        "edge_length": 3
-                    }
-                ]
+                "source": "DeBartolo Hall",
+                "target": "Hesburgh Library"
             },
             {
-                "time": "12:00",
-                "segments": [
-                    {
-                        "path_index": 0,
-                        "edge_id": 765,
-                        "edge_length": 90
-                    }
-                ]
+                "time": "9:45",
+                "source": "Hesburgh Library",
+                "target": "Washington Hall"
             }
         ]
     },
     {
         "id": 1,
-        "speed": 1,
-        "edge_index": -1,
         "journey": [
             {
                 "time": "8:00",
-                "segments": [
-                    {
-                        "path_index": 0,
-                        "edge_id": 1001,
-                        "edge_length": 20
-                    },
-                    {
-                        "path_index": 1,
-                        "edge_id": 1100,
-                        "edge_length": 3
-                    }
-                ]
+                "source": "Lewis Hall",
+                "target": "Duncan Student Center"
             },
             {
                 "time": "9:00",
-                "segments": [
-                    {
-                        "path_index": 0,
-                        "edge_id": 765,
-                        "edge_length": 90
-                    }
-                ]
+                "source": "Duncan Student Center",
+                "target": "Badin Hall"
             }
         ]
     }

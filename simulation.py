@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import sys
 import os
 import json
 from datetime import time, timedelta, datetime, date
@@ -10,6 +11,14 @@ def load_students(students_file):
     with open(students_file) as data:
         table = json.load(data)
     return table
+
+def fill_students(table)
+    for student in table:
+        student['speed'] = 1        # TODO: add speed later
+
+        # create paths
+        for class in student['journey']:
+            
 
 def add_edgeid(D, edge_id):
     if edge_id not in D:            # if edge_id not in dictionary
@@ -27,12 +36,17 @@ def remove_files():
 if __name__ == '__main__':
 
     # Initialize parameters
-    students_file = 'm_students.txt'        # TODO: commandline argument
-    curr_time = time(7, 30, 0)              # TODO: determine start time -> 8 am
-    end_time = time(23, 5, 0)               # TODO: determine end time -> 8 pm
-    N = 3                                   # TODO: set N accordingly
+    students_file = sys.argv[1]             # students file
+    h, m = sys.argv[2].split(':')           # start time
+    curr_time = time(int(h), int(m), 0)
+    h, m = sys.argv[3].split(':')           # end time
+    end_time = time(int(h), int(m), 0)
+    N = int(sys.argv[4])                    # N
+
+    # Data
     crowding_dict = {}
     table = load_students(students_file)
+    table = fill_students(table)
 
     # Main loop
     while curr_time != end_time:
