@@ -3,22 +3,73 @@
 import sys
 import os
 import json
+import osmnx as ox
 from datetime import time, timedelta, datetime, date
+
+def setup_osm(place_name): 
+    graph = ox.graph_from_place(place_name)
+    buildings = ox.geometries_from_place(place_name, tags={'building':True})
+    buildings_dict = {}
+    for index, row in buildings.iterrows():
+        if row['name'] not in buildings_dict:
+            buildings_dict[row['name']] = {}
+            buildings_dict[row['name']]['x'] = float('-' + str(row['geometry']).split('-')[1].split(' ')[0])
+            buildings_dict[row['name']]['y'] = float(str(row['geometry']).split('-')[1].split(' ')[1].split(',')[0][:-1])
+    return graph,buildings_dict
+
+def generate_segments(graph, buildings_dict, s_building, t_building):
+    # Make sure source != target 
+    if s_building == t_building: 
+        return []
+
+    nodes, edges = ox.graph_to_gdfs(graph)
+
+    # Get starting node
+    try: 
+        x = buildings_dict[s_building]['x']
+        y = buildings_dict[s_building]['y']        
+        orig_node = ox.get_nearest_node(graph, (y, x))
+
+        # Get destination node
+        x = buildings_dict[t_building]['x']
+        y = buildings_dict[t_building]['y']        
+        target_node = ox.get_nearest_node(graph, (y, x))
+
+        # Create path
+        node_list = ox.distance.shortest_path(graph, orig_node, target_node)
+
+        # Create segments list
+        segments = []
+        for i, (u, v) in enumerate(list(zip(node_list[:-1], node_list[1:]))):
+            edge = graph.get_edge_data(u, v)
+
+            # Find dictionary parameters
+            path_index = i + 1 #TODO: change this to zero indexing 
+            edge_id = edge[0]['osmid']
+            if isinstance(edge_id, list):
+                edge_id = edge_id[0]
+            edge_length = math.ceil(edge[0]['length'])
+
+            # Set dictionary parameters
+            segment = {}
+            segment['path_index'] = path_index
+            segment['edge_id'] = edge_id
+            segment['edge_length'] = edge_length
+            segments.append(segment)
+    except Exception as e: 
+        print(f"ERROR DURING |{s_building}| {e}")
+        
+    return segments
 
 def load_students(students_file):
     table = []          # master list of students
 
     with open(students_file) as data:
         table = json.load(data)
-    return table
 
-def fill_students(table)
     for student in table:
         student['speed'] = 1        # TODO: add speed later
-
-        # create paths
-        for class in student['journey']:
-            
+        student['edge_index'] = -1
 
 def add_edgeid(D, edge_id):
     if edge_id not in D:            # if edge_id not in dictionary
@@ -45,6 +96,7 @@ if __name__ == '__main__':
 
     # Data
     crowding_dict = {}
+    graph, buildings_dict = setup_osm('Notre Dame, Indiana, United States') 
     table = load_students(students_file)
     table = fill_students(table)
 
@@ -80,6 +132,8 @@ if __name__ == '__main__':
             
                 # Calculate estimated time to get to class
                 estimated_time = 0
+                if not 'segments' in student['journey'][0]:
+                    student['journey'][0]['segments'] = generate_segments(graph, buildings_dict, student['journey'][0]['source'], student['journey'][0]['target'])
                 for t in student['journey'][0]['segments']:
                     estimated_time += t['edge_length']
                 estimated_time /= student['speed']
