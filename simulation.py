@@ -4,6 +4,7 @@ import sys
 import os
 import json
 import osmnx as ox
+import math
 from datetime import time, timedelta, datetime, date
 
 def setup_osm(place_name): 
@@ -70,6 +71,7 @@ def load_students(students_file):
     for student in table:
         student['speed'] = 1        # TODO: add speed later
         student['edge_index'] = -1
+    return table
 
 def add_edgeid(D, edge_id):
     if edge_id not in D:            # if edge_id not in dictionary
@@ -93,15 +95,18 @@ if __name__ == '__main__':
     h, m = sys.argv[3].split(':')           # end time
     end_time = time(int(h), int(m), 0)
     N = int(sys.argv[4])                    # N
+    print('----done with command line arguments----')
 
     # Data
     crowding_dict = {}
     graph, buildings_dict = setup_osm('Notre Dame, Indiana, United States') 
+    print('----done with osmnx graph stuff----')
     table = load_students(students_file)
-    table = fill_students(table)
+    print('----done with student table----')
 
     # Main loop
     while curr_time != end_time:
+        print(curr_time)
         curr_dict = {}
 
         # Iterate through each student
