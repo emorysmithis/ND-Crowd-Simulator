@@ -79,14 +79,11 @@ def add_edgeid(D, edge_id):
     D[edge_id] += 1                 # increment count
     return D
 
-def remove_files():
-    json_files = [json_file for json_file in os.listdir('./') if json_file.endswith('.json')]
-    for json_file in json_files:
-        os.remove(json_file)
-
-
 # Main function
 if __name__ == '__main__':
+    
+    # Get start time
+    time_start = datetime.now()
 
     # Initialize parameters
     students_file = sys.argv[1]             # students file
@@ -95,18 +92,14 @@ if __name__ == '__main__':
     h, m = sys.argv[3].split(':')           # end time
     end_time = time(int(h), int(m), 0)
     N = int(sys.argv[4])                    # N
-    print('----done with command line arguments----')
 
     # Data
     crowding_dict = {}
     graph, buildings_dict = setup_osm('Notre Dame, Indiana, United States') 
-    print('----done with osmnx graph stuff----')
     table = load_students(students_file)
-    print('----done with student table----')
 
     # Main loop
     while curr_time != end_time:
-        print(curr_time)
         curr_dict = {}
 
         # Iterate through each student
@@ -120,13 +113,11 @@ if __name__ == '__main__':
                 if edge_index < student['journey'][0]['segments'][0]['edge_length']:
                     student['edge_index'] += student['speed']
                     add_edgeid(curr_dict, student['journey'][0]['segments'][0]['edge_id'])
-                    print(curr_time, student['id'], student['journey'][0]['segments'][0]['path_index'], student['edge_index'])
                 # Student should change to a new edge
                 elif len(student['journey'][0]['segments']) > 1:
                     student['journey'][0]['segments'].pop(0)
                     student['edge_index'] = student['speed']
                     add_edgeid(curr_dict, student['journey'][0]['segments'][0]['edge_id'])
-                    print(curr_time, student['id'], student['journey'][0]['segments'][0]['path_index'], student['edge_index'])
                 # Student has arrived at destination
                 else:
                     student['journey'].pop(0)
@@ -150,7 +141,6 @@ if __name__ == '__main__':
                 if (datetime.combine(date(1,1,1),class_time) - timedelta(minutes=2, seconds=estimated_time)).time() < curr_time:
                     student['edge_index'] = student['speed']
                     add_edgeid(curr_dict, student['journey'][0]['segments'][0]['edge_id'])
-                    print(curr_time, student['id'], student['journey'][0]['segments'][0]['path_index'], student['edge_index'])
         
         # Update crowding_dict
         for edge_id, value in curr_dict.items():
@@ -163,11 +153,15 @@ if __name__ == '__main__':
         curr_time = (datetime.combine(date(1,1,1),curr_time) + timedelta(seconds=1)).time()
    
     # Print N most crowded edges 
+    print('--------CROWDED EDGES--------')
     crowding_dict = {k: v for k, v in sorted(crowding_dict.items(), key=lambda item: item[1], reverse=True)}
     for i, (key, value) in enumerate(crowding_dict.items()):
         if i < N:
             print(key, value)
-            
 
-    # Remove files
-    #remove_files()             # TODO: uncomment later
+    # Get end time
+    time_end = datetime.now()
+    tdelta = time_end - time_start
+    print('--------TIME--------')
+    print(tdelta)
+    
