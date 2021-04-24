@@ -166,5 +166,7 @@ if __name__ == '__main__':
     time_end = datetime.now()
     tdelta = time_end - time_start
     print('--------TIME--------')
-    print(tdelta)
+    print('start:', time_start)
+    print('end:', time_end)
+    print('timedelta:', tdelta)
     

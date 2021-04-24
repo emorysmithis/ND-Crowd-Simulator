@@ -3,6 +3,7 @@
 import os
 import sys
 import multiprocessing as mp
+from datetime import datetime
 
 def worker(input_list):
     command = './simulation.py ' + ' '.join(input_list)
@@ -30,7 +31,7 @@ if __name__ == '__main__':
         # Run simulation for each day of the week
         for day in days:
             input_file = d + '/' + day + '_students.txt'
-            output_file = d + '/output_' + day + '.txt'
+            output_file = d + '/default/output_' + day + '.txt'
             process = mp.Process(target=worker, args=([input_file, start, end, '50', '>', output_file],))
             processes.append(process)
             process.start()
