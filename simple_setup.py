@@ -9,6 +9,7 @@ import osmnx as ox
 import math 
 import json
 
+
 def usage(exitcode=0): 
     progname = os.path.basename(sys.argv[0])
     print(f'''Usage: {progname} -c class_search.xlsx 
@@ -59,7 +60,6 @@ def get_journey(classes, day, dorm):
     # need journey for dorm -> first class 
     first_source = dorm 
     first_target = get_dest(day_classes[0]['Where'], dorm)
-    #segments = generate_segments(graph, buildings, first_source, first_target)
     if first_source != first_target: 
         target_time = day_classes[0]['Start']
         journey = {"time": target_time, "source": first_source, "target": first_target}
@@ -69,7 +69,6 @@ def get_journey(classes, day, dorm):
         source = get_dest(c['Where'], dorm)
         if i != (len(day_classes)-1): # if not on last class, create journey # TODO: change if to be before 
             target = get_dest(day_classes[i+1]['Where'], dorm) 
-            #segments = generate_segments(graph, buildings, source, target)
             if source != target: 
                 target_time = day_classes[i+1]['Start']
                 journey = {"time": target_time, "source": source, "target": target}
@@ -106,15 +105,46 @@ def check_time_overlap(classes, start, end, days):
         #else: 
     return False 
         
-def check_class_full(cdf, num):  
+def check_class_full(num): 
+    global cdf 
+    global totalNumClasses 
     spec_row = cdf.loc[num]
     if spec_row['Opn'].item() == 0: 
+        print(f"dropping index {num} from classes table because full") 
+        cdf.drop(index=num)
+        totalNumClasses -= 1 
         return True # class is full :( 
     else: 
         return False # class is not full :) 
 
+def set_earliest(time1, time2):
+    t1 = timeStr2Num(time1) 
+    t2 = timeStr2Num(time2) 
+    #print(f"time1: {time1} t1: {t1}")
+    #print(f"time2: {time2} t2: {t2}")
+    if t1 < t2: 
+        #print(f"earliest time is {time1}") 
+        return time1
+    else: 
+        #print(f"earliest time is {time2}") 
+        return time2 
 
-def get_classes(cdf, numClasses, totalNumClasses): 
+def set_latest(time1, time2):
+    t1 = timeStr2Num(time1) 
+    t2 = timeStr2Num(time2) 
+    #print(f"time1: {time1} t1: {t1}")
+    #print(f"time2: {time2} t2: {t2}")
+    if t1 > t2: 
+        print(f"latest time is {time1}") 
+        return time1
+    else: 
+        print(f"latest time is {time2}") 
+        return time2 
+
+
+def get_classes(cdf, numClasses, totalNumClasses):
+    global EARLIEST 
+    global LATEST 
     classes = []
     class_indicies = [] 
     c = 0 
@@ -125,9 +155,11 @@ def get_classes(cdf, numClasses, totalNumClasses):
             course = cdf.loc[num]
             course = {"crn": course['Course - Sec'], "Days": course['Days'], "Start": course['Start Time'], "End": course['End Time'], "Where": course['Where']}
             if type(course["Start"]) != float: 
-                if not check_time_overlap(classes, course["Start"], course["End"], course['Days']) and not check_class_full(cdf, num): # make sure classes not at same time/day and not full
+                if not check_time_overlap(classes, course["Start"], course["End"], course['Days']) and not check_class_full(num): # make sure classes not at same time/day and not full
                     classes.append(course)
-                    c += 1 
+                    EARLIEST = set_earliest(course['Start'], EARLIEST) 
+                    LATEST = set_latest(course['End'], LATEST) 
+                    c += 1 # TODO: might be able to remove this?  
                     cdf.at[num, 'Opn'] =  cdf.at[num, 'Opn'] - 1 # decrease number of open seats 
     return classes 
 
@@ -161,11 +193,12 @@ def create_students(ugrads, grads, cdf, ddf, setup_dir):
         print(grad)
         sid = grad
         # get classes for student 
+        global totalNumClasses 
         totalNumClasses = len(cdf.axes[0])
         if grad > ugrads-1: 
             myClasses = get_classes(cdf, 2, totalNumClasses)
         else: 
-            myClasses = get_classes(cdf, 7, totalNumClasses)
+            myClasses = get_classes(cdf, 6, totalNumClasses)
         # get dorm for student 
         dorm = get_dorm(ddf)   
         # create journey 
@@ -214,6 +247,11 @@ def check_type(var):
         print(f"WARNING: you input {var} instead of an integer. Rounding {var} to {math.ceil(var)}") 
         return math.ceil(var) 
 
+def write_time(time, filename): 
+    with open(filename, 'a') as f: 
+        f.write(time) 
+        f.write('\n') 
+
 def main(): 
     # make sure num arguments is correct 
     arguments = sys.argv[1:]
@@ -253,11 +291,17 @@ def main():
             print(f"ERROR: cannot create directory '{setup_dir}': {e}") 
 
     # create class_search data frame 
+    global cdf 
     cdf = pd.DataFrame() 
     cdf = cdf.append(pd.read_excel(class_search_path), ignore_index=True)  
     if cdf['Max'].all() != cdf['Opn'].all(): 
         print(f"Max seats and Open seats not equal!")
-    
+    # GLOBALS 
+    global EARLIEST
+    EARLIEST = "23:59"
+    global LATEST 
+    LATEST = "0:01" 
+
     # create dorms data frame 
     ddf = pd.DataFrame() 
     ddf = ddf.append(pd.read_excel(dorms_path), ignore_index=True)
@@ -265,7 +309,11 @@ def main():
     ddf = ddf.rename(columns={0: 'Dorm'})
     
     create_students(ugrads, grads, cdf, ddf, setup_dir)
-    cdf.to_excel('full_classes.xlsx')
+    time_file = setup_dir + "/time.txt" 
+    write_time(EARLIEST, time_file) 
+    write_time(LATEST, time_file) 
+    full_classes_file = setup_dir + "/full_classes.xlsx" 
+    cdf.to_excel(full_classes_file)
 
 if __name__ == '__main__': 
     main() 
