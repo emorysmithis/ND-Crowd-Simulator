@@ -93,6 +93,8 @@ if __name__ == '__main__':
     h, m = sys.argv[3].split(':')           # end time
     end_time = time(int(h), int(m), 0)
     N = int(sys.argv[4])                    # N
+    #walk = int(sys.argv[5])                 # walking percentage
+    #bike = int(sys.argv[6])                 # biking percentage
 
     # Data
     crowding_dict = {}
