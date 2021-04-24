@@ -86,6 +86,7 @@ if __name__ == '__main__':
     time_start = datetime.now()
 
     # Initialize parameters
+    print(sys.argv[1:])
     students_file = sys.argv[1]             # students file
     h, m = sys.argv[2].split(':')           # start time
     curr_time = time(int(h), int(m), 0)

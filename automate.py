@@ -4,12 +4,12 @@ import os
 import sys
 import multiprocessing as mp
 
-def worker(input_file, start, end, N, output_file):
-    command = './simulation.py ' + input_file + ' ' + start + ' ' + end + ' ' + N ' > ' + output_file
+def worker(input_list):
+    command = './simulation.py ' + ' '.join(input_list)
+    print(command)
     os.system(command)
     print('finished')
 
-print("Number of processors: ", mp.cpu_count())
 if __name__ == '__main__':
     
     # Initialize variables
@@ -24,13 +24,14 @@ if __name__ == '__main__':
 
         # Get start_time and end_time
         with open (d+'/time.txt', 'r') as f:
-            start, end = f.readline().strip().split()
+            start = f.readline().strip()
+            end = f.readline().strip()
 
         # Run simulation for each day of the week
         for day in days:
             input_file = d + '/' + day + '_students.txt'
             output_file = d + '/output_' + day + '.txt'
-            process = mp.Process(target=worker, args=(input_file, start, end, '50', output_file))
+            process = mp.Process(target=worker, args=([input_file, start, end, '50', '>', output_file],))
             processes.append(process)
             process.start()
 
