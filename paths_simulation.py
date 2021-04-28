@@ -6,7 +6,7 @@ import json
 import osmnx as ox
 import math
 from datetime import time, timedelta, datetime, date
-import random
+from random import randint
 
 def setup_osm(place_name): 
     graph = ox.graph_from_place(place_name)
@@ -65,15 +65,22 @@ def generate_segments(graph, buildings_dict, s_building, t_building, path_num):
         
     return segments
 
-def load_students(students_file):
+def load_students(students_file, speed_list):
     table = []          # master list of students
 
     with open(students_file) as data:
         table = json.load(data)
 
     for student in table:
-        student['speed'] = 1        # TODO: add speed later
         student['edge_index'] = -1
+        # Set speed
+        value = randint(0, 100)
+        if value < speed_list[0]: # walk 
+            student['speed'] = 1
+        elif value < speed_list[0] + speed_list[1]: # scooter 
+            student['speed'] = 3
+        else: # biking 
+            student['speed'] = 5
     return table
 
 def add_edgeid(D, edge_id):
@@ -90,6 +97,7 @@ def usage(exitcode=0):
                 -end end_time (ex: 23:59) 
                 -n N (top N crowded paths ex: 50) 
                 [-fp (percentage of students who take the fastest paths) ex: 80_10 (80% 1st fastest, 10% 2nd fastest, 10% 3rd fastest)]
+                [-speed percentage of people walking, scootering, biking ex: 80_10_10] 
     ''')
     sys.exit(exitcode)
 
@@ -100,7 +108,7 @@ def calc_fp3(fp1, fp2):
     return 100 - fp1 - fp2
 
 def get_path_num(fp1, fp2, fp3): 
-    rand = random.randint(1, 100) 
+    rand = randint(1, 100) 
     #print(f"rand: {rand}") 
     if rand <= fp1: 
         return 0 
@@ -125,7 +133,7 @@ if __name__ == '__main__':
     fp1 = 100 
     fp2 = 0 
     fp3 = 0 
-
+    speed_list = [100, 0, 0]
     # command line parsing 
     while arguments and arguments[0].startswith('-'):
         argument = arguments.pop(0)
@@ -147,6 +155,9 @@ if __name__ == '__main__':
             #print(f"1f_per: {fp1}, 2f_per: {fp2}, 3f_per: {fp3}") 
             fp2 = fp1 + fp2 
             fp3 = fp2 + fp3 
+        elif argument == '-speed': 
+            speed1, speed2, speed3 = arguments.pop(0).split('_') 
+            speed_list = [int(speed1), int(speed2), int(speed3)]
         elif argument == '-h':
             usage(0)
         else:
@@ -157,7 +168,7 @@ if __name__ == '__main__':
     # Data
     crowding_dict = {}
     graph, buildings_dict = setup_osm('Notre Dame, Indiana, United States') 
-    table = load_students(students_file)
+    table = load_students(students_file, speed_list)
 
     # Main loop
     while curr_time != end_time:
