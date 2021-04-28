@@ -6,6 +6,7 @@ import json
 import osmnx as ox
 import math
 from datetime import time, timedelta, datetime, date
+import random
 
 def setup_osm(place_name): 
     graph = ox.graph_from_place(place_name)
@@ -18,7 +19,7 @@ def setup_osm(place_name):
             buildings_dict[row['name']]['y'] = float(str(row['geometry']).split('-')[1].split(' ')[1].split(',')[0][:-1])
     return graph,buildings_dict
 
-def generate_segments(graph, buildings_dict, s_building, t_building):
+def generate_segments(graph, buildings_dict, s_building, t_building, path_num):
     # Make sure source != target 
     if s_building == t_building: 
         return []
@@ -37,7 +38,9 @@ def generate_segments(graph, buildings_dict, s_building, t_building):
         target_node = ox.get_nearest_node(graph, (y, x))
 
         # Create path
-        node_list = ox.distance.shortest_path(graph, orig_node, target_node)
+        node_list = ox.distance.k_shortest_paths(graph, orig_node, target_node, 3) 
+        node_list = list(node_list)[path_num]
+        #node_list = ox.distance.shortest_path(graph, orig_node, target_node)
 
         # Create segments list
         segments = []
@@ -78,6 +81,7 @@ def add_edgeid(D, edge_id):
         D[edge_id] = 0
     D[edge_id] += 1                 # increment count
     return D
+
 def usage(exitcode=0): 
     progname = os.path.basename(sys.argv[0])
     print(f'''Usage: {progname}
@@ -85,8 +89,25 @@ def usage(exitcode=0):
                 -start start_time (ex: 7:30) 
                 -end end_time (ex: 23:59) 
                 -n N (top N crowded paths ex: 50) 
+                [-fp (percentage of students who take the fastest paths) ex: 80_10 (80% 1st fastest, 10% 2nd fastest, 10% 3rd fastest)]
     ''')
     sys.exit(exitcode)
+
+def calc_fp3(fp1, fp2): 
+    if fp1 + fp2 > 100: 
+        print(f"{fp1} + {fp2} > 100") 
+        sys.exit(1) 
+    return 100 - fp1 - fp2
+
+def get_path_num(fp1, fp2, fp3): 
+    rand = random.randint(1, 100) 
+    #print(f"rand: {rand}") 
+    if rand <= fp1: 
+        return 0 
+    elif rand <= fp2: 
+        return 1 
+    elif rand <= fp3: 
+        return 2 
 
 # Main function
 if __name__ == '__main__':
@@ -100,6 +121,11 @@ if __name__ == '__main__':
     if len(arguments) < 8: # 1 for each flag + 1 for the corresponding arg 
         usage(0)
     
+    # set default vals 
+    fp1 = 100 
+    fp2 = 0 
+    fp3 = 0 
+
     # command line parsing 
     while arguments and arguments[0].startswith('-'):
         argument = arguments.pop(0)
@@ -113,13 +139,21 @@ if __name__ == '__main__':
             end_time = time(int(h), int(m), 0)
         elif argument == '-n': 
             N = int(arguments.pop(0))  
+        elif argument == '-fp': 
+            fp1, fp2 = arguments.pop(0).split('_') # determine the weights for shortest k paths  
+            fp1 = int(fp1) 
+            fp2 = int(fp2) 
+            fp3 = calc_fp3(fp1, fp2) 
+            #print(f"1f_per: {fp1}, 2f_per: {fp2}, 3f_per: {fp3}") 
+            fp2 = fp1 + fp2 
+            fp3 = fp2 + fp3 
         elif argument == '-h':
             usage(0)
         else:
             usage(1)    
     
     print(f"students file: {students_file}, start: {curr_time}, end: {end_time}, N: {N}") 
-    
+
     # Data
     crowding_dict = {}
     graph, buildings_dict = setup_osm('Notre Dame, Indiana, United States') 
@@ -156,7 +190,9 @@ if __name__ == '__main__':
                 # Calculate estimated time to get to class
                 estimated_time = 0
                 if not 'segments' in student['journey'][0]:
-                    student['journey'][0]['segments'] = generate_segments(graph, buildings_dict, student['journey'][0]['source'], student['journey'][0]['target'])
+                    path_num = get_path_num(fp1, fp2, fp3) 
+                    #print(f"path num: {path_num}") 
+                    student['journey'][0]['segments'] = generate_segments(graph, buildings_dict, student['journey'][0]['source'], student['journey'][0]['target'], path_num)
                 for t in student['journey'][0]['segments']:
                     estimated_time += t['edge_length']
                 estimated_time /= student['speed']
