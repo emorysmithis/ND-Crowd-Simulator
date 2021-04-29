@@ -45,16 +45,13 @@ def generate_segments(graph, buildings_dict, s_building, t_building):
             edge = graph.get_edge_data(u, v)
 
             # Find dictionary parameters
-            path_index = i + 1 #TODO: change this to zero indexing 
-            edge_id = edge[0]['osmid']
-            if isinstance(edge_id, list):
-                edge_id = edge_id[0]
+            path_index = i 
             edge_length = math.ceil(edge[0]['length'])
 
             # Set dictionary parameters
             segment = {}
             segment['path_index'] = path_index
-            segment['edge_id'] = edge_id
+            segment['u_v'] = str(u) + '_' + str(v)
             segment['edge_length'] = edge_length
             segments.append(segment)
     except Exception as e: 
@@ -73,10 +70,10 @@ def load_students(students_file):
         student['edge_index'] = -1
     return table
 
-def add_edgeid(D, edge_id):
-    if edge_id not in D:            # if edge_id not in dictionary
-        D[edge_id] = 0
-    D[edge_id] += 1                 # increment count
+def add_u_v(D, u_v):
+    if u_v not in D:                # if u_v not in dictionary
+        D[u_v] = 0
+    D[u_v] += 1                     # increment count
     return D
 
 # Main function
@@ -115,12 +112,12 @@ if __name__ == '__main__':
                 # Student should continue walking along edge
                 if edge_index < student['journey'][0]['segments'][0]['edge_length']:
                     student['edge_index'] += student['speed']
-                    add_edgeid(curr_dict, student['journey'][0]['segments'][0]['edge_id'])
+                    add_u_v(curr_dict, student['journey'][0]['segments'][0]['u_v'])
                 # Student should change to a new edge
                 elif len(student['journey'][0]['segments']) > 1:
                     student['journey'][0]['segments'].pop(0)
                     student['edge_index'] = student['speed']
-                    add_edgeid(curr_dict, student['journey'][0]['segments'][0]['edge_id'])
+                    add_u_v(curr_dict, student['journey'][0]['segments'][0]['u_v'])
                 # Student has arrived at destination
                 else:
                     student['journey'].pop(0)
@@ -143,14 +140,14 @@ if __name__ == '__main__':
                 # Student should start moving
                 if (datetime.combine(date(1,1,1),class_time) - timedelta(minutes=2, seconds=estimated_time)).time() < curr_time:
                     student['edge_index'] = student['speed']
-                    add_edgeid(curr_dict, student['journey'][0]['segments'][0]['edge_id'])
+                    add_u_v(curr_dict, student['journey'][0]['segments'][0]['u_v'])
         
         # Update crowding_dict
-        for edge_id, value in curr_dict.items():
-            if edge_id not in crowding_dict:
-                crowding_dict[edge_id] = value
-            elif value > crowding_dict[edge_id]:
-                crowding_dict[edge_id] = value
+        for u_v, value in curr_dict.items():
+            if u_v not in crowding_dict:
+                crowding_dict[u_v] = value
+            elif value > crowding_dict[u_v]:
+                crowding_dict[u_v] = value
     
         # Update curr_time
         curr_time = (datetime.combine(date(1,1,1),curr_time) + timedelta(seconds=1)).time()
