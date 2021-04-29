@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 import sys
 import os
 import json
@@ -129,6 +128,19 @@ def calc_arrive_early(times_list):
     else: 
         return 15 
 
+def walk_check(curr_dict, student):
+    u_v = student['journey'][0]['segments'][0]['u_v']
+    edge_length = student['journey'][0]['segments'][0]['edge_length']
+
+    # Empty sidewalk
+    if u_v not in curr_dict:
+        return True
+    
+    # Full sidewalk
+    if curr_dict[u_v] > 2 * edge_length:
+        return False
+    
+    return True
 
 
 # Main function
@@ -137,7 +149,6 @@ if __name__ == '__main__':
     # Get start time
     time_start = datetime.now()
     
-
     # make sure num arguments is correct 
     arguments = sys.argv[1:]
     if len(arguments) < 8: # 1 for each flag + 1 for the corresponding arg 
@@ -148,7 +159,10 @@ if __name__ == '__main__':
     fp2 = 0 
     fp3 = 0 
     speed_list = [100, 0, 0] # walk, scooter, bike (3) 
-    times_list = [100, 0, 0, 0, 0] # 0, 2, 5, 10, 15 (5) 
+    times_list = [100, 0, 0, 0, 0] # 0, 2, 5, 10, 15 (5)
+    late_classes = 0
+    total_classes = 0
+ 
     # command line parsing 
     while arguments and arguments[0].startswith('-'):
         argument = arguments.pop(0)
@@ -201,15 +215,21 @@ if __name__ == '__main__':
 
                 # Student should continue walking along edge
                 if edge_index < student['journey'][0]['segments'][0]['edge_length']:
-                    student['edge_index'] += student['speed']
-                    add_u_v(curr_dict, student['journey'][0]['segments'][0]['u_v'])
+                    if walk_check(curr_dict, student):
+                        student['edge_index'] += student['speed']
+                        add_u_v(curr_dict, student['journey'][0]['segments'][0]['u_v'])
                 # Student should change to a new edge
                 elif len(student['journey'][0]['segments']) > 1:
                     student['journey'][0]['segments'].pop(0)
-                    student['edge_index'] = student['speed']
-                    add_u_v(curr_dict, student['journey'][0]['segments'][0]['u_v'])
+                    if walk_check(curr_dict, student):
+                        student['edge_index'] = student['speed']
+                        add_u_v(curr_dict, student['journey'][0]['segments'][0]['u_v'])
                 # Student has arrived at destination
                 else:
+                    h, m = student['journey'][0]['time'].split(':')
+                    class_time = time(int(h), int(m), 0)
+                    if curr_time > class_time:
+                        late_classes += 1
                     student['journey'].pop(0)
                     student['edge_index'] = -1
             
@@ -222,6 +242,7 @@ if __name__ == '__main__':
                     path_num = get_path_num(fp1, fp2, fp3) 
                     #print(f"path num: {path_num}") 
                     student['journey'][0]['segments'] = generate_segments(graph, buildings_dict, student['journey'][0]['source'], student['journey'][0]['target'], path_num)
+                    total_classes += 1
                 for t in student['journey'][0]['segments']:
                     estimated_time += t['edge_length']
                 estimated_time /= student['speed']
@@ -233,8 +254,9 @@ if __name__ == '__main__':
                 arrive_early = calc_arrive_early(times_list) 
                 print(f"arriving {arrive_early} minutes early") 
                 if (datetime.combine(date(1,1,1),class_time) - timedelta(minutes=arrive_early, seconds=estimated_time)).time() < curr_time:
-                    student['edge_index'] = student['speed']
-                    add_u_v(curr_dict, student['journey'][0]['segments'][0]['u_v'])
+                    if walk_check(curr_dict, student):
+                        student['edge_index'] = student['speed']
+                        add_u_v(curr_dict, student['journey'][0]['segments'][0]['u_v'])
         
         # Update crowding_dict
         for u_v, value in curr_dict.items():
@@ -252,6 +274,9 @@ if __name__ == '__main__':
     for i, (key, value) in enumerate(crowding_dict.items()):
         if i < N:
             print(key, value)
+
+    # Classes missed
+    print(late_classes / total_classes)
 
     # Get end time
     time_end = datetime.now()
