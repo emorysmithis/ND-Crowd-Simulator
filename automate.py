@@ -12,6 +12,9 @@ def worker(input_list):
     print('finished')
 
 if __name__ == '__main__':
+
+    # Get start time
+    time_start = datetime.now()
     
     # Initialize variables
     directories = sys.argv[1:]
@@ -31,7 +34,9 @@ if __name__ == '__main__':
         # Run simulation for each day of the week
         for day in days:
             input_file = d + '/' + day + '_students.txt'
-            output_file = d + '/default/output_' + day + '.txt'
+            output_file = d + '/default/output_' + day + '.txtUVTEST'
+            if not os.path.exists(d + '/default'):
+                os.mkdir(d + '/default')
             process = mp.Process(target=worker, args=([input_file, start, end, '50', '>', output_file],))
             processes.append(process)
             process.start()
@@ -39,3 +44,10 @@ if __name__ == '__main__':
     for process in processes:
         process.join()
 
+    # Get end time
+    time_end = datetime.now()
+    tdelta = time_end - time_start
+    print('--------TIME--------')
+    print('start:', time_start)
+    print('end:', time_end)
+    print('timedelta:', tdelta)

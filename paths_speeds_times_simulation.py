@@ -72,7 +72,7 @@ def load_students(students_file, speed_list):
         student['edge_index'] = -1
         # Set speed
         value = randint(0, 100)
-        if value < speed_list[0]: # walk 
+        if value <= speed_list[0]: # walk 
             student['speed'] = 1
         elif value < speed_list[0] + speed_list[1]: # scooter 
             student['speed'] = 3
@@ -118,7 +118,7 @@ def get_path_num(fp1, fp2, fp3):
 def calc_arrive_early(times_list): 
     num = randint(0, 100) 
     if num <= times_list[0]: 
-        return 0 
+        return 1 
     elif num <= sum(times_list[0:2]): 
         return 2 
     elif num <= sum(times_list[0:3]): 
@@ -218,18 +218,21 @@ if __name__ == '__main__':
                     if walk_check(curr_dict, student):
                         student['edge_index'] += student['speed']
                         add_u_v(curr_dict, student['journey'][0]['segments'][0]['u_v'])
+                        #print(curr_time, student['id'], student['edge_index'])
                 # Student should change to a new edge
                 elif len(student['journey'][0]['segments']) > 1:
                     student['journey'][0]['segments'].pop(0)
                     if walk_check(curr_dict, student):
                         student['edge_index'] = student['speed']
+                        #print(curr_time, student['id'], student['edge_index'])
                         add_u_v(curr_dict, student['journey'][0]['segments'][0]['u_v'])
                 # Student has arrived at destination
                 else:
                     h, m = student['journey'][0]['time'].split(':')
                     class_time = time(int(h), int(m), 0)
-                    if curr_time > class_time:
+                    if (datetime.combine(date(1,1,1), curr_time) - timedelta(seconds=1)).time() > class_time:
                         late_classes += 1
+                        #print('LATE', curr_time, class_time)
                     student['journey'].pop(0)
                     student['edge_index'] = -1
             
@@ -252,10 +255,11 @@ if __name__ == '__main__':
 
                 # Student should start moving
                 arrive_early = calc_arrive_early(times_list) 
-                print(f"arriving {arrive_early} minutes early") 
+                #print(f"arriving {arrive_early} minutes early") 
                 if (datetime.combine(date(1,1,1),class_time) - timedelta(minutes=arrive_early, seconds=estimated_time)).time() < curr_time:
                     if walk_check(curr_dict, student):
                         student['edge_index'] = student['speed']
+                        #print(curr_time, student['id'], student['edge_index'])
                         add_u_v(curr_dict, student['journey'][0]['segments'][0]['u_v'])
         
         # Update crowding_dict
@@ -276,7 +280,10 @@ if __name__ == '__main__':
             print(key, value)
 
     # Classes missed
-    print(late_classes / total_classes)
+    print('--------LATE PERCENTAGE--------')
+    print('percent late:', late_classes / total_classes)
+    print('number late:', late_classes)
+    print('total classes:', total_classes)
 
     # Get end time
     time_end = datetime.now()
