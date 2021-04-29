@@ -35,7 +35,7 @@ if __name__ == '__main__':
             # Run simulation for each combination of speeds 
             step = 10
             for speed1 in range(30, 110, 10):  
-                upper_limit = 100 - speed1 + 10
+                upper_limit = 100 - speed1 + 10  
                 for speed2 in range(0, upper_limit, 10):  
                     speed3 = 100 - speed1 - speed2 
                     speed_arg = str(speed1) + '_' + str(speed2) + '_' + str(speed3)
@@ -46,3 +46,4 @@ if __name__ == '__main__':
 
     for process in processes:
         process.join()
+
