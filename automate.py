@@ -6,10 +6,10 @@ import multiprocessing as mp
 from datetime import datetime
 
 def worker(input_list):
-    command = './simulation.py ' + ' '.join(input_list)
+    command = './paths_speeds_times_simulation.py ' + ' '.join(input_list)
     print(command)
     os.system(command)
-    print('finished')
+    print(f'finished: {command}')
 
 if __name__ == '__main__':
 
@@ -34,10 +34,10 @@ if __name__ == '__main__':
         # Run simulation for each day of the week
         for day in days:
             input_file = d + '/' + day + '_students.txt'
-            output_file = d + '/default/output_' + day + '.txtUVTEST'
+            output_file = d + '/default/output_' + day + '.txt'
             if not os.path.exists(d + '/default'):
                 os.mkdir(d + '/default')
-            process = mp.Process(target=worker, args=([input_file, start, end, '50', '>', output_file],))
+            process = mp.Process(target=worker, args=(['-s', input_file, '-start', start, '-end', end, '-n', '50', '>', output_file],))
             processes.append(process)
             process.start()
 
