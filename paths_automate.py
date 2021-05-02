@@ -18,6 +18,7 @@ if __name__ == '__main__':
     # Initialize variables
     directories = sys.argv[1:]
     days = ['m', 't', 'w', 'r', 'f']
+    #days = ['m'] # TODO for testing 
     processes = []
     start = ''
     end = ''
@@ -35,9 +36,9 @@ if __name__ == '__main__':
             input_file = d + '/' + day + '_students.txt'
             # Run simulation for each combination of paths 
             step = 10
-            for fp1 in range(30, 110, 10):  
+            for fp1 in range(30, 110, 10):  # TODO change 40 to 110 
                 upper_limit = 100 - fp1 + 10
-                for fp2 in range(0, upper_limit, 10): 
+                for fp2 in range(0, upper_limit, 10): # TODO change 10 to upper_limit 
                     fp_arg = str(fp1) + '_' + str(fp2)
                     # create output file 
                     output_file = d + '/paths/output_' + day + '.txt'
