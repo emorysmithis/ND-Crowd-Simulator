@@ -4,6 +4,7 @@ import sys
 import osmnx as ox
 import matplotlib.pyplot as plt
 import geopandas
+import math 
 
 def setup_osm(place_name):
     graph = ox.graph_from_place(place_name)
@@ -18,7 +19,8 @@ def load_output(output_file):
 
     with open(output_file, 'r') as f:
         for line in f:
-            
+            if 'LATE PERCENTAGE' in line: 
+                break 
             # Data separator
             if '--------' in line:
                 should_read = not should_read
@@ -43,7 +45,7 @@ if __name__ == '__main__':
     crowded_edges = load_output(output_file)
 
     # Produce figure
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(20,20))
     area.plot(ax=ax, facecolor='black')
     buildings.plot(ax=ax, facecolor='khaki', alpha=0.7)
     edges.plot(ax=ax, linewidth=1, edgecolor='white')
@@ -53,14 +55,26 @@ if __name__ == '__main__':
         u_v = str(u) + '_' + str(v)
 
         # Crowded edge
-        if u_v in crowded_edges:
-            value = crowded_edges[u_v]/20.0
+        if u_v in crowded_edges: 
+            value = crowded_edges[u_v]/75.0
             edge = edges.loc[u].loc[v]
+            # get max crowding 
+            max_value = max(crowded_edges.values()) 
+            print(f"max val: {max_value}") 
+            # set color vals 
+            red_val = pow(crowded_edges[u_v],4)  / pow(max_value,4) 
+            blue_val = 1 - (red_val) 
+            green_val = 0
+            print(red_val, blue_val) 
+            # graph 
             temp = geopandas.geodataframe.GeoDataFrame(edge, columns=['Name', 'osmid', 'highway', 'oneway', 'length', 'geometry', 'lanes', 'maxspeed', 'service', 'access', 'tunnel', 'junction'])
-            temp.plot(ax=ax, linewidth=value, edgecolor='red', zorder=3)
+            temp.plot(ax=ax, linewidth=value, edgecolor=(red_val, green_val, blue_val), zorder=3)
+            #temp.plot(ax=ax, linewidth=value, edgecolor='red', zorder=3)
     plt.axis('off')
     plt.xlabel('longitude')
     plt.ylabel('latitude')
     plt.tight_layout()
-    plt.savefig('figure.png')    
-    print('\nSaved figure')
+
+    fig_name = sys.argv[2]
+    plt.savefig(fig_name)    
+    print(f'\nSaved figure to {fig_name}')
