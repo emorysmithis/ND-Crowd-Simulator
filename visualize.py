@@ -46,9 +46,9 @@ if __name__ == '__main__':
 
     # Produce figure
     fig, ax = plt.subplots(figsize=(20,20))
-    area.plot(ax=ax, facecolor='black')
+    area.plot(ax=ax, facecolor='white')
     buildings.plot(ax=ax, facecolor='khaki', alpha=0.7)
-    edges.plot(ax=ax, linewidth=1, edgecolor='white')
+    edges.plot(ax=ax, linewidth=1, edgecolor='khaki')
     for edge in edges.iterrows():
         u = edge[0][0]
         v = edge[0][1]
