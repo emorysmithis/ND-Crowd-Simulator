@@ -3,6 +3,7 @@
 import os
 import sys
 import multiprocessing as mp
+from datetime import datetime 
 
 def worker(input_list):
     command = './paths_speeds_times_simulation.py ' + ' '.join(input_list)
@@ -11,7 +12,9 @@ def worker(input_list):
     print(f'Finished: {command}')
 
 if __name__ == '__main__':
-    
+    # Get Start Time 
+    time_start = datetime.now() 
+
     # Initialize variables
     directories = sys.argv[1:]
     days = ['m', 't', 'w', 'r', 'f']
@@ -39,8 +42,10 @@ if __name__ == '__main__':
                 for fp2 in range(0, upper_limit, 10): # TODO: changed upper_limit to 20 
                     fp_arg = str(fp1) + '_' + str(fp2)
                     #print(fp_arg) 
-            
-                    output_file = d + '/output_' + day + '_' + fp_arg + '.txt'
+                    
+                    output_file = d + '/paths_batch/output_' + day + '_' + fp_arg + '.txt'
+                    if not os.path.exists(d+'/paths_batch'): 
+                        os.mkdir(d + '/paths_batch') 
                     process = mp.Process(target=worker, args=(['-s', input_file, '-start', start, '-end', end, '-n', '50', '-fp', fp_arg, '>', output_file],))
                     processes.append(process)
                     process.start()
@@ -48,4 +53,12 @@ if __name__ == '__main__':
                 for process in processes:
                     process.join()
                 print("joined one set") 
-                processes = [] 
+                processes = []
+
+    # Get end time
+    time_end = datetime.now()
+    tdelta = time_end - time_start
+    print('--------TIME--------')
+    print('start:', time_start)
+    print('end:', time_end)
+    print('timedelta:', tdelta)
