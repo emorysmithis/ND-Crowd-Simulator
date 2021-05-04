@@ -5,7 +5,7 @@ import sys
 import multiprocessing as mp
 
 def worker(input_list):
-    command = './paths_speeds_simulation.py ' + ' '.join(input_list)
+    command = './paths_speeds_times_simulation.py ' + ' '.join(input_list)
     print(command)
     os.system(command)
     print(f'Finished: {command}')
