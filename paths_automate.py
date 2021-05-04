@@ -5,7 +5,7 @@ import sys
 import multiprocessing as mp
 
 def worker(input_list):
-    command = './paths_speeds_simulation.py ' + ' '.join(input_list)
+    command = './paths_speeds_times_simulation.py ' + ' '.join(input_list)
     print(command)
     os.system(command)
     print(f'Finished: {command}')
@@ -40,7 +40,7 @@ if __name__ == '__main__':
                     fp_arg = str(fp1) + '_' + str(fp2)
                     #print(fp_arg) 
             
-                    output_file = d + '/output_' + day + '.txtTEST'
+                    output_file = d + '/output_' + day + '_' + fp_arg + '.txt'
                     process = mp.Process(target=worker, args=(['-s', input_file, '-start', start, '-end', end, '-n', '50', '-fp', fp_arg, '>', output_file],))
                     processes.append(process)
                     process.start()
