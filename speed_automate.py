@@ -49,7 +49,8 @@ if __name__ == '__main__':
 
                 for process in processes:
                     process.join()
-                print("joined one set") 
+                intermediate_time = datetime.now() - time_start
+                print(f"Joined! Elapsed Time: {intermediate_time}, Time Now: {datetime.now()}") 
                 processes = [] 
     
     # Get end time
