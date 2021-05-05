@@ -1,0 +1,14 @@
+./paths_speeds_times_simulation.py -s ../6000_students/f_students.txt -start 6:30 -end 23:59 -n 50 > ../6000_students/default/output_f.txt
+finished: ./paths_speeds_times_simulation.py -s ../6000_students/f_students.txt -start 6:30 -end 23:59 -n 50 > ../6000_students/default/output_f.txt
+./paths_speeds_times_simulation.py -s ../6000_students/r_students.txt -start 6:30 -end 23:59 -n 50 > ../6000_students/default/output_r.txt
+finished: ./paths_speeds_times_simulation.py -s ../6000_students/r_students.txt -start 6:30 -end 23:59 -n 50 > ../6000_students/default/output_r.txt
+./paths_speeds_times_simulation.py -s ../6000_students/t_students.txt -start 6:30 -end 23:59 -n 50 > ../6000_students/default/output_t.txt
+finished: ./paths_speeds_times_simulation.py -s ../6000_students/t_students.txt -start 6:30 -end 23:59 -n 50 > ../6000_students/default/output_t.txt
+./paths_speeds_times_simulation.py -s ../6000_students/w_students.txt -start 6:30 -end 23:59 -n 50 > ../6000_students/default/output_w.txt
+finished: ./paths_speeds_times_simulation.py -s ../6000_students/w_students.txt -start 6:30 -end 23:59 -n 50 > ../6000_students/default/output_w.txt
+./paths_speeds_times_simulation.py -s ../6000_students/m_students.txt -start 6:30 -end 23:59 -n 50 > ../6000_students/default/output_m.txt
+finished: ./paths_speeds_times_simulation.py -s ../6000_students/m_students.txt -start 6:30 -end 23:59 -n 50 > ../6000_students/default/output_m.txt
+--------TIME--------
+start: 2021-05-03 20:45:11.515879
+end: 2021-05-04 01:02:35.115624
+timedelta: 4:17:23.599745
