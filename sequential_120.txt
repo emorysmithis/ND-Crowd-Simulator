@@ -1,6 +1,0 @@
-./paths_speeds_times_simulation.py -s ../ND-Crowd-Simulator-Results/120_students/r_students.txt -start 7:00 -end 22:00 -n 50 > ../ND-Crowd-Simulator-Results/120_students/local/output_r.txt
-finished: ./paths_speeds_times_simulation.py -s ../ND-Crowd-Simulator-Results/120_students/r_students.txt -start 7:00 -end 22:00 -n 50 > ../ND-Crowd-Simulator-Results/120_students/local/output_r.txt
---------TIME--------
-start: 2021-05-03 01:03:06.844344
-end: 2021-05-03 01:05:27.955412
-timedelta: 0:02:21.111068
