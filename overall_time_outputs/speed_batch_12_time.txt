@@ -1,0 +1,404 @@
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_60_10 > ../12_students/speeds_batch/output_m_30_60_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_60_10 > ../12_students/speeds_batch/output_m_30_60_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_0_70 > ../12_students/speeds_batch/output_m_30_0_70.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_0_70 > ../12_students/speeds_batch/output_m_30_0_70.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_30_40 > ../12_students/speeds_batch/output_m_30_30_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_30_40 > ../12_students/speeds_batch/output_m_30_30_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_50_20 > ../12_students/speeds_batch/output_m_30_50_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_50_20 > ../12_students/speeds_batch/output_m_30_50_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_20_50 > ../12_students/speeds_batch/output_m_30_20_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_20_50 > ../12_students/speeds_batch/output_m_30_20_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_70_0 > ../12_students/speeds_batch/output_m_30_70_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_70_0 > ../12_students/speeds_batch/output_m_30_70_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_10_60 > ../12_students/speeds_batch/output_m_30_10_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_10_60 > ../12_students/speeds_batch/output_m_30_10_60.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_40_30 > ../12_students/speeds_batch/output_m_30_40_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_40_30 > ../12_students/speeds_batch/output_m_30_40_30.txt
+Joined! Elapsed Time: 0:00:19.851440, Time Now: 2021-05-05 23:45:38.838935
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_0_60 > ../12_students/speeds_batch/output_m_40_0_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_0_60 > ../12_students/speeds_batch/output_m_40_0_60.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_10_50 > ../12_students/speeds_batch/output_m_40_10_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_10_50 > ../12_students/speeds_batch/output_m_40_10_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_60_0 > ../12_students/speeds_batch/output_m_40_60_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_60_0 > ../12_students/speeds_batch/output_m_40_60_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_30_30 > ../12_students/speeds_batch/output_m_40_30_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_30_30 > ../12_students/speeds_batch/output_m_40_30_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_40_20 > ../12_students/speeds_batch/output_m_40_40_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_40_20 > ../12_students/speeds_batch/output_m_40_40_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_50_10 > ../12_students/speeds_batch/output_m_40_50_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_50_10 > ../12_students/speeds_batch/output_m_40_50_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_20_40 > ../12_students/speeds_batch/output_m_40_20_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_20_40 > ../12_students/speeds_batch/output_m_40_20_40.txt
+Joined! Elapsed Time: 0:00:39.345884, Time Now: 2021-05-05 23:45:58.333365
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_0_50 > ../12_students/speeds_batch/output_m_50_0_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_0_50 > ../12_students/speeds_batch/output_m_50_0_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_40_10 > ../12_students/speeds_batch/output_m_50_40_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_40_10 > ../12_students/speeds_batch/output_m_50_40_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_10_40 > ../12_students/speeds_batch/output_m_50_10_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_10_40 > ../12_students/speeds_batch/output_m_50_10_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_20_30 > ../12_students/speeds_batch/output_m_50_20_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_20_30 > ../12_students/speeds_batch/output_m_50_20_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_50_0 > ../12_students/speeds_batch/output_m_50_50_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_50_0 > ../12_students/speeds_batch/output_m_50_50_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_30_20 > ../12_students/speeds_batch/output_m_50_30_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_30_20 > ../12_students/speeds_batch/output_m_50_30_20.txt
+Joined! Elapsed Time: 0:00:58.850625, Time Now: 2021-05-05 23:46:17.838106
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_40_0 > ../12_students/speeds_batch/output_m_60_40_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_40_0 > ../12_students/speeds_batch/output_m_60_40_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_10_30 > ../12_students/speeds_batch/output_m_60_10_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_10_30 > ../12_students/speeds_batch/output_m_60_10_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_0_40 > ../12_students/speeds_batch/output_m_60_0_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_0_40 > ../12_students/speeds_batch/output_m_60_0_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_30_10 > ../12_students/speeds_batch/output_m_60_30_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_30_10 > ../12_students/speeds_batch/output_m_60_30_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_20_20 > ../12_students/speeds_batch/output_m_60_20_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_20_20 > ../12_students/speeds_batch/output_m_60_20_20.txt
+Joined! Elapsed Time: 0:01:18.252906, Time Now: 2021-05-05 23:46:37.240386
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_30_0 > ../12_students/speeds_batch/output_m_70_30_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_30_0 > ../12_students/speeds_batch/output_m_70_30_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_20_10 > ../12_students/speeds_batch/output_m_70_20_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_20_10 > ../12_students/speeds_batch/output_m_70_20_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_0_30 > ../12_students/speeds_batch/output_m_70_0_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_0_30 > ../12_students/speeds_batch/output_m_70_0_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_10_20 > ../12_students/speeds_batch/output_m_70_10_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_10_20 > ../12_students/speeds_batch/output_m_70_10_20.txt
+Joined! Elapsed Time: 0:01:36.986086, Time Now: 2021-05-05 23:46:55.973562
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_0_20 > ../12_students/speeds_batch/output_m_80_0_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_0_20 > ../12_students/speeds_batch/output_m_80_0_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_20_0 > ../12_students/speeds_batch/output_m_80_20_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_20_0 > ../12_students/speeds_batch/output_m_80_20_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_10_10 > ../12_students/speeds_batch/output_m_80_10_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_10_10 > ../12_students/speeds_batch/output_m_80_10_10.txt
+Joined! Elapsed Time: 0:01:55.542079, Time Now: 2021-05-05 23:47:14.529563
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_0_10 > ../12_students/speeds_batch/output_m_90_0_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_0_10 > ../12_students/speeds_batch/output_m_90_0_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_10_0 > ../12_students/speeds_batch/output_m_90_10_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_10_0 > ../12_students/speeds_batch/output_m_90_10_0.txt
+Joined! Elapsed Time: 0:02:14.541134, Time Now: 2021-05-05 23:47:33.528617
+./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 100_0_0 > ../12_students/speeds_batch/output_m_100_0_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/m_students.txt -start 7:30 -end 21:30 -n 50 -speed 100_0_0 > ../12_students/speeds_batch/output_m_100_0_0.txt
+Joined! Elapsed Time: 0:02:32.406854, Time Now: 2021-05-05 23:47:51.394335
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_40_30 > ../12_students/speeds_batch/output_t_30_40_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_40_30 > ../12_students/speeds_batch/output_t_30_40_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_10_60 > ../12_students/speeds_batch/output_t_30_10_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_10_60 > ../12_students/speeds_batch/output_t_30_10_60.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_50_20 > ../12_students/speeds_batch/output_t_30_50_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_50_20 > ../12_students/speeds_batch/output_t_30_50_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_0_70 > ../12_students/speeds_batch/output_t_30_0_70.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_0_70 > ../12_students/speeds_batch/output_t_30_0_70.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_60_10 > ../12_students/speeds_batch/output_t_30_60_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_60_10 > ../12_students/speeds_batch/output_t_30_60_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_20_50 > ../12_students/speeds_batch/output_t_30_20_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_20_50 > ../12_students/speeds_batch/output_t_30_20_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_30_40 > ../12_students/speeds_batch/output_t_30_30_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_30_40 > ../12_students/speeds_batch/output_t_30_30_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_70_0 > ../12_students/speeds_batch/output_t_30_70_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_70_0 > ../12_students/speeds_batch/output_t_30_70_0.txt
+Joined! Elapsed Time: 0:02:50.639990, Time Now: 2021-05-05 23:48:09.627471
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_10_50 > ../12_students/speeds_batch/output_t_40_10_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_10_50 > ../12_students/speeds_batch/output_t_40_10_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_60_0 > ../12_students/speeds_batch/output_t_40_60_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_60_0 > ../12_students/speeds_batch/output_t_40_60_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_20_40 > ../12_students/speeds_batch/output_t_40_20_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_20_40 > ../12_students/speeds_batch/output_t_40_20_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_50_10 > ../12_students/speeds_batch/output_t_40_50_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_50_10 > ../12_students/speeds_batch/output_t_40_50_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_30_30 > ../12_students/speeds_batch/output_t_40_30_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_30_30 > ../12_students/speeds_batch/output_t_40_30_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_40_20 > ../12_students/speeds_batch/output_t_40_40_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_40_20 > ../12_students/speeds_batch/output_t_40_40_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_0_60 > ../12_students/speeds_batch/output_t_40_0_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_0_60 > ../12_students/speeds_batch/output_t_40_0_60.txt
+Joined! Elapsed Time: 0:03:08.751491, Time Now: 2021-05-05 23:48:27.738968
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_40_10 > ../12_students/speeds_batch/output_t_50_40_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_40_10 > ../12_students/speeds_batch/output_t_50_40_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_50_0 > ../12_students/speeds_batch/output_t_50_50_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_50_0 > ../12_students/speeds_batch/output_t_50_50_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_0_50 > ../12_students/speeds_batch/output_t_50_0_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_0_50 > ../12_students/speeds_batch/output_t_50_0_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_10_40 > ../12_students/speeds_batch/output_t_50_10_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_10_40 > ../12_students/speeds_batch/output_t_50_10_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_20_30 > ../12_students/speeds_batch/output_t_50_20_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_20_30 > ../12_students/speeds_batch/output_t_50_20_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_30_20 > ../12_students/speeds_batch/output_t_50_30_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_30_20 > ../12_students/speeds_batch/output_t_50_30_20.txt
+Joined! Elapsed Time: 0:03:26.719970, Time Now: 2021-05-05 23:48:45.707450
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_30_10 > ../12_students/speeds_batch/output_t_60_30_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_30_10 > ../12_students/speeds_batch/output_t_60_30_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_40_0 > ../12_students/speeds_batch/output_t_60_40_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_40_0 > ../12_students/speeds_batch/output_t_60_40_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_0_40 > ../12_students/speeds_batch/output_t_60_0_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_0_40 > ../12_students/speeds_batch/output_t_60_0_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_10_30 > ../12_students/speeds_batch/output_t_60_10_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_10_30 > ../12_students/speeds_batch/output_t_60_10_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_20_20 > ../12_students/speeds_batch/output_t_60_20_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_20_20 > ../12_students/speeds_batch/output_t_60_20_20.txt
+Joined! Elapsed Time: 0:03:44.621581, Time Now: 2021-05-05 23:49:03.609061
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_0_30 > ../12_students/speeds_batch/output_t_70_0_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_0_30 > ../12_students/speeds_batch/output_t_70_0_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_10_20 > ../12_students/speeds_batch/output_t_70_10_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_10_20 > ../12_students/speeds_batch/output_t_70_10_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_30_0 > ../12_students/speeds_batch/output_t_70_30_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_30_0 > ../12_students/speeds_batch/output_t_70_30_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_20_10 > ../12_students/speeds_batch/output_t_70_20_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_20_10 > ../12_students/speeds_batch/output_t_70_20_10.txt
+Joined! Elapsed Time: 0:04:02.856527, Time Now: 2021-05-05 23:49:21.844006
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_10_10 > ../12_students/speeds_batch/output_t_80_10_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_10_10 > ../12_students/speeds_batch/output_t_80_10_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_0_20 > ../12_students/speeds_batch/output_t_80_0_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_0_20 > ../12_students/speeds_batch/output_t_80_0_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_20_0 > ../12_students/speeds_batch/output_t_80_20_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_20_0 > ../12_students/speeds_batch/output_t_80_20_0.txt
+Joined! Elapsed Time: 0:04:20.651426, Time Now: 2021-05-05 23:49:39.638906
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_0_10 > ../12_students/speeds_batch/output_t_90_0_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_0_10 > ../12_students/speeds_batch/output_t_90_0_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_10_0 > ../12_students/speeds_batch/output_t_90_10_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_10_0 > ../12_students/speeds_batch/output_t_90_10_0.txt
+Joined! Elapsed Time: 0:04:38.385257, Time Now: 2021-05-05 23:49:57.372740
+./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 100_0_0 > ../12_students/speeds_batch/output_t_100_0_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/t_students.txt -start 7:30 -end 21:30 -n 50 -speed 100_0_0 > ../12_students/speeds_batch/output_t_100_0_0.txt
+Joined! Elapsed Time: 0:04:55.948829, Time Now: 2021-05-05 23:50:14.936317
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_30_40 > ../12_students/speeds_batch/output_w_30_30_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_30_40 > ../12_students/speeds_batch/output_w_30_30_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_10_60 > ../12_students/speeds_batch/output_w_30_10_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_10_60 > ../12_students/speeds_batch/output_w_30_10_60.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_50_20 > ../12_students/speeds_batch/output_w_30_50_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_50_20 > ../12_students/speeds_batch/output_w_30_50_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_20_50 > ../12_students/speeds_batch/output_w_30_20_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_20_50 > ../12_students/speeds_batch/output_w_30_20_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_0_70 > ../12_students/speeds_batch/output_w_30_0_70.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_0_70 > ../12_students/speeds_batch/output_w_30_0_70.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_60_10 > ../12_students/speeds_batch/output_w_30_60_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_60_10 > ../12_students/speeds_batch/output_w_30_60_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_70_0 > ../12_students/speeds_batch/output_w_30_70_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_70_0 > ../12_students/speeds_batch/output_w_30_70_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_40_30 > ../12_students/speeds_batch/output_w_30_40_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_40_30 > ../12_students/speeds_batch/output_w_30_40_30.txt
+Joined! Elapsed Time: 0:05:17.468789, Time Now: 2021-05-05 23:50:36.456270
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_60_0 > ../12_students/speeds_batch/output_w_40_60_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_60_0 > ../12_students/speeds_batch/output_w_40_60_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_20_40 > ../12_students/speeds_batch/output_w_40_20_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_20_40 > ../12_students/speeds_batch/output_w_40_20_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_40_20 > ../12_students/speeds_batch/output_w_40_40_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_40_20 > ../12_students/speeds_batch/output_w_40_40_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_10_50 > ../12_students/speeds_batch/output_w_40_10_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_10_50 > ../12_students/speeds_batch/output_w_40_10_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_50_10 > ../12_students/speeds_batch/output_w_40_50_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_50_10 > ../12_students/speeds_batch/output_w_40_50_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_30_30 > ../12_students/speeds_batch/output_w_40_30_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_30_30 > ../12_students/speeds_batch/output_w_40_30_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_0_60 > ../12_students/speeds_batch/output_w_40_0_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_0_60 > ../12_students/speeds_batch/output_w_40_0_60.txt
+Joined! Elapsed Time: 0:05:39.010053, Time Now: 2021-05-05 23:50:57.997531
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_0_50 > ../12_students/speeds_batch/output_w_50_0_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_0_50 > ../12_students/speeds_batch/output_w_50_0_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_50_0 > ../12_students/speeds_batch/output_w_50_50_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_50_0 > ../12_students/speeds_batch/output_w_50_50_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_30_20 > ../12_students/speeds_batch/output_w_50_30_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_30_20 > ../12_students/speeds_batch/output_w_50_30_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_20_30 > ../12_students/speeds_batch/output_w_50_20_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_20_30 > ../12_students/speeds_batch/output_w_50_20_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_40_10 > ../12_students/speeds_batch/output_w_50_40_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_40_10 > ../12_students/speeds_batch/output_w_50_40_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_10_40 > ../12_students/speeds_batch/output_w_50_10_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_10_40 > ../12_students/speeds_batch/output_w_50_10_40.txt
+Joined! Elapsed Time: 0:05:59.835749, Time Now: 2021-05-05 23:51:18.823227
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_20_20 > ../12_students/speeds_batch/output_w_60_20_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_20_20 > ../12_students/speeds_batch/output_w_60_20_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_0_40 > ../12_students/speeds_batch/output_w_60_0_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_0_40 > ../12_students/speeds_batch/output_w_60_0_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_30_10 > ../12_students/speeds_batch/output_w_60_30_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_30_10 > ../12_students/speeds_batch/output_w_60_30_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_10_30 > ../12_students/speeds_batch/output_w_60_10_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_10_30 > ../12_students/speeds_batch/output_w_60_10_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_40_0 > ../12_students/speeds_batch/output_w_60_40_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_40_0 > ../12_students/speeds_batch/output_w_60_40_0.txt
+Joined! Elapsed Time: 0:06:20.447057, Time Now: 2021-05-05 23:51:39.434538
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_0_30 > ../12_students/speeds_batch/output_w_70_0_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_0_30 > ../12_students/speeds_batch/output_w_70_0_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_30_0 > ../12_students/speeds_batch/output_w_70_30_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_30_0 > ../12_students/speeds_batch/output_w_70_30_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_20_10 > ../12_students/speeds_batch/output_w_70_20_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_20_10 > ../12_students/speeds_batch/output_w_70_20_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_10_20 > ../12_students/speeds_batch/output_w_70_10_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_10_20 > ../12_students/speeds_batch/output_w_70_10_20.txt
+Joined! Elapsed Time: 0:06:41.379118, Time Now: 2021-05-05 23:52:00.366598
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_0_20 > ../12_students/speeds_batch/output_w_80_0_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_0_20 > ../12_students/speeds_batch/output_w_80_0_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_10_10 > ../12_students/speeds_batch/output_w_80_10_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_10_10 > ../12_students/speeds_batch/output_w_80_10_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_20_0 > ../12_students/speeds_batch/output_w_80_20_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_20_0 > ../12_students/speeds_batch/output_w_80_20_0.txt
+Joined! Elapsed Time: 0:07:02.241244, Time Now: 2021-05-05 23:52:21.228723
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_10_0 > ../12_students/speeds_batch/output_w_90_10_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_10_0 > ../12_students/speeds_batch/output_w_90_10_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_0_10 > ../12_students/speeds_batch/output_w_90_0_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_0_10 > ../12_students/speeds_batch/output_w_90_0_10.txt
+Joined! Elapsed Time: 0:07:22.227897, Time Now: 2021-05-05 23:52:41.215375
+./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 100_0_0 > ../12_students/speeds_batch/output_w_100_0_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/w_students.txt -start 7:30 -end 21:30 -n 50 -speed 100_0_0 > ../12_students/speeds_batch/output_w_100_0_0.txt
+Joined! Elapsed Time: 0:07:41.762963, Time Now: 2021-05-05 23:53:00.750444
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_0_70 > ../12_students/speeds_batch/output_r_30_0_70.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_0_70 > ../12_students/speeds_batch/output_r_30_0_70.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_60_10 > ../12_students/speeds_batch/output_r_30_60_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_60_10 > ../12_students/speeds_batch/output_r_30_60_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_30_40 > ../12_students/speeds_batch/output_r_30_30_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_30_40 > ../12_students/speeds_batch/output_r_30_30_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_50_20 > ../12_students/speeds_batch/output_r_30_50_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_50_20 > ../12_students/speeds_batch/output_r_30_50_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_20_50 > ../12_students/speeds_batch/output_r_30_20_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_20_50 > ../12_students/speeds_batch/output_r_30_20_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_40_30 > ../12_students/speeds_batch/output_r_30_40_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_40_30 > ../12_students/speeds_batch/output_r_30_40_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_70_0 > ../12_students/speeds_batch/output_r_30_70_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_70_0 > ../12_students/speeds_batch/output_r_30_70_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_10_60 > ../12_students/speeds_batch/output_r_30_10_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_10_60 > ../12_students/speeds_batch/output_r_30_10_60.txt
+Joined! Elapsed Time: 0:08:01.733142, Time Now: 2021-05-05 23:53:20.720626
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_10_50 > ../12_students/speeds_batch/output_r_40_10_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_10_50 > ../12_students/speeds_batch/output_r_40_10_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_50_10 > ../12_students/speeds_batch/output_r_40_50_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_50_10 > ../12_students/speeds_batch/output_r_40_50_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_40_20 > ../12_students/speeds_batch/output_r_40_40_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_40_20 > ../12_students/speeds_batch/output_r_40_40_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_30_30 > ../12_students/speeds_batch/output_r_40_30_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_30_30 > ../12_students/speeds_batch/output_r_40_30_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_60_0 > ../12_students/speeds_batch/output_r_40_60_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_60_0 > ../12_students/speeds_batch/output_r_40_60_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_20_40 > ../12_students/speeds_batch/output_r_40_20_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_20_40 > ../12_students/speeds_batch/output_r_40_20_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_0_60 > ../12_students/speeds_batch/output_r_40_0_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_0_60 > ../12_students/speeds_batch/output_r_40_0_60.txt
+Joined! Elapsed Time: 0:08:21.916317, Time Now: 2021-05-05 23:53:40.903795
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_30_20 > ../12_students/speeds_batch/output_r_50_30_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_30_20 > ../12_students/speeds_batch/output_r_50_30_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_40_10 > ../12_students/speeds_batch/output_r_50_40_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_40_10 > ../12_students/speeds_batch/output_r_50_40_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_50_0 > ../12_students/speeds_batch/output_r_50_50_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_50_0 > ../12_students/speeds_batch/output_r_50_50_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_20_30 > ../12_students/speeds_batch/output_r_50_20_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_20_30 > ../12_students/speeds_batch/output_r_50_20_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_0_50 > ../12_students/speeds_batch/output_r_50_0_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_0_50 > ../12_students/speeds_batch/output_r_50_0_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_10_40 > ../12_students/speeds_batch/output_r_50_10_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_10_40 > ../12_students/speeds_batch/output_r_50_10_40.txt
+Joined! Elapsed Time: 0:08:42.025413, Time Now: 2021-05-05 23:54:01.012894
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_20_20 > ../12_students/speeds_batch/output_r_60_20_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_20_20 > ../12_students/speeds_batch/output_r_60_20_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_10_30 > ../12_students/speeds_batch/output_r_60_10_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_10_30 > ../12_students/speeds_batch/output_r_60_10_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_0_40 > ../12_students/speeds_batch/output_r_60_0_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_0_40 > ../12_students/speeds_batch/output_r_60_0_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_40_0 > ../12_students/speeds_batch/output_r_60_40_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_40_0 > ../12_students/speeds_batch/output_r_60_40_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_30_10 > ../12_students/speeds_batch/output_r_60_30_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_30_10 > ../12_students/speeds_batch/output_r_60_30_10.txt
+Joined! Elapsed Time: 0:09:02.296001, Time Now: 2021-05-05 23:54:21.283480
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_30_0 > ../12_students/speeds_batch/output_r_70_30_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_30_0 > ../12_students/speeds_batch/output_r_70_30_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_0_30 > ../12_students/speeds_batch/output_r_70_0_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_0_30 > ../12_students/speeds_batch/output_r_70_0_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_10_20 > ../12_students/speeds_batch/output_r_70_10_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_10_20 > ../12_students/speeds_batch/output_r_70_10_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_20_10 > ../12_students/speeds_batch/output_r_70_20_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_20_10 > ../12_students/speeds_batch/output_r_70_20_10.txt
+Joined! Elapsed Time: 0:09:21.784140, Time Now: 2021-05-05 23:54:40.771617
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_0_20 > ../12_students/speeds_batch/output_r_80_0_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_0_20 > ../12_students/speeds_batch/output_r_80_0_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_10_10 > ../12_students/speeds_batch/output_r_80_10_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_10_10 > ../12_students/speeds_batch/output_r_80_10_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_20_0 > ../12_students/speeds_batch/output_r_80_20_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_20_0 > ../12_students/speeds_batch/output_r_80_20_0.txt
+Joined! Elapsed Time: 0:09:40.995341, Time Now: 2021-05-05 23:54:59.982823
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_10_0 > ../12_students/speeds_batch/output_r_90_10_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_10_0 > ../12_students/speeds_batch/output_r_90_10_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_0_10 > ../12_students/speeds_batch/output_r_90_0_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_0_10 > ../12_students/speeds_batch/output_r_90_0_10.txt
+Joined! Elapsed Time: 0:10:00.340223, Time Now: 2021-05-05 23:55:19.327704
+./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 100_0_0 > ../12_students/speeds_batch/output_r_100_0_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/r_students.txt -start 7:30 -end 21:30 -n 50 -speed 100_0_0 > ../12_students/speeds_batch/output_r_100_0_0.txt
+Joined! Elapsed Time: 0:10:19.900697, Time Now: 2021-05-05 23:55:38.888179
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_30_40 > ../12_students/speeds_batch/output_f_30_30_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_30_40 > ../12_students/speeds_batch/output_f_30_30_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_40_30 > ../12_students/speeds_batch/output_f_30_40_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_40_30 > ../12_students/speeds_batch/output_f_30_40_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_10_60 > ../12_students/speeds_batch/output_f_30_10_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_10_60 > ../12_students/speeds_batch/output_f_30_10_60.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_70_0 > ../12_students/speeds_batch/output_f_30_70_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_70_0 > ../12_students/speeds_batch/output_f_30_70_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_0_70 > ../12_students/speeds_batch/output_f_30_0_70.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_0_70 > ../12_students/speeds_batch/output_f_30_0_70.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_50_20 > ../12_students/speeds_batch/output_f_30_50_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_50_20 > ../12_students/speeds_batch/output_f_30_50_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_20_50 > ../12_students/speeds_batch/output_f_30_20_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_20_50 > ../12_students/speeds_batch/output_f_30_20_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_60_10 > ../12_students/speeds_batch/output_f_30_60_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 30_60_10 > ../12_students/speeds_batch/output_f_30_60_10.txt
+Joined! Elapsed Time: 0:10:33.703698, Time Now: 2021-05-05 23:55:52.691176
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_60_0 > ../12_students/speeds_batch/output_f_40_60_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_60_0 > ../12_students/speeds_batch/output_f_40_60_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_0_60 > ../12_students/speeds_batch/output_f_40_0_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_0_60 > ../12_students/speeds_batch/output_f_40_0_60.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_20_40 > ../12_students/speeds_batch/output_f_40_20_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_20_40 > ../12_students/speeds_batch/output_f_40_20_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_10_50 > ../12_students/speeds_batch/output_f_40_10_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_10_50 > ../12_students/speeds_batch/output_f_40_10_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_40_20 > ../12_students/speeds_batch/output_f_40_40_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_40_20 > ../12_students/speeds_batch/output_f_40_40_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_50_10 > ../12_students/speeds_batch/output_f_40_50_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_50_10 > ../12_students/speeds_batch/output_f_40_50_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_30_30 > ../12_students/speeds_batch/output_f_40_30_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 40_30_30 > ../12_students/speeds_batch/output_f_40_30_30.txt
+Joined! Elapsed Time: 0:10:47.517949, Time Now: 2021-05-05 23:56:06.505428
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_20_30 > ../12_students/speeds_batch/output_f_50_20_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_20_30 > ../12_students/speeds_batch/output_f_50_20_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_50_0 > ../12_students/speeds_batch/output_f_50_50_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_50_0 > ../12_students/speeds_batch/output_f_50_50_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_40_10 > ../12_students/speeds_batch/output_f_50_40_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_40_10 > ../12_students/speeds_batch/output_f_50_40_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_30_20 > ../12_students/speeds_batch/output_f_50_30_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_30_20 > ../12_students/speeds_batch/output_f_50_30_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_0_50 > ../12_students/speeds_batch/output_f_50_0_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_0_50 > ../12_students/speeds_batch/output_f_50_0_50.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_10_40 > ../12_students/speeds_batch/output_f_50_10_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 50_10_40 > ../12_students/speeds_batch/output_f_50_10_40.txt
+Joined! Elapsed Time: 0:11:01.103063, Time Now: 2021-05-05 23:56:20.090541
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_40_0 > ../12_students/speeds_batch/output_f_60_40_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_40_0 > ../12_students/speeds_batch/output_f_60_40_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_30_10 > ../12_students/speeds_batch/output_f_60_30_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_30_10 > ../12_students/speeds_batch/output_f_60_30_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_10_30 > ../12_students/speeds_batch/output_f_60_10_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_10_30 > ../12_students/speeds_batch/output_f_60_10_30.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_0_40 > ../12_students/speeds_batch/output_f_60_0_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_0_40 > ../12_students/speeds_batch/output_f_60_0_40.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_20_20 > ../12_students/speeds_batch/output_f_60_20_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 60_20_20 > ../12_students/speeds_batch/output_f_60_20_20.txt
+Joined! Elapsed Time: 0:11:14.655975, Time Now: 2021-05-05 23:56:33.643455
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_20_10 > ../12_students/speeds_batch/output_f_70_20_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_20_10 > ../12_students/speeds_batch/output_f_70_20_10.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_30_0 > ../12_students/speeds_batch/output_f_70_30_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_30_0 > ../12_students/speeds_batch/output_f_70_30_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_10_20 > ../12_students/speeds_batch/output_f_70_10_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_10_20 > ../12_students/speeds_batch/output_f_70_10_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_0_30 > ../12_students/speeds_batch/output_f_70_0_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 70_0_30 > ../12_students/speeds_batch/output_f_70_0_30.txt
+Joined! Elapsed Time: 0:11:28.363561, Time Now: 2021-05-05 23:56:47.351038
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_0_20 > ../12_students/speeds_batch/output_f_80_0_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_0_20 > ../12_students/speeds_batch/output_f_80_0_20.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_20_0 > ../12_students/speeds_batch/output_f_80_20_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_20_0 > ../12_students/speeds_batch/output_f_80_20_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_10_10 > ../12_students/speeds_batch/output_f_80_10_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 80_10_10 > ../12_students/speeds_batch/output_f_80_10_10.txt
+Joined! Elapsed Time: 0:11:41.726274, Time Now: 2021-05-05 23:57:00.713751
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_10_0 > ../12_students/speeds_batch/output_f_90_10_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_10_0 > ../12_students/speeds_batch/output_f_90_10_0.txt
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_0_10 > ../12_students/speeds_batch/output_f_90_0_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 90_0_10 > ../12_students/speeds_batch/output_f_90_0_10.txt
+Joined! Elapsed Time: 0:11:55.008654, Time Now: 2021-05-05 23:57:13.996135
+./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 100_0_0 > ../12_students/speeds_batch/output_f_100_0_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../12_students/f_students.txt -start 7:30 -end 21:30 -n 50 -speed 100_0_0 > ../12_students/speeds_batch/output_f_100_0_0.txt
+Joined! Elapsed Time: 0:12:07.961743, Time Now: 2021-05-05 23:57:26.949221
+--------TIME--------
+start: 2021-05-05 23:45:18.987447
+end: 2021-05-05 23:57:26.949258
+timedelta: 0:12:07.961811
