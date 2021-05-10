@@ -3,7 +3,8 @@
 import os
 import sys
 from datetime import datetime
-import pandas as pd  
+import pandas as pd 
+import re 
 
 def usage(exitcode=0): 
     progname = os.path.basename(sys.argv[0])
@@ -28,6 +29,8 @@ def add_row(data, df):
 def get_day(f): 
     filename = f.split(r'/')[-1]
     day = filename.split('_')[1]
+    if '.txt' in day: 
+        day = day[0] 
     if day not in ['m', 't', 'w', 'r', 'f']: 
         print(f"ERROR: {day} not in Days!")
         exit(1)
@@ -46,9 +49,41 @@ def add_late(data, line):
     return data 
 
 def add_time(data, line): 
-    data['time'] = line #TODO: add total seconds 
+    data['time'] = line #TODO: add total seconds
+    line = line.split('.')[0] 
+    line = line.split(':')
+    print(line) 
+    hours = int(line[0]) 
+    mins = int(line[1]) 
+    secs = int(line[2]) 
+    total_sec = hours*60*60 + mins*60 + secs 
+    data['total_sec'] = total_sec 
     return data
 
+def get_pop(f): 
+    regex = (r'([0-9]+)_students') 
+    matches = re.findall(regex, f) 
+    if len(matches) > 1: 
+        print(f"len(matches) > 1! matches: {matches}. choosing {matches[0]}")
+    return matches[0] 
+
+def get_type(f): 
+    if 'default' in f and 'parallel' in f: 
+        return 0
+    elif 'path' in f and 'parallel' in f: 
+        return 1
+    elif 'path' in f and 'batch' in f: 
+        return 2 
+    elif 'speed' in f: 
+        return 3
+    elif 'local' in f: 
+        return 4 
+    elif 'path' in f: 
+        return 5 
+    elif 'default' in f: 
+        return 6
+    else: 
+        return 'ERROR' 
 
 if __name__ == '__main__':   
     
@@ -79,11 +114,14 @@ if __name__ == '__main__':
     files = arguments 
     if not input_df:
         print(f"input dataframe not given!") 
-        df = pd.DataFrame(columns=['file', 'day', 'pop', 'time', 'max_crowd', 'avg_crowd', 'percent_late', 'num_late', 'total_classes'])
+        df = pd.DataFrame(columns=['file', 'day', 'pop', 'type', 'time', 'total_sec', 'max_crowd', 'avg_crowd', 'percent_late', 'num_late', 'total_classes'])
     
-    for f in files: 
+    for f in files:
+        print(f) 
+        pop = get_pop(f)  
         day = get_day(f) 
-        data = {'day': day, 'file': f} 
+        sim_type = get_type(f) 
+        data = {'day': day, 'file': f, 'pop': pop, 'type': sim_type} 
         output_file = open(f, 'r')
         time_line_found     = False  
         crowded_line_found  = False
