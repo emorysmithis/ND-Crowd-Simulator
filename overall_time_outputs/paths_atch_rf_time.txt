@@ -1,0 +1,164 @@
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_10 > ../600_students/paths_batch/output_r_30_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_10 > ../600_students/paths_batch/output_r_30_10.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_70 > ../600_students/paths_batch/output_r_30_70.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_70 > ../600_students/paths_batch/output_r_30_70.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_50 > ../600_students/paths_batch/output_r_30_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_50 > ../600_students/paths_batch/output_r_30_50.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_20 > ../600_students/paths_batch/output_r_30_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_20 > ../600_students/paths_batch/output_r_30_20.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_60 > ../600_students/paths_batch/output_r_30_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_60 > ../600_students/paths_batch/output_r_30_60.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_0 > ../600_students/paths_batch/output_r_30_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_0 > ../600_students/paths_batch/output_r_30_0.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_30 > ../600_students/paths_batch/output_r_30_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_30 > ../600_students/paths_batch/output_r_30_30.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_40 > ../600_students/paths_batch/output_r_30_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_40 > ../600_students/paths_batch/output_r_30_40.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_30 > ../600_students/paths_batch/output_r_40_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_30 > ../600_students/paths_batch/output_r_40_30.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_10 > ../600_students/paths_batch/output_r_40_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_10 > ../600_students/paths_batch/output_r_40_10.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_60 > ../600_students/paths_batch/output_r_40_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_60 > ../600_students/paths_batch/output_r_40_60.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_40 > ../600_students/paths_batch/output_r_40_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_40 > ../600_students/paths_batch/output_r_40_40.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_50 > ../600_students/paths_batch/output_r_40_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_50 > ../600_students/paths_batch/output_r_40_50.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_20 > ../600_students/paths_batch/output_r_40_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_20 > ../600_students/paths_batch/output_r_40_20.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_0 > ../600_students/paths_batch/output_r_40_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_0 > ../600_students/paths_batch/output_r_40_0.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_10 > ../600_students/paths_batch/output_r_50_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_10 > ../600_students/paths_batch/output_r_50_10.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_20 > ../600_students/paths_batch/output_r_50_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_20 > ../600_students/paths_batch/output_r_50_20.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_40 > ../600_students/paths_batch/output_r_50_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_40 > ../600_students/paths_batch/output_r_50_40.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_0 > ../600_students/paths_batch/output_r_50_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_0 > ../600_students/paths_batch/output_r_50_0.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_50 > ../600_students/paths_batch/output_r_50_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_50 > ../600_students/paths_batch/output_r_50_50.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_30 > ../600_students/paths_batch/output_r_50_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_30 > ../600_students/paths_batch/output_r_50_30.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_10 > ../600_students/paths_batch/output_r_60_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_10 > ../600_students/paths_batch/output_r_60_10.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_30 > ../600_students/paths_batch/output_r_60_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_30 > ../600_students/paths_batch/output_r_60_30.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_40 > ../600_students/paths_batch/output_r_60_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_40 > ../600_students/paths_batch/output_r_60_40.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_0 > ../600_students/paths_batch/output_r_60_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_0 > ../600_students/paths_batch/output_r_60_0.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_20 > ../600_students/paths_batch/output_r_60_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_20 > ../600_students/paths_batch/output_r_60_20.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_30 > ../600_students/paths_batch/output_r_70_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_30 > ../600_students/paths_batch/output_r_70_30.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_10 > ../600_students/paths_batch/output_r_70_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_10 > ../600_students/paths_batch/output_r_70_10.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_0 > ../600_students/paths_batch/output_r_70_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_0 > ../600_students/paths_batch/output_r_70_0.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_20 > ../600_students/paths_batch/output_r_70_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_20 > ../600_students/paths_batch/output_r_70_20.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 80_20 > ../600_students/paths_batch/output_r_80_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 80_20 > ../600_students/paths_batch/output_r_80_20.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 80_0 > ../600_students/paths_batch/output_r_80_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 80_0 > ../600_students/paths_batch/output_r_80_0.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 80_10 > ../600_students/paths_batch/output_r_80_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 80_10 > ../600_students/paths_batch/output_r_80_10.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 90_0 > ../600_students/paths_batch/output_r_90_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 90_0 > ../600_students/paths_batch/output_r_90_0.txt
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 90_10 > ../600_students/paths_batch/output_r_90_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 90_10 > ../600_students/paths_batch/output_r_90_10.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 100_0 > ../600_students/paths_batch/output_r_100_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/r_students.txt -start 6:30 -end 23:59 -n 50 -fp 100_0 > ../600_students/paths_batch/output_r_100_0.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_40 > ../600_students/paths_batch/output_f_30_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_40 > ../600_students/paths_batch/output_f_30_40.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_50 > ../600_students/paths_batch/output_f_30_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_50 > ../600_students/paths_batch/output_f_30_50.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_30 > ../600_students/paths_batch/output_f_30_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_30 > ../600_students/paths_batch/output_f_30_30.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_0 > ../600_students/paths_batch/output_f_30_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_0 > ../600_students/paths_batch/output_f_30_0.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_10 > ../600_students/paths_batch/output_f_30_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_10 > ../600_students/paths_batch/output_f_30_10.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_60 > ../600_students/paths_batch/output_f_30_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_60 > ../600_students/paths_batch/output_f_30_60.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_70 > ../600_students/paths_batch/output_f_30_70.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_70 > ../600_students/paths_batch/output_f_30_70.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_20 > ../600_students/paths_batch/output_f_30_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 30_20 > ../600_students/paths_batch/output_f_30_20.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_30 > ../600_students/paths_batch/output_f_40_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_30 > ../600_students/paths_batch/output_f_40_30.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_0 > ../600_students/paths_batch/output_f_40_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_0 > ../600_students/paths_batch/output_f_40_0.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_20 > ../600_students/paths_batch/output_f_40_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_20 > ../600_students/paths_batch/output_f_40_20.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_10 > ../600_students/paths_batch/output_f_40_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_10 > ../600_students/paths_batch/output_f_40_10.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_50 > ../600_students/paths_batch/output_f_40_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_50 > ../600_students/paths_batch/output_f_40_50.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_40 > ../600_students/paths_batch/output_f_40_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_40 > ../600_students/paths_batch/output_f_40_40.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_60 > ../600_students/paths_batch/output_f_40_60.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 40_60 > ../600_students/paths_batch/output_f_40_60.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_0 > ../600_students/paths_batch/output_f_50_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_0 > ../600_students/paths_batch/output_f_50_0.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_10 > ../600_students/paths_batch/output_f_50_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_10 > ../600_students/paths_batch/output_f_50_10.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_50 > ../600_students/paths_batch/output_f_50_50.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_50 > ../600_students/paths_batch/output_f_50_50.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_40 > ../600_students/paths_batch/output_f_50_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_40 > ../600_students/paths_batch/output_f_50_40.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_30 > ../600_students/paths_batch/output_f_50_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_30 > ../600_students/paths_batch/output_f_50_30.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_20 > ../600_students/paths_batch/output_f_50_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 50_20 > ../600_students/paths_batch/output_f_50_20.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_0 > ../600_students/paths_batch/output_f_60_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_0 > ../600_students/paths_batch/output_f_60_0.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_20 > ../600_students/paths_batch/output_f_60_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_20 > ../600_students/paths_batch/output_f_60_20.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_30 > ../600_students/paths_batch/output_f_60_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_30 > ../600_students/paths_batch/output_f_60_30.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_40 > ../600_students/paths_batch/output_f_60_40.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_40 > ../600_students/paths_batch/output_f_60_40.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_10 > ../600_students/paths_batch/output_f_60_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 60_10 > ../600_students/paths_batch/output_f_60_10.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_0 > ../600_students/paths_batch/output_f_70_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_0 > ../600_students/paths_batch/output_f_70_0.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_10 > ../600_students/paths_batch/output_f_70_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_10 > ../600_students/paths_batch/output_f_70_10.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_30 > ../600_students/paths_batch/output_f_70_30.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_30 > ../600_students/paths_batch/output_f_70_30.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_20 > ../600_students/paths_batch/output_f_70_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 70_20 > ../600_students/paths_batch/output_f_70_20.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 80_10 > ../600_students/paths_batch/output_f_80_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 80_10 > ../600_students/paths_batch/output_f_80_10.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 80_0 > ../600_students/paths_batch/output_f_80_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 80_0 > ../600_students/paths_batch/output_f_80_0.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 80_20 > ../600_students/paths_batch/output_f_80_20.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 80_20 > ../600_students/paths_batch/output_f_80_20.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 90_10 > ../600_students/paths_batch/output_f_90_10.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 90_10 > ../600_students/paths_batch/output_f_90_10.txt
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 90_0 > ../600_students/paths_batch/output_f_90_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 90_0 > ../600_students/paths_batch/output_f_90_0.txt
+joined one set
+./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 100_0 > ../600_students/paths_batch/output_f_100_0.txt
+Finished: ./paths_speeds_times_simulation.py -s ../600_students/f_students.txt -start 6:30 -end 23:59 -n 50 -fp 100_0 > ../600_students/paths_batch/output_f_100_0.txt
+joined one set
+--------TIME--------
+start: 2021-05-05 13:07:21.748416
+end: 2021-05-05 16:42:46.803387
+timedelta: 3:35:25.054971
