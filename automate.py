@@ -6,7 +6,7 @@ import multiprocessing as mp
 from datetime import datetime
 
 def worker(input_list):
-    command = './paths_speeds_times_simulation.py ' + ' '.join(input_list)
+    command = './simulation.py ' + ' '.join(input_list)
     print(command)
     os.system(command)
     print(f'finished: {command}')
