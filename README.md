@@ -62,7 +62,7 @@
 7. Use `simple_setup.py` to create the journey JSON files 
     - `./simple_setup.py -c class_search.xlsx -d dorms.xlsx -ugrads 8000 -grads 4000 -dir 12000_students` 
         - you have to run this script for each population size 
-        - dorms.xlsx is a modified version of building_names.xlsx that only contains dorm names (we created this file manually) 
+        - `dorms.xlsx` is a modified version of `building_names.xlsx` that only contains dorm names (we created this file manually) 
         - the `-ugrads` and `-grads` flags say how many of each type of student we want to create setup files for 
         - the `-dir` flag says where we want to save the output JSON files to 
         - output: 
