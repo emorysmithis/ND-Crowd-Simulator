@@ -79,9 +79,9 @@ This repository contains the code and some of the files for Emory Smith and Chri
 
 ### Automation/Simulation
 1. Run the automation script (`automate.py`, `automate_paths.py`, `automate_speeds.py`) with a list of directories for the population sizes. This will run multiple simulations and save the output file in a new directory within the student population directories. Here are examples on how to run the three different automation scripts:
-    - ./automate.py 12_students 60_students 120_students 600_students 1200_students 6000_students 12000_students
-    - ./automate_paths.py 12_students 60_students
-    - ./automate_speeds.py 12000_students`
+    - `./automate.py 12_students 60_students 120_students 600_students 1200_students 6000_students 12000_students`
+    - `./automate_paths.py 12_students 60_students`
+    - `./automate_speeds.py 12000_students`
 2. To run a simulation manually, run the `simulation.py` script. Unlike the automation scripts, the simulation script will print the output directly to the console. Here are the flags that can be used for the simulation script:
     - -s students.txt 
     - -start start_time (ex: 7:30) 
@@ -91,4 +91,4 @@ This repository contains the code and some of the files for Emory Smith and Chri
     - [-speed percentage of students walking, scootering, biking ex: 80_10_10]
     - [-times percentage of students who get to class 0, 2, 5, 10, 15 minutes early ex: 20_20_20_20_20] 
 3. To visualize the output of the simulation (display the 50 most crowded sidewalks), run the `visualize.py` script. The visualization script takes in an output file from a simulation run. This is how you would run this script:
-    - ./visualize outputfile
+    - .`/visualize.py` outputfile
