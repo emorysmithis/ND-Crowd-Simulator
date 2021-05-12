@@ -42,8 +42,7 @@
 ### Requirements 
 - python3
 - pip3 
-- install the python3 packages 
-- `pip3 install -r requirements.txt`
+- install the python3 packages:  `pip3 install -r requirements.txt`
 ### Data Collection, Data Processing, and Setup 
 1. Go to Class Search: https://class-search-secure.nd.edu/reg/srch/SecureClassSearchServlet
 2. For each subject, in SP21 on Main Campus, download Excel 
