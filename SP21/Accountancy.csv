@@ -1,0 +1,76 @@
+Course - Sec,Title,Cr,St,Max,Opn,Xlst,CRN,Instructor,When,Begin,End,Where
+ACCT10100-01*,Fundamental Financial Literacy,1.5,OP,17,1,,31929,"Hums, Edward",M W - 2:20P - 3:35P,2/3/2021,3/23/2021,DeBartolo Hall 118
+ACCT10100-02,Fundamental Financial Literacy,1.5,CL,17,0,,31928,"Hums, Edward",M W - 2:20P - 3:35P,3/24/2021,5/11/2021,DeBartolo Hall 118
+ACCT20100-01,Accountancy I,3,OP,28,1,Y,21539,"Larocque, Stephannie",T R - 11:10A - 12:25P,2/3/2021,5/11/2021,Geddes Hall B001
+ACCT20100-02,Accountancy I,3,CL,28,0,Y,21115,"Larocque, Stephannie",T R - 12:45P - 2:00P,2/3/2021,5/11/2021,Geddes Hall B001
+ACCT20100-03,Accountancy I,3,CL,0,0,Y,25811,"Stober, Thomas",M W - 11:10A - 12:25P,2/3/2021,5/11/2021,ONLINE COURSE
+ACCT20100-04,Accountancy I,3,CL,0,0,Y,28736,"Stober, Thomas",M W - 12:45P - 2:00P,2/3/2021,5/11/2021,ONLINE COURSE
+ACCT20100-05,Accountancy I,3,CL,0,0,Y,25810,"Stober, Thomas",M W - 2:20P - 3:35P,2/3/2021,5/11/2021,ONLINE COURSE
+ACCT20100-06,Accountancy I,3,OP,32,1,Y,26829,"Kowaleski, Zachary",M W - 8:00A - 9:15A,2/3/2021,5/11/2021,Geddes Hall B001
+ACCT20100-07,Accountancy I,3,OP,28,1,Y,26833,"Kowaleski, Zachary",M W - 9:35A - 10:50A,2/3/2021,5/11/2021,Geddes Hall B001
+ACCT20100-08,Accountancy I,3,CL,28,0,Y,26837,"Kowaleski, Zachary",M W - 11:10A - 12:25P,2/3/2021,5/11/2021,Geddes Hall B001
+ACCT20200-01,Accountancy II,3,OP,34,1,Y,22198,"Milani, Kenneth",M W F - 1:00P - 1:50P,2/3/2021,5/11/2021,ONLINE COURSE
+ACCT20200-02,Accountancy II,3,OP,34,1,Y,20208,"Hums, Edward",M W F - 8:00A - 8:50A,2/3/2021,5/11/2021,DeBartolo Hall 126
+ACCT20200-03,Accountancy II,3,OP,31,1,Y,20725,"O'Tousa, Janet",M W F - 9:10A - 10:00A,2/3/2021,5/11/2021,DeBartolo Hall 140
+ACCT20200-04,Accountancy II,3,CL,32,0,Y,22725,"Meyer, Michael",M W F - 2:30P - 3:20P,2/3/2021,5/11/2021,DeBartolo Hall 126
+ACCT20200-05,Accountancy II,3,CL,30,0,Y,20249,"Hums, Edward",M W F - 9:10A - 10:00A,2/3/2021,5/11/2021,DeBartolo Hall 126
+ACCT20200-06,Accountancy II,3,CL,34,0,Y,20301,"Hums, Edward",M W F - 10:25A - 11:15A,2/3/2021,5/11/2021,DeBartolo Hall 126
+ACCT20200-07,Accountancy II,3,CL,32,0,Y,20106,"O'Tousa, Janet",M W F - 2:30P - 3:20P,2/3/2021,5/11/2021,DeBartolo Hall 140
+ACCT20200-08,Accountancy II,3,CL,31,0,Y,32304,"Creighton, Colleen",M W - 2:20P - 3:35P,2/3/2021,5/11/2021,DeBartolo Hall 129
+ACCT20200-09,Accountancy II,3,CL,32,0,Y,26841,"Bellm, Sebastian",M W F - 1:00P - 1:50P,2/3/2021,5/11/2021,DeBartolo Hall 131
+ACCT20200-10,Accountancy II,3,OP,34,6,Y,20292,"O'Tousa, Janet",M W F - 4:05P - 4:55P,2/3/2021,5/11/2021,DeBartolo Hall 140
+ACCT20200-11,Accountancy II,3,CL,30,0,Y,20936,"Favorite, Michael",M W F - 11:40A - 12:30P,2/3/2021,5/11/2021,DeBartolo Hall 140
+ACCT20200-12,Accountancy II,3,OP,34,23,Y,20510,"O'Tousa, Janet",M W F - 8:00A - 8:50A,2/3/2021,5/11/2021,DeBartolo Hall 140
+ACCT20200-13,Accountancy II,3,CL,34,0,Y,22757,"Meyer, Michael",M W F - 4:05P - 4:55P,2/3/2021,5/11/2021,DeBartolo Hall 126
+ACCT20200-14,Accountancy II,3,CL,34,0,Y,22726,"Meyer, Michael",M W F - 1:00P - 1:50P,2/3/2021,5/11/2021,DeBartolo Hall 126
+ACCT30100-01,Corporate Financial Reporting,3,CL,28,0,,22200,"Liu, Chao-Shin",M W - 5:30P - 6:45P,2/3/2021,5/11/2021,DeBartolo Hall 141
+ACCT30100-02,Corporate Financial Reporting,3,OP,28,2,,22728,"Liu, Chao-Shin",M W - 7:05P - 8:20P,2/3/2021,5/11/2021,DeBartolo Hall 141
+ACCT30100-03,Corporate Financial Reporting,3,CL,28,0,,31927,"Liu, Chao-Shin",M W - 3:55P - 5:10P,2/3/2021,5/11/2021,DeBartolo Hall 141
+ACCT30110-01,Acct Measurement&Disclosure I,3,OP,61,5,,21186,"Urtel, Keith",M W - 5:30P - 6:45P,2/3/2021,5/11/2021,Nieuwland Science Hall 118
+ACCT30120-01,Acct Measurement&Disclosure II,3,OP,45,6,,20055,"Mittelstaedt, H. Fred",T R - 12:45P - 2:00P,2/3/2021,5/11/2021,Jordan Hall of Science 105
+ACCT30120-02,Acct Measurement&Disclosure II,3,OP,45,15,,26843,"Mittelstaedt, H. Fred",T R - 2:20P - 3:35P,2/3/2021,5/11/2021,Jordan Hall of Science 105
+ACCT30160-01,Sustainability: Accounting,3,OP,25,4,,31926,"Vera-Munoz, Sandra",W - 3:00P - 5:30P,2/3/2021,5/11/2021,Mendoza College of Business 158
+ACCT30180-01,Tools for Accounting Analytics,3,CL,30,0,,31925,"Chorvat, Elizabeth",T R - 2:20P - 3:35P,2/3/2021,5/11/2021,Mendoza College of Business L003
+ACCT30210-01,Strategic Cost Management,3,OP,38,1,,21198,"Vera-Munoz, Sandra",T R - 11:10A - 12:25P,2/3/2021,5/11/2021,DeBartolo Hall 140
+ACCT30280-01,Data Analytics in Accounting,3,CL,27,0,,20322,"Burks, Jeffrey",M W - 2:20P - 3:35P,2/3/2021,5/11/2021,Mendoza College of Business L051
+ACCT30280-02,Data Analytics in Accounting,3,CL,27,0,,24153,"Burks, Jeffrey",M W - 3:55P - 5:10P,2/3/2021,5/11/2021,Mendoza College of Business L051
+ACCT40510-01,Audit and Assurance Services,3,CL,23,0,,24450,"Ranzilla, Samuel",T R - 2:20P - 3:35P,2/3/2021,5/11/2021,Bond Hall 106
+ACCT40510-02,Audit and Assurance Services,3,CL,24,0,,23610,"Ranzilla, Samuel",T R - 12:45P - 2:00P,2/3/2021,5/11/2021,Bond Hall 104
+ACCT40610-01,Federal Taxation,3,CL,44,0,,21064,"O'Brien, James",M W - 8:00A - 9:15A,2/3/2021,5/11/2021,Haggar Hall 117
+ACCT40610-02,Federal Taxation,3,CL,35,0,,22542,"O'Brien, James",M W - 11:10A - 12:25P,2/3/2021,5/11/2021,Hesburgh Ctr. for Int. Studies C100
+ACCT40620-01,Taxation Corps & Shareholders,3,OP,30,3,,28757,"Wittenbach, James",T R - 11:10A - 12:25P,2/3/2021,5/11/2021,ONLINE COURSE
+ACCT40660-01,Tax Assistance Program,2,CL,20,0,Y,21436,"Creighton, Colleen",M W - 5:30P - 7:00P,2/3/2021,5/11/2021,Mendoza College of Business L068
+ACCT40660-02,Tax Assistance Program,2,OP,28,26,Y,21437,"Creighton, Colleen",T R - 5:30P - 7:00P,2/3/2021,5/11/2021,Mendoza College of Business L003
+ACCT40670-01,Tax Assistance Program,2,CL,10,0,Y,21438,"Creighton, Colleen",M W - 5:30P - 7:00P,2/3/2021,5/11/2021,Mendoza College of Business L068
+ACCT40670-02,Tax Assistance Program,2,OP,20,14,Y,21439,"Creighton, Colleen",T R - 5:30P - 7:00P,2/3/2021,5/11/2021,Mendoza College of Business L003
+ACCT40750-01,Ethics in Accounting,3,OP,29,5,,28758,"Levey, Brian",T R - 7:05P - 8:20P,2/3/2021,5/11/2021,Mendoza College of Business 162
+ACCT40790-01,Acct. of Not-for-Profit Org.,3,OP,26,6,,24154,"Kroll, Linda",T R - 8:00A - 9:15A,2/3/2021,5/11/2021,Hayes Healy Center 231
+ACCT40810-01,IFRS,3,CL,11,0,Y,28759,"Ranzilla, Samuel",M W - 11:10A - 12:25P,2/3/2021,5/11/2021,DeBartolo Hall 213
+ACCT70080-01,Data Exploration Visualization,2,OP,7,6,Y,33363,"Chorvat, Elizabeth",M W - 3:00P - 4:45P,2/1/2021,3/16/2021,Mendoza College of Business 133
+ACCT70081-01,Data Exploration Visualization,2,OP,19,1,Y,31832,"Chorvat, Elizabeth",M W - 3:00P - 4:45P,2/1/2021,3/16/2021,Mendoza College of Business 133
+ACCT70131-01*,Topics in Acct Meas and Discl,3,OP,25,1,,20982,"Urtel, Keith",M W - 1:00P - 2:15P,2/1/2021,5/11/2021,Mendoza College of Business 122
+ACCT70131-02,Topics in Acct Meas and Discl,3,OP,25,8,,20794,"Urtel, Keith",M W - 3:00P - 4:15P,2/1/2021,5/11/2021,Mendoza College of Business 122
+ACCT70180-01,Accounting Data Management,2,OP,14,12,Y,33364,"Chorvat, Elizabeth",M W - 3:00P - 4:45P,3/29/2021,5/11/2021,Mendoza College of Business 134
+ACCT70181-01,Accounting Data Management,2,OP,12,3,Y,31831,"Chorvat, Elizabeth",M W - 3:00P - 4:45P,3/29/2021,5/11/2021,Mendoza College of Business 134
+ACCT70200-01*,Strategic Cost Management,2,CL,32,0,,24152,"Ramanan, Ramachandran",M W - 8:00A - 9:45A,3/29/2021,5/11/2021,ONLINE COURSE
+ACCT70200-02*,Strategic Cost Management,2,CL,30,0,,25081,"Ramanan, Ramachandran",M W - 10:00A - 11:45A,3/29/2021,5/11/2021,ONLINE COURSE
+ACCT70281-01,Data Analytics in Accounting,2,OP,26,2,,26844,"Burks, Jeffrey",T R - 3:00P - 4:45P,2/1/2021,3/16/2021,Mendoza College of Business L051
+ACCT70291-01,Advanced Accounting Analytics,2,OP,26,6,,31830,"Chorvat, Elizabeth",M W - 5:00P - 6:45P,2/1/2021,3/16/2021,Mendoza College of Business 133
+ACCT70291-02,Advanced Accounting Analytics,2,OP,26,7,,31829,"Chorvat, Elizabeth",M W - 5:00P - 6:50P,3/29/2021,5/11/2021,Mendoza College of Business 133
+ACCT70311-01*,Anlys & Val Using Fin Stmts,3,CL,24,0,,20999,"Easton, Peter",M W - 8:30A - 9:45A,2/1/2021,5/11/2021,ONLINE COURSE
+ACCT70311-02*,Anlys & Val Using Fin Stmts,3,OP,24,1,,20541,"Easton, Peter",M W - 10:00A - 11:15A,2/1/2021,5/11/2021,ONLINE COURSE
+ACCT70620-01,Taxation Corps & Share Holders,3,OP,2,2,Y,23079,"Wittenbach, James",TBA,2/1/2021,5/11/2021,ONLINE COURSE
+ACCT70621-01,Taxation Corps & Share Holders,3,OP,24,2,Y,22729,"Wittenbach, James",TBA,2/1/2021,5/11/2021,ONLINE COURSE
+ACCT70661-01,Spec Top in Tax II: Per & Meth,2,OP,12,6,,31828,"Creighton, Colleen",T R - 1:00P - 2:45P,2/1/2021,3/16/2021,Mendoza College of Business 133
+ACCT70680-01*,Spec Topic Tax IV:St & Loc,1.5,OP,5,5,Y,24023,"Seida, James",M T R - 9:45A - 11:45A,1/4/2021,1/27/2021,ONLINE COURSE
+ACCT70681-01,Spec Topic Tax IV:St & Loc,1.5,OP,20,8,Y,22730,"Seida, James",M T R - 9:45A - 11:45A,1/4/2021,1/27/2021,ONLINE COURSE
+ACCT70691-01,Income Taxation/Intl Individls,2,OP,20,8,,31827,"Laskowski, Becky",T R - 8:15A - 9:45A,2/1/2021,5/11/2021,Mendoza College of Business 159
+ACCT70710-01,Bus Law: Property & Neg. Instr,3,OP,15,9,Y,27400,"O'Brien, James",T R - 1:00P - 2:15P,2/1/2021,5/11/2021,Mendoza College of Business 122
+ACCT70710-02,Bus Law: Property & Neg. Instr,3,OP,16,12,Y,24010,"O'Brien, James",T R - 3:00P - 4:15P,2/1/2021,5/11/2021,Mendoza College of Business 122
+ACCT70711-01,Bus Law: Property & Neg. Instr,3,OP,10,4,Y,20021,"O'Brien, James",T R - 1:00P - 2:15P,2/1/2021,5/11/2021,Mendoza College of Business 122
+ACCT70711-02,Bus Law: Property & Neg. Instr,3,OP,9,5,Y,20465,"O'Brien, James",T R - 3:00P - 4:15P,2/1/2021,5/11/2021,Mendoza College of Business 122
+ACCT70751-01*,Ethics in Accounting,3,CL,29,0,,23257,"Levey, Brian",T R - 5:30P - 6:45P,2/1/2021,5/11/2021,Mendoza College of Business 162
+ACCT70761-01,Tax Ethics,2,CL,12,0,,31826,"Tapajna, Joseph",T R - 10:00A - 11:45A,3/29/2021,5/11/2021,Mendoza College of Business 122
+ACCT70770-01,Accounting for Income Taxes,1.5,OP,8,7,Y,24024,"Achille, Ann Marie",W - 5:00P - 7:55P,3/29/2021,5/11/2021,Mendoza College of Business 134
+ACCT70771-01,Accounting for Income Taxes,1.5,OP,15,1,Y,23967,"Achille, Ann Marie",W - 5:00P - 7:55P,3/29/2021,5/11/2021,Mendoza College of Business 134
+ACCT70811-01,IFRS,3,OP,8,3,Y,24601,"Ranzilla, Samuel",M W - 11:10A - 12:25P,2/3/2021,5/11/2021,DeBartolo Hall 213

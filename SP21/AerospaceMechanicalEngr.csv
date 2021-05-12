@@ -1,0 +1,265 @@
+Course - Sec,Title,Cr,St,Max,Opn,Xlst,CRN,Instructor,When,Begin,End,Where
+AME18491-01*,Undergraduate Research - FY,1,OP,5,5,,29613,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME20210-01,Into to Desn. Thinking in EG,3,OP,90,27,,31649,"Seelinger, Michael",T R - 9:35A - 10:50A,2/3/2021,5/11/2021,DeBartolo Hall 141
+AME20216-01,AME Laboratory I,1,OP,63,19,,25861,"Rumbach, Paul Ott, John",M - 11:40A - 12:30P,2/3/2021,5/11/2021,ONLINE COURSE
+AME20217-01,AME Laboratory II,1,OP,70,4,Y,26061,"Rumbach, Paul Ott, John",F - 11:40A - 12:30P,2/3/2021,5/11/2021,ONLINE COURSE
+AME20217-99,AME Laboratory II,1,CL,2,0,Y,29426,"Rumbach, Paul Ott, John",F - 11:40A - 12:30P,2/3/2021,5/11/2021,ONLINE COURSE
+AME20221-01,Mechanics I,3,CL,12,0,,26883,"Ovaert, Timothy",T R - 2:20P - 3:35P,2/3/2021,5/11/2021,Jenkins and Nanovic Hall B052
+AME20222-01,Mechanics II,3,OP,130,23,,20166,"Stanisic, Michael",M W F - 2:30P - 3:20P,2/3/2021,5/11/2021,DeBartolo Hall 101
+AME20231-01,Thermodynamics,3,OP,70,8,,23024,"Powers, Joseph",T R - 9:35A - 10:50A,2/3/2021,5/11/2021,Jordan Hall of Science 105
+AME20231-02,Thermodynamics,3,CL,65,0,,31648,"Zorlutuna, Pinar",M W F - 10:25A - 11:15A,2/3/2021,5/11/2021,ONLINE COURSE
+AME20241-01,Solid Mechanics,3,OP,59,3,Y,20144,"Yoon, Sangpil",M W F - 1:00P - 1:50P,2/3/2021,5/11/2021,Morris Inn 190AB
+AME20241-02*,Solid Mechanics,3,OP,60,13,,21398,"Cerrone, Albert",M W F - 1:00P - 1:50P,2/3/2021,5/11/2021,Nieuwland Science Hall 127
+AME20241-03,Solid Mechanics,3,OP,60,23,,29438,"Ovaert, Timothy",M W F - 4:05P - 4:55P,2/3/2021,5/11/2021,Jordan Hall of Science 101
+AME20241-99,Solid Mechanics,3,CL,1,0,Y,29512,"Yoon, Sangpil",M W F - 1:00P - 1:50P,2/3/2021,5/11/2021,Morris Inn 190AB
+AME21216-002,AME Laboratory 1L,1,OP,9,1,,31646,"Rumbach, Paul Ott, John",T - 2:10P - 3:00P,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. B14
+AME21216-003,AME Laboratory 1L,1,OP,9,8,,31645,"Rumbach, Paul Ott, John",T - 5:05P - 5:55P,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. B14
+AME21216-005,AME Laboratory 1L,1,OP,9,1,,31643,"Rumbach, Paul Ott, John",R - 12:20P - 1:10P,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. B14
+AME21216-02,AME Laboratory 1L,1,CL,9,0,,26064,"Ott, John Rumbach, Paul",T - 1:00P - 1:50P,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. B14
+AME21216-03,AME Laboratory 1L,1,CL,9,0,,26062,"Ott, John Rumbach, Paul",T - 3:55P - 4:45P,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. B14
+AME21216-05,AME Laboratory 1L,1,CL,9,0,,31642,"Rumbach, Paul Ott, John",R - 11:10A - 12:00P,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. B14
+AME21217-02,AME Laboratory 2L,1,CL,16,0,Y,26162,"Ott, John Rumbach, Paul",T - 1:00P - 3:00P,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. B14
+AME21217-03,AME Laboratory 2L,1,CL,18,0,,26884,"Rumbach, Paul Ott, John",T - 3:55P - 5:55P,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. B14
+AME21217-04,AME Laboratory 2L,1,OP,18,3,,26163,"Ott, John Rumbach, Paul",W - 3:40P - 5:40P,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. B14
+AME21217-05,AME Laboratory 2L,1,OP,18,1,,31641,"Rumbach, Paul Ott, John",R - 11:10A - 1:10P,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. B14
+AME21217-99,AME Laboratory 2L,1,CL,2,0,Y,29427,"Ott, John Rumbach, Paul",T - 1:00P - 3:00P,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. B14
+AME21267-01,Design Tools 1,2,OP,30,1,,25863,"Strebinger, Richard",T R - 11:10A - 12:25P,2/3/2021,5/11/2021,ONLINE COURSE
+AME21267-02,Design Tools 1,2,OP,30,8,,25862,"Strebinger, Richard",T R - 12:45P - 2:00P,2/3/2021,5/11/2021,ONLINE COURSE
+AME21268-01*,Design Tools 2,2,CL,28,0,Y,26164,"Wang, Jing",T R - 2:20P - 3:35P,2/3/2021,5/11/2021,Cushing Hall of Engineering 303
+AME21268-02*,Design Tools 2,2,CL,30,0,,26165,"Wang, Jing",T R - 3:55P - 5:10P,2/3/2021,5/11/2021,Cushing Hall of Engineering 303
+AME21268-99,Design Tools 2,2,CL,2,0,Y,29443,"Wang, Jing",T R - 2:20P - 3:35P,2/3/2021,5/11/2021,Cushing Hall of Engineering 303
+AME24290-01,"Career Choices, Mech EG",1,OP,48,25,,33056,"Meyers, Kerry Seelinger, Michael",M W F - 12:00P - 12:55P,1/4/2021,1/27/2021,ONLINE COURSE
+AME28491-01*,Undergraduate Research,1,CL,6,0,,29612,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME28491-02*,Undergraduate Research,2,OP,7,1,,29623,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME28491-03*,Undergraduate Research,3,OP,4,3,,29624,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME30315-01,"Dif Eqs,Vibrations&Controls II",3,OP,135,19,,20917,"Schmiedeler, James",M W F - 8:00A - 8:50A,2/3/2021,5/11/2021,Washington Hall 200
+AME30332-01,Compressible Aerodynamics,3,OP,38,10,,20421,"MacArt, Jonathan",M W F - 10:25A - 11:15A,2/3/2021,5/11/2021,DeBartolo Hall 136
+AME30333-01,Theory/Experiment Aerodynamics,4,CL,27,0,,20678,"Jumper, Eric",M W F - 1:00P - 1:50P,2/3/2021,5/11/2021,Hayes Healy Center 117
+AME30334-01,Heat Transfer,3,OP,90,5,,21167,"McClarren, Ryan",T R - 9:35A - 10:50A,2/3/2021,5/11/2021,DeBartolo Hall 102
+AME30334-02,Heat Transfer,3,OP,50,2,,27794,"Rosenberger, Matthew",M W F - 9:10A - 10:00A,2/3/2021,5/11/2021,Nieuwland Science Hall 123
+AME30381-01,Orbital and Space Dynamics,3,OP,47,6,,20385,"Matous, Karel",M W F - 2:30P - 3:20P,2/3/2021,5/11/2021,Hayes Healy Center 127
+AME30386-01*,Intro to Bioengineering,3,OP,19,5,Y,27392,"Wang, Yichun",M W F - 11:40A - 12:30P,2/3/2021,5/11/2021,Hayes Healy Center 127
+AME34391-01,Nanomat. Surf. Mod. Strategies,2,OP,20,8,,33057,"Nallathamby, Prakash",TBA,1/4/2021,1/27/2021,ONLINE COURSE
+AME36099-01*,Directed Readings,3,OP,1,1,,24823,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME36319-01*,Dir Rdngs: Differential Eqns,0,OP,5,4,,20346,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME36329-01*,Dir Rdngs: Vibrations,0,OP,10,10,,20988,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME36339-01*,Directed Readings - Fluids,0,OP,5,5,,20168,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME36359-01*,Dir Rdngs: Controls,0,OP,5,5,,21122,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME38491-01*,Undergraduate Research,1,OP,6,5,,29611,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME38491-02*,Undergraduate Research,2,OP,6,3,,29625,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME38491-03*,Undergraduate Research,3,OP,6,4,,29626,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME40453-01*,Automation and Controls,1,CL,10,0,,29259,"Rumbach, Paul",W - 10:25A - 11:15A,2/3/2021,5/11/2021,Jenkins and Nanovic Hall B052
+AME40462-01,Aerospace Design,4,OP,25,2,,20923,"Juliano, Thomas Sakaue, Hirotaka",M W - 8:00A - 9:15A,2/3/2021,5/11/2021,Stinson Remick Hall 212
+AME40463-01,ME Senior Design Project,4,CL,30,0,,22201,"Stanisic, Michael",T R - 9:35A - 10:50A,2/3/2021,5/11/2021,Stinson Remick Hall 213
+AME40463-02,ME Senior Design Project,4,OP,27,1,,25864,"Zhang, Yanliang",T R - 9:35A - 10:50A,2/3/2021,5/11/2021,Stinson Remick Hall 212
+AME40463-03,ME Senior Design Project,4,OP,18,8,,31640,"Luo, Tengfei",M W - 8:00A - 9:15A,2/3/2021,5/11/2021,Stinson Remick Hall 213
+AME40498-01*,Spc.Stud.Int'l Collab.Indus P,V,CL,1,0,,33451,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME40530-01,"Wind Turb Perform, Cntrl, Desn",3,OP,54,4,Y,26066,"Corke, Thomas",M W - 3:55P - 5:10P,2/3/2021,5/11/2021,Morris Inn 190AB
+AME40541-01,Finite Element Methods,3,OP,26,3,Y,29298,"Zahr, Matthew",M W F - 1:00P - 1:50P,2/3/2021,5/11/2021,Geddes Hall B34/36
+AME40572-01,Introduction to Biomechanics,3,OP,45,4,Y,33249,"Holland, Maria",M W F - 9:10A - 10:00A,2/3/2021,5/11/2021,ONLINE COURSE
+AME40623-01,Analytical Dynamics,3,OP,19,6,Y,31639,"Plecnik, Mark",T R - 12:45P - 2:00P,2/3/2021,5/11/2021,Bond Hall 325
+AME40671-01*,Orthopaedic Biomechanics,3,OP,21,5,Y,29302,"Niebur, Glen",T R - 12:45P - 2:00P,2/3/2021,5/11/2021,Bond Hall 308
+AME41453-01*,Automation and Controls Lab,2,CL,10,0,,29260,"Rumbach, Paul",M F - 9:10A - 11:15A,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. B14
+AME41462-01,Aerospace Design Lab,0,OP,25,2,,22199,"Juliano, Thomas Sakaue, Hirotaka",M W - 9:35A - 10:50A,2/3/2021,5/11/2021,Stinson Remick Hall 212
+AME41463-01,ME Senior Design Lab,0,CL,30,0,,22202,"Stanisic, Michael",T R - 11:10A - 12:25P,2/3/2021,5/11/2021,Stinson Remick Hall 213
+AME41463-02,ME Senior Design Lab,0,OP,27,1,,25865,"Zhang, Yanliang",T R - 11:10A - 12:25P,2/3/2021,5/11/2021,Stinson Remick Hall 212
+AME41463-03,ME Senior Design Lab,0,OP,18,8,,31636,"Luo, Tengfei",M W - 9:35A - 10:50A,2/3/2021,5/11/2021,Stinson Remick Hall 213
+AME47560-001*,Independent UG Design Project,V,OP,7,7,,32958,"Go, David",TBA,1/4/2021,1/27/2021,ONLINE COURSE
+AME47560-002*,Independent UG Design Project,V,OP,7,7,,32959,"Go, David",TBA,1/4/2021,1/27/2021,ONLINE COURSE
+AME47560-003*,Independent UG Design Project,V,OP,7,7,,32960,"Go, David",TBA,1/4/2021,1/27/2021,ONLINE COURSE
+AME47560-01*,Independent UG Design Project,1,OP,10,7,,27394,"Go, David",TBA,2/3/2021,5/11/2021,TBA
+AME47560-02*,Independent UG Design Project,2,OP,10,5,,27395,"Go, David",TBA,2/3/2021,5/11/2021,TBA
+AME47560-03*,Independent UG Design Project,3,OP,10,5,,27396,"Go, David",TBA,2/3/2021,5/11/2021,TBA
+AME48491-001*,Undergraduate Research,V,OP,15,15,,32955,"Goodwine, John",TBA,1/4/2021,1/27/2021,ONLINE COURSE
+AME48491-002*,Undergraduate Research,V,OP,10,9,,32961,"Goodwine, John",TBA,1/4/2021,1/27/2021,ONLINE COURSE
+AME48491-003*,Undergraduate Research,V,OP,10,10,,32962,"Goodwine, John",TBA,1/4/2021,1/27/2021,ONLINE COURSE
+AME48491-01*,Undergraduate Research,1,OP,10,7,,20238,"Goodwine, John",TBA,2/3/2021,5/11/2021,DEPARTMENTAL ASSIGNS
+AME48491-02*,Undergraduate Research,2,OP,12,9,,25866,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME48491-03*,Undergraduate Research,3,OP,30,24,,25867,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME48495-01*,DaVinci Concentration Summary,0,OP,12,9,,26287,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME50542-01,Eng Analysis/Manufact Process,3,OP,34,7,,25868,"Kinzel, Edward",M W F - 11:40A - 12:30P,2/3/2021,5/11/2021,Morris Inn 190A
+AME50551-01,Introduction to Robotics,3,OP,45,8,,27795,"Wensing, Patrick",M W F - 2:30P - 3:20P,2/3/2021,5/11/2021,DeBartolo Hall 155
+AME57520-01*,Mechatronic Football,3,OP,15,15,,23698,"Stanisic, Michael",T R - 3:55P - 5:10P,2/3/2021,5/11/2021,DEPARTMENTAL SPACE
+AME57561-01*,Baja Build,3,OP,19,13,,23673,"Stanisic, Michael",T R - 3:55P - 5:10P,2/3/2021,5/11/2021,DEPARTMENTAL SPACE
+AME57562-01*,Special Studies: Adv. Baja Des,3,OP,1,1,,27421,"Stanisic, Michael",TBA,2/3/2021,5/11/2021,TBA
+AME60541-01,Finite Element Methods,3,OP,7,1,Y,29299,"Zahr, Matthew",M W F - 1:00P - 1:50P,2/3/2021,5/11/2021,Geddes Hall B34/36
+AME60572-01,Introduction to Biomechanics,3,OP,5,2,Y,33251,"Holland, Maria",M W F - 9:10A - 10:00A,2/3/2021,5/11/2021,ONLINE COURSE
+AME60612-01,Mathematical Methods II,3,OP,15,8,,25090,"Powers, Joseph",M W F - 11:40A - 12:30P,2/3/2021,5/11/2021,DeBartolo Hall 116
+AME60614-01,Numerical Methods,3,OP,15,6,,24405,"Wang, Meng",T R - 12:45P - 2:00P,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. 356
+AME60617-01,Data Assimilation & Parameter-,3,OP,38,16,,29249,"Wang, Jian-Xun",T R - 11:10A - 12:25P,2/3/2021,5/11/2021,DeBartolo Hall 136
+AME60619-01,Fractional Calc for Engineers,3,OP,15,9,,31633,"Goodwine, John",M W - 3:55P - 5:10P,2/3/2021,5/11/2021,Corbett Family Hall E202
+AME60623-01,Analytical Dynamics,3,OP,6,4,Y,31638,"Plecnik, Mark",T R - 12:45P - 2:00P,2/3/2021,5/11/2021,Bond Hall 325
+AME60671-01,Orthopaedic Biomechanics,3,CL,4,0,Y,27799,"Niebur, Glen",T R - 12:45P - 2:00P,2/3/2021,5/11/2021,Bond Hall 308
+AME60733-01,Solar Energy:Photovol Systems,3,OP,27,7,,32609,"Neretina, Svetlana",T R - 2:20P - 3:35P,2/3/2021,5/11/2021,Hayes Healy Center 117
+AME60735-01,Adv. Data Analysis Techniques,3,OP,23,13,,31632,"Gordeyev, Stanislav",T R - 11:10A - 12:25P,2/3/2021,5/11/2021,DeBartolo Hall B011
+AME60770-01,Stem Cell Engineering,3,OP,15,10,,31631,"Hanjaya Putra, Donny",M W F - 9:10A - 10:00A,2/3/2021,5/11/2021,DeBartolo Hall 125
+AME63999-01,Graduate Seminar,0,CL,100,-1,,20245,"Niebur, Glen",T R - 3:55P - 5:10P,2/3/2021,5/11/2021,DeBartolo Hall 101
+AME63999-02,Graduate Seminar,0,CL,10,0,,21402,"Niebur, Glen",T R - 5:40P - 6:25P,2/3/2021,5/11/2021,DEPARTMENTAL SPACE
+AME63999-03,Graduate Seminar,0,CL,15,0,,21728,"Niebur, Glen",T R - 6:00P - 6:45P,2/3/2021,5/11/2021,DEPARTMENTAL SPACE
+AME63999-04,Graduate Seminar,0,OP,5,2,,26283,"Niebur, Glen",M W - 8:00A - 9:15A,2/3/2021,5/11/2021,DEPARTMENTAL SPACE
+AME68691-01,Thesis Research,V,OP,5,5,,20349,"Im, Seong-kyun",TBA,2/3/2021,5/11/2021,TBA
+AME68691-02,Thesis Research,V,OP,5,1,,21001,"Go, David",TBA,2/3/2021,5/11/2021,TBA
+AME68691-03,Thesis Research,V,OP,10,10,,20236,"Jumper, Eric",TBA,2/3/2021,5/11/2021,TBA
+AME68691-04,Thesis Research,V,OP,10,10,,22894,"Tryggvason, Gretar",TBA,2/3/2021,5/11/2021,TBA
+AME68691-05,Thesis Research,V,OP,5,5,,20484,"Stanisic, Michael",TBA,2/3/2021,5/11/2021,TBA
+AME68691-06,Thesis Research,V,OP,5,5,,20422,"Powers, Joseph",TBA,2/3/2021,5/11/2021,TBA
+AME68691-07,Thesis Research,V,OP,10,5,,21087,"Holland, Maria",TBA,2/3/2021,5/11/2021,TBA
+AME68691-08,Thesis Research,V,OP,5,3,,20764,"Neretina, Svetlana",TBA,2/3/2021,5/11/2021,TBA
+AME68691-09,Thesis Research,V,OP,5,1,,23101,"Zorlutuna, Pinar",TBA,2/3/2021,5/11/2021,TBA
+AME68691-10,Thesis Research,V,CL,5,0,,20482,"Schmiedeler, James",TBA,2/3/2021,5/11/2021,TBA
+AME68691-11,Thesis Research,V,OP,5,2,,20215,"Niebur, Glen",TBA,2/3/2021,5/11/2021,TBA
+AME68691-12,Thesis Research,V,OP,5,4,,20227,"Thomas, Flint",TBA,2/3/2021,5/11/2021,TBA
+AME68691-13,Thesis Research,V,OP,5,5,,20577,"Hanjaya Putra, Donny",TBA,2/3/2021,5/11/2021,TBA
+AME68691-14,Thesis Research,V,OP,5,2,,20175,"Christensen, Kenneth",TBA,2/3/2021,5/11/2021,TBA
+AME68691-15,Thesis Research,V,OP,5,4,,20851,"MacArt, Jonathan",TBA,2/3/2021,5/11/2021,TBA
+AME68691-16,Thesis Research,V,OP,5,2,,24362,"Sakaue, Hirotaka",TBA,2/3/2021,5/11/2021,TBA
+AME68691-17,Thesis Research,V,OP,5,3,,20402,"Roeder, Ryan",TBA,2/3/2021,5/11/2021,TBA
+AME68691-18,Thesis Research,V,OP,5,1,,20709,"Gordeyev, Stanislav",TBA,2/3/2021,5/11/2021,TBA
+AME68691-19,Thesis Research,V,OP,5,5,,20896,"Peng, Zhangli",TBA,2/3/2021,5/11/2021,TBA
+AME68691-20,Thesis Research,V,OP,10,6,,20713,"Corke, Thomas",TBA,2/3/2021,5/11/2021,TBA
+AME68691-21,Thesis Research,V,OP,3,3,,23416,"Boerckel, Joel",TBA,2/3/2021,5/11/2021,TBA
+AME68691-22,Thesis Research,V,OP,5,3,,24363,"Juliano, Thomas",TBA,2/3/2021,5/11/2021,TBA
+AME68691-23,Thesis Research,V,OP,5,5,,24376,"Leonov, Sergey",TBA,2/3/2021,5/11/2021,TBA
+AME68691-24,Thesis Research,V,OP,10,2,,23452,"Luo, Tengfei",TBA,2/3/2021,5/11/2021,TBA
+AME68691-25,Thesis Research,V,OP,10,3,,20517,"Morris, Scott",TBA,2/3/2021,5/11/2021,TBA
+AME68691-26,Thesis Research,V,OP,5,5,,20911,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME68691-27,Thesis Research,V,OP,5,5,,20895,"Ovaert, Timothy",TBA,2/3/2021,5/11/2021,TBA
+AME68691-28,Thesis Research,V,CL,5,0,,20655,"McClarren, Ryan",TBA,2/3/2021,5/11/2021,TBA
+AME68691-29,Thesis Research,V,OP,5,5,,24838,"Kennedy, Andrew",TBA,2/3/2021,5/11/2021,TBA
+AME68691-30,Thesis Research,V,OP,5,4,,21908,"Richter, David",TBA,2/3/2021,5/11/2021,TBA
+AME68691-31,Thesis Research,V,OP,5,1,,21909,"Matous, Karel",TBA,2/3/2021,5/11/2021,TBA
+AME68691-32,Thesis Research,V,OP,5,4,,21910,"Wang, Meng",TBA,2/3/2021,5/11/2021,TBA
+AME68691-33,Thesis Research,V,OP,5,2,,23248,"Zabaras, Nicholas",TBA,2/3/2021,5/11/2021,TBA
+AME68691-34,Thesis Research,V,CL,5,0,,25870,"Wensing, Patrick",TBA,2/3/2021,5/11/2021,TBA
+AME68691-35,Thesis Research,V,OP,5,1,,25871,"Zhang, Yanliang",TBA,2/3/2021,5/11/2021,TBA
+AME68691-36,Thesis Research,V,OP,5,1,,25869,"Wang, Jian-Xun",TBA,2/3/2021,5/11/2021,TBA
+AME68691-37,Thesis Research,V,OP,5,5,,25872,"Yoon, Sangpil",TBA,2/3/2021,5/11/2021,TBA
+AME68691-38,Thesis Research,V,OP,5,1,,27370,"Zahr, Matthew",TBA,2/3/2021,5/11/2021,TBA
+AME68691-39,Thesis Research,V,OP,5,3,,27378,"Kinzel, Edward",TBA,2/3/2021,5/11/2021,TBA
+AME68691-40,Thesis Research,V,OP,5,3,,27379,"Plecnik, Mark",TBA,2/3/2021,5/11/2021,TBA
+AME68691-41,Thesis Research,V,OP,3,3,,33465,"Rosenberger, Matthew",TBA,2/3/2021,5/11/2021,TBA
+AME68697-01,Nonresident Thesis Research,V,OP,5,5,,20855,"Gordeyev, Stanislav",TBA,2/3/2021,5/11/2021,TBA
+AME68697-02,Nonresident Thesis Research,V,OP,5,4,,20014,"Im, Seong-kyun",TBA,2/3/2021,5/11/2021,TBA
+AME68697-03,Nonresident Thesis Research,V,OP,15,15,,21066,"MacArt, Jonathan",TBA,2/3/2021,5/11/2021,TBA
+AME68697-04,Nonresident Thesis Research,V,OP,5,5,,20512,"McClarren, Ryan",TBA,2/3/2021,5/11/2021,TBA
+AME68697-05,Nonresident Thesis Research,V,OP,5,5,,21017,"Jumper, Eric",TBA,2/3/2021,5/11/2021,TBA
+AME68697-06,Nonresident Thesis Research,V,OP,15,15,,20658,"Wang, Jian-Xun",TBA,2/3/2021,5/11/2021,TBA
+AME68697-07,Nonresident Thesis Research,V,OP,15,15,,21155,"Christensen, Kenneth",TBA,2/3/2021,5/11/2021,TBA
+AME68697-08,Nonresident Thesis Research,V,OP,5,5,,21188,"Wensing, Patrick",TBA,2/3/2021,5/11/2021,TBA
+AME68697-09,Nonresident Thesis Research,V,OP,5,5,,21407,"Powers, Joseph",TBA,2/3/2021,5/11/2021,TBA
+AME68697-10,Nonresident Thesis Research,V,OP,5,5,,21416,"Go, David",TBA,2/3/2021,5/11/2021,TBA
+AME68697-11,Nonresident Thesis Research,V,OP,10,10,,21501,"Corke, Thomas",TBA,2/3/2021,5/11/2021,TBA
+AME68697-12,Nonresident Thesis Research,V,OP,10,10,,21502,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME68697-13,Nonresident Thesis Research,V,OP,5,5,,22895,"Tryggvason, Gretar",TBA,2/3/2021,5/11/2021,TBA
+AME68697-14,Nonresident Thesis Research,V,OP,5,5,,21503,"Morris, Scott",TBA,2/3/2021,5/11/2021,TBA
+AME68697-15,Nonresident Thesis Research,V,OP,10,10,,21504,"Boerckel, Joel",TBA,2/3/2021,5/11/2021,TBA
+AME68697-16,Nonresident Thesis Research,V,OP,5,5,,21505,"Niebur, Glen",TBA,2/3/2021,5/11/2021,TBA
+AME68697-17,Nonresident Thesis Research,V,OP,5,5,,21506,"Ovaert, Timothy",TBA,2/3/2021,5/11/2021,TBA
+AME68697-18,Nonresident Thesis Research,V,OP,5,5,,21507,"Roeder, Ryan",TBA,2/3/2021,5/11/2021,TBA
+AME68697-19,Nonresident Thesis Research,V,OP,5,5,,21508,"Neretina, Svetlana",TBA,2/3/2021,5/11/2021,TBA
+AME68697-20,Nonresident Thesis Research,V,OP,5,5,,21509,"Schmiedeler, James",TBA,2/3/2021,5/11/2021,TBA
+AME68697-21,Nonresident Thesis Research,V,OP,5,5,,21510,"Stanisic, Michael",TBA,2/3/2021,5/11/2021,TBA
+AME68697-22,Nonresident Thesis Research,V,OP,5,5,,21511,"Thomas, Flint",TBA,2/3/2021,5/11/2021,TBA
+AME68697-23,Nonresident Thesis Research,V,OP,5,5,,23100,"Zorlutuna, Pinar",TBA,2/3/2021,5/11/2021,TBA
+AME68697-24,Nonresident Thesis Research,V,OP,3,3,,23419,"Peng, Zhangli",TBA,2/3/2021,5/11/2021,TBA
+AME68697-25,Nonresident Thesis Research,V,OP,5,5,,24364,"Sakaue, Hirotaka",TBA,2/3/2021,5/11/2021,TBA
+AME68697-26,Nonresident Thesis Research,V,OP,5,4,,24365,"Juliano, Thomas",TBA,2/3/2021,5/11/2021,TBA
+AME68697-27,Nonresident Thesis Research,V,OP,5,5,,24377,"Leonov, Sergey",TBA,2/3/2021,5/11/2021,TBA
+AME68697-28,Nonresident Thesis Research,V,OP,5,5,,24832,"Luo, Tengfei",TBA,2/3/2021,5/11/2021,TBA
+AME68697-29,Nonresident Thesis Research,V,OP,5,5,,24839,"Kennedy, Andrew",TBA,2/3/2021,5/11/2021,TBA
+AME68697-30,Nonresident Thesis Research,V,OP,5,5,,21911,"Zabaras, Nicholas",TBA,2/3/2021,5/11/2021,TBA
+AME68697-31,Nonresident Thesis Research,V,OP,5,5,,21912,"Richter, David",TBA,2/3/2021,5/11/2021,TBA
+AME68697-32,Nonresident Thesis Research,V,OP,5,5,,21913,"Wang, Meng",TBA,2/3/2021,5/11/2021,TBA
+AME68697-33,Nonresident Thesis Research,V,OP,5,5,,25874,"Zhang, Yanliang",TBA,2/3/2021,5/11/2021,TBA
+AME68697-34,Nonresident Thesis Research,V,OP,5,5,,25873,"Holland, Maria",TBA,2/3/2021,5/11/2021,TBA
+AME68697-35,Nonresident Thesis Research,V,OP,5,5,,25875,"Hanjaya Putra, Donny",TBA,2/3/2021,5/11/2021,TBA
+AME68697-36,Nonresident Thesis Research,V,OP,8,8,,26887,"Yoon, Sangpil",TBA,2/3/2021,5/11/2021,TBA
+AME68697-37,Nonresident Thesis Research,V,OP,5,5,,27371,"Zahr, Matthew",TBA,2/3/2021,5/11/2021,TBA
+AME68697-38,Nonresident Thesis Research,V,OP,5,5,,27380,"Kinzel, Edward",TBA,2/3/2021,5/11/2021,TBA
+AME68697-39,Nonresident Thesis Research,V,OP,5,5,,27381,"Plecnik, Mark",TBA,2/3/2021,5/11/2021,TBA
+AME68697-40,Nonresident Thesis Research,V,OP,3,3,,33466,"Rosenberger, Matthew",TBA,2/3/2021,5/11/2021,TBA
+AME70637-01,Ionization and Ion Transport,3,OP,14,10,,31630,"Go, David",M W - 9:35A - 10:50A,2/3/2021,5/11/2021,DeBartolo Hall 231
+AME70790-01,Adv.Topics Mach. Learn,4,OP,15,9,,29280,"Zabaras, Nicholas Zabaras, Nicholas",(01) T R - 11:10A - 12:25P(11) F - 11:40A - 12:30P,(01) 02/03/2021(11) 02/03/2021,(01) 05/11/2021(11) 05/11/2021,DeBartolo Hall 313 Pasquerilla Center 109
+AME90935-01,Turbulence,3,OP,21,1,,32412,"Thomas, Flint",M W - 3:55P - 5:10P,2/3/2021,5/11/2021,Fitzpatrick Hall of Eng. 356A
+AME98200-01,Dissertation Completion,1,OP,10,10,,24043,"Go, David",TBA,2/3/2021,5/11/2021,TBA
+AME98991-01,Dissertation Research,V,OP,5,5,,20278,"Im, Seong-kyun",TBA,2/3/2021,5/11/2021,TBA
+AME98991-02,Dissertation Research,V,OP,5,5,,20192,"Boerckel, Joel",TBA,2/3/2021,5/11/2021,TBA
+AME98991-03,Dissertation Research,V,OP,3,2,,23418,"Christensen, Kenneth",TBA,2/3/2021,5/11/2021,TBA
+AME98991-04,Dissertation Research,V,OP,5,1,,20755,"Jumper, Eric",TBA,2/3/2021,5/11/2021,TBA
+AME98991-05,Dissertation Research,V,OP,5,5,,20483,"Rosenberger, Matthew",TBA,2/3/2021,5/11/2021,TBA
+AME98991-06,Dissertation Research,V,OP,5,5,,20258,"Peng, Zhangli",TBA,2/3/2021,5/11/2021,TBA
+AME98991-07,Dissertation Research,V,OP,5,3,,20844,"Gordeyev, Stanislav",TBA,2/3/2021,5/11/2021,TBA
+AME98991-08,Dissertation Research,V,OP,5,4,,20961,"Powers, Joseph",TBA,2/3/2021,5/11/2021,TBA
+AME98991-09,Dissertation Research,V,OP,10,9,,21149,"Wensing, Patrick",TBA,2/3/2021,5/11/2021,TBA
+AME98991-10,Dissertation Research,V,OP,5,5,,22896,"Tryggvason, Gretar",TBA,2/3/2021,5/11/2021,TBA
+AME98991-11,Dissertation Research,V,OP,5,5,,21072,"Stanisic, Michael",TBA,2/3/2021,5/11/2021,TBA
+AME98991-12,Dissertation Research,V,OP,5,3,,23099,"Zorlutuna, Pinar",TBA,2/3/2021,5/11/2021,TBA
+AME98991-13,Dissertation Research,V,OP,5,4,,20822,"Thomas, Flint",TBA,2/3/2021,5/11/2021,TBA
+AME98991-14,Dissertation Research,V,OP,10,9,,21174,"Corke, Thomas",TBA,2/3/2021,5/11/2021,TBA
+AME98991-15,Dissertation Research,V,OP,5,2,,20819,"Go, David",TBA,2/3/2021,5/11/2021,TBA
+AME98991-16,Dissertation Research,V,OP,5,5,,23865,"Wang, Jian-Xun",TBA,2/3/2021,5/11/2021,TBA
+AME98991-17,Dissertation Research,V,OP,5,1,,21074,"Neretina, Svetlana",TBA,2/3/2021,5/11/2021,TBA
+AME98991-18,Dissertation Research,V,OP,5,5,,24366,"Sakaue, Hirotaka",TBA,2/3/2021,5/11/2021,TBA
+AME98991-19,Dissertation Research,V,OP,5,5,,21094,"MacArt, Jonathan",TBA,2/3/2021,5/11/2021,TBA
+AME98991-20,Dissertation Research,V,OP,5,3,,24378,"Leonov, Sergey",TBA,2/3/2021,5/11/2021,TBA
+AME98991-21,Dissertation Research,V,OP,5,4,,21245,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME98991-22,Dissertation Research,V,OP,5,5,,24367,"Juliano, Thomas",TBA,2/3/2021,5/11/2021,TBA
+AME98991-23,Dissertation Research,V,OP,8,7,,21112,"Schmiedeler, James",TBA,2/3/2021,5/11/2021,TBA
+AME98991-24,Dissertation Research,V,OP,5,4,,20964,"Niebur, Glen",TBA,2/3/2021,5/11/2021,TBA
+AME98991-25,Dissertation Research,V,OP,5,5,,21117,"Ovaert, Timothy",TBA,2/3/2021,5/11/2021,TBA
+AME98991-26,Dissertation Research,V,OP,10,9,,21387,"Morris, Scott",TBA,2/3/2021,5/11/2021,TBA
+AME98991-27,Dissertation Research,V,OP,5,2,,24833,"Luo, Tengfei",TBA,2/3/2021,5/11/2021,TBA
+AME98991-28,Dissertation Research,V,OP,5,4,,21401,"Roeder, Ryan",TBA,2/3/2021,5/11/2021,TBA
+AME98991-29,Dissertation Research,V,OP,5,5,,24836,"Kennedy, Andrew",TBA,2/3/2021,5/11/2021,TBA
+AME98991-30,Dissertation Research,V,OP,5,2,,21914,"Matous, Karel",TBA,2/3/2021,5/11/2021,TBA
+AME98991-31,Dissertation Research,V,OP,5,2,,21916,"Zabaras, Nicholas",TBA,2/3/2021,5/11/2021,TBA
+AME98991-32,Dissertation Research,V,OP,5,4,,22033,"Richter, David",TBA,2/3/2021,5/11/2021,TBA
+AME98991-33,Dissertation Research,V,OP,10,7,,21917,"Wang, Meng",TBA,2/3/2021,5/11/2021,TBA
+AME98991-34,Dissertation Research,V,OP,10,9,,25878,"Zhang, Yanliang",TBA,2/3/2021,5/11/2021,TBA
+AME98991-35,Dissertation Research,V,OP,10,7,,25877,"McClarren, Ryan",TBA,2/3/2021,5/11/2021,TBA
+AME98991-36,Dissertation Research,V,OP,10,10,,25876,"Holland, Maria",TBA,2/3/2021,5/11/2021,TBA
+AME98991-37,Dissertation Research,V,OP,10,7,,25879,"Hanjaya Putra, Donny",TBA,2/3/2021,5/11/2021,TBA
+AME98991-38,Dissertation Research,V,OP,8,8,,26888,"Yoon, Sangpil",TBA,2/3/2021,5/11/2021,TBA
+AME98991-39,Dissertation Research,V,OP,5,5,,27372,"Zahr, Matthew",TBA,2/3/2021,5/11/2021,TBA
+AME98991-40,Dissertation Research,V,OP,5,5,,27382,"Kinzel, Edward",TBA,2/3/2021,5/11/2021,TBA
+AME98991-41,Dissertation Research,V,OP,5,5,,27383,"Plecnik, Mark",TBA,2/3/2021,5/11/2021,TBA
+AME98998-01,Nonresident Dissertation Rsrch,V,OP,10,10,,20360,"Jumper, Eric",TBA,2/3/2021,5/11/2021,TBA
+AME98998-02,Nonresident Dissertation Rsrch,V,OP,5,5,,21138,"Thomas, Flint",TBA,2/3/2021,5/11/2021,TBA
+AME98998-03,Nonresident Dissertation Rsrch,V,OP,5,5,,21512,"Im, Seong-kyun",TBA,2/3/2021,5/11/2021,TBA
+AME98998-04,Nonresident Dissertation Rsrch,V,OP,5,5,,21513,"Wang, Jian-Xun",TBA,2/3/2021,5/11/2021,TBA
+AME98998-05,Nonresident Dissertation Rsrch,V,OP,5,5,,21514,"McClarren, Ryan",TBA,2/3/2021,5/11/2021,TBA
+AME98998-06,Nonresident Dissertation Rsrch,V,OP,5,5,,21515,"Corke, Thomas",TBA,2/3/2021,5/11/2021,TBA
+AME98998-07,Nonresident Dissertation Rsrch,V,OP,5,5,,21516,"Go, David",TBA,2/3/2021,5/11/2021,TBA
+AME98998-08,Nonresident Dissertation Rsrch,V,OP,5,4,,21517,"Goodwine, John",TBA,2/3/2021,5/11/2021,TBA
+AME98998-09,Nonresident Dissertation Rsrch,V,OP,5,5,,21518,"Boerckel, Joel",TBA,2/3/2021,5/11/2021,TBA
+AME98998-10,Nonresident Dissertation Rsrch,V,OP,5,5,,21403,"MacArt, Jonathan",TBA,2/3/2021,5/11/2021,TBA
+AME98998-11,Nonresident Dissertation Rsrch,V,OP,5,5,,22897,"Tryggvason, Gretar",TBA,2/3/2021,5/11/2021,TBA
+AME98998-12,Nonresident Dissertation Rsrch,V,OP,5,5,,21519,"Morris, Scott",TBA,2/3/2021,5/11/2021,TBA
+AME98998-13,Nonresident Dissertation Rsrch,V,OP,5,5,,21520,"Christensen, Kenneth",TBA,2/3/2021,5/11/2021,TBA
+AME98998-14,Nonresident Dissertation Rsrch,V,OP,5,5,,21521,"Niebur, Glen",TBA,2/3/2021,5/11/2021,TBA
+AME98998-15,Nonresident Dissertation Rsrch,V,OP,5,5,,21522,"Ovaert, Timothy",TBA,2/3/2021,5/11/2021,TBA
+AME98998-16,Nonresident Dissertation Rsrch,V,OP,5,5,,21523,"Gordeyev, Stanislav",TBA,2/3/2021,5/11/2021,TBA
+AME98998-17,Nonresident Dissertation Rsrch,V,OP,5,5,,21524,"Powers, Joseph",TBA,2/3/2021,5/11/2021,TBA
+AME98998-18,Nonresident Dissertation Rsrch,V,OP,5,5,,21525,"Wensing, Patrick",TBA,2/3/2021,5/11/2021,TBA
+AME98998-19,Nonresident Dissertation Rsrch,V,OP,5,5,,21526,"Roeder, Ryan",TBA,2/3/2021,5/11/2021,TBA
+AME98998-20,Nonresident Dissertation Rsrch,V,OP,5,5,,21527,"Neretina, Svetlana",TBA,2/3/2021,5/11/2021,TBA
+AME98998-21,Nonresident Dissertation Rsrch,V,OP,5,5,,23098,"Zorlutuna, Pinar",TBA,2/3/2021,5/11/2021,TBA
+AME98998-22,Nonresident Dissertation Rsrch,V,OP,5,5,,21528,"Stanisic, Michael",TBA,2/3/2021,5/11/2021,TBA
+AME98998-23,Nonresident Dissertation Rsrch,V,OP,3,3,,23417,"Peng, Zhangli",TBA,2/3/2021,5/11/2021,TBA
+AME98998-24,Nonresident Dissertation Rsrch,V,OP,5,5,,24368,"Sakaue, Hirotaka",TBA,2/3/2021,5/11/2021,TBA
+AME98998-25,Nonresident Dissertation Rsrch,V,OP,5,5,,24369,"Juliano, Thomas",TBA,2/3/2021,5/11/2021,TBA
+AME98998-26,Nonresident Dissertation Rsrch,V,OP,5,5,,24379,"Leonov, Sergey",TBA,2/3/2021,5/11/2021,TBA
+AME98998-27,Nonresident Dissertation Rsrch,V,OP,5,5,,24834,"Luo, Tengfei",TBA,2/3/2021,5/11/2021,TBA
+AME98998-28,Nonresident Dissertation Rsrch,V,OP,5,5,,24837,"Kennedy, Andrew",TBA,2/3/2021,5/11/2021,TBA
+AME98998-30,Nonresident Dissertation Rsrch,V,OP,5,5,,21918,"Schmiedeler, James",TBA,2/3/2021,5/11/2021,TBA
+AME98998-31,Nonresident Dissertation Rsrch,V,OP,5,5,,21919,"Zabaras, Nicholas",TBA,2/3/2021,5/11/2021,TBA
+AME98998-32,Nonresident Dissertation Rsrch,V,OP,5,5,,21920,"Richter, David",TBA,2/3/2021,5/11/2021,TBA
+AME98998-33,Nonresident Dissertation Rsrch,V,OP,5,5,,21921,"Wang, Meng",TBA,2/3/2021,5/11/2021,TBA
+AME98998-34,Nonresident Dissertation Rsrch,V,OP,5,5,,25880,"Zhang, Yanliang",TBA,2/3/2021,5/11/2021,TBA
+AME98998-35,Nonresident Dissertation Rsrch,V,OP,5,5,,25881,"Holland, Maria",TBA,2/3/2021,5/11/2021,TBA
+AME98998-36,Nonresident Dissertation Rsrch,V,OP,5,5,,25882,"Hanjaya Putra, Donny",TBA,2/3/2021,5/11/2021,TBA
+AME98998-37,Nonresident Dissertation Rsrch,V,OP,8,8,,26889,"Yoon, Sangpil",TBA,2/3/2021,5/11/2021,TBA
+AME98998-38,Nonresident Dissertation Rsrch,V,OP,5,5,,27373,"Zahr, Matthew",TBA,2/3/2021,5/11/2021,TBA
+AME98998-39,Nonresident Dissertation Rsrch,V,OP,5,5,,27384,"Kinzel, Edward",TBA,2/3/2021,5/11/2021,TBA
+AME98998-40,Nonresident Dissertation Rsrch,V,OP,5,5,,27385,"Plecnik, Mark",TBA,2/3/2021,5/11/2021,TBA
+AME98998-41,Nonresident Dissertation Rsrch,V,OP,5,5,,33467,"Rosenberger, Matthew",TBA,2/3/2021,5/11/2021,TBA
