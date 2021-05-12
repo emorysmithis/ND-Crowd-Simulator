@@ -1,4 +1,6 @@
-# ND-Crowd-Simulator 
+# ND-Crowd-Simulator
+This repository contains the code and some of the files for Emory Smith and Christina Youn's CSE-40822 Cloud Computing Project. The results of our simulations can be found in our sister repository ND-Crowd-Simulator-Results found at https://github.com/emorysmithis/ND-Crowd-Simulator-Results. 
+
 ## Branches 
 - main: this branch contains the scripts you would need to reproduce our project and some of the files that you would make along the way 
 - data: this branch contains the files and scripts needed for data collection and processing 
