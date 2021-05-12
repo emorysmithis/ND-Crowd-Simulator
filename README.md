@@ -55,9 +55,9 @@
         - `noCompleteDups_ALL_SP21_COURSES.xlsx`: no duplicate classes 
         - `noTBA_ALL_SP21_COURSES.xlsx` : no duplicate classes and no classes where time or location is TBA 
         - `noTABnoONLINE_ALL_SP21_COURSES.xlsx`: no duplicate classes and no classes where time or location is TBA or ONLINE 
-6. Use  `createSimData.py` to create class_search.xlsx, an excel file that is better suited for the `simple_setup.py` script 
+6. Use  `createSimData.py` to create `class_search.xlsx`, an excel file that is better suited for the `simple_setup.py` script 
     - `./createSimData.py -d noCompleteDups_ALL_SP21_COURSES.xlsx -o class_search.xlsx -b building_names.xlsx` 
-    - output: class_search.xlsx
+    - output: `class_search.xlsx`
     - `building_names.xlsx` is an input to this script, but an output from the `createBuildingsList.py` script in the mapping branch 
 7. Use `simple_setup.py` to create the journey JSON files 
     - `./simple_setup.py -c class_search.xlsx -d dorms.xlsx -ugrads 8000 -grads 4000 -dir 12000_students` 
