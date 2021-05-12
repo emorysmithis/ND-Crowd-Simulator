@@ -8,7 +8,8 @@
 ## Files 
 ### Data 
 - 12_students ... 12000_students directories: these directories contain the output files from simple_setup.py. These output files are JSON files, one for each weekday. They also contain time.txt files which have the earliest class time minus 30 minutes and the last class time. This time.txt file is used in our automate.py script. 
-- SP21 directory: this direcotry contains all of the data downloaded from the ND class search website. They are in .xlsx format instead of the original .xls format because .xls is deprecated in many python packages. 
+- SP21 directory: this direcotry contains all of the data downloaded from the ND class search website. They are in .xlsx format instead of the original .xls format because .xls is deprecated in many python packages.
+    - combineExcel.pyL this script aggregates all of the .xlsx files in the current working directory 
 - SP21_data directory: this directory contains the same files as SP21 directory plus the aggregated .xlsx file with all of the courses in it. 
 - cleanedData directory: this directory contains the output excel files from cleanData.py
 - simData directory: this directory contains the createSimData.py script and the necessary inputs and the outputs for this script 
@@ -38,14 +39,16 @@
 - visualize.py: this script takes in an output file from simulation.py and outputs a picture of the ND campus with sidewalks colored to indicate how many people are on them (red = more people, blue = less peopel, purple = middle) 
 
 ## How to Run 
-### Data Collection and Processing 
+### Data Collection, Data Processing, and Setup 
 1. Go to Class Search: https://class-search-secure.nd.edu/reg/srch/SecureClassSearchServlet
 2. For each subject, in SP21 on Main Campus, download Excel 
 3. Manually convert .xls to .xlsx 
-4. Use `combineExcel.py` to combine data into one file
-5. use `cleanData.py` to clean up ALL_COURSES.xlsx 
-6. likely want to use the `noCompleteDups` one 
-
-### Setup 
+4. Use `combineExcel.py` to combine all of the attribute .xlsx files into one aggregated course file 
+- `python3 combineExcel.py` 
+- make sure to delete previously aggregated file
+- output: `ALL_SP21_COURSES.xlsx` 
+5. Use `cleanData.py` to clean up this aggregated course file 
+6. Use  `createSimData.py` to create class_search.xlsx, an excel file that is better suited for the `simple_setup.py` script 
+7. Use `simple_setup.py` to create the journey JSON files 
 
 ### Automation/Simulation 
