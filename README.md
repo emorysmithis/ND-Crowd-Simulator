@@ -44,11 +44,33 @@
 2. For each subject, in SP21 on Main Campus, download Excel 
 3. Manually convert .xls to .xlsx 
 4. Use `combineExcel.py` to combine all of the attribute .xlsx files into one aggregated course file 
-- `python3 combineExcel.py` 
-- make sure to delete previously aggregated file
-- output: `ALL_SP21_COURSES.xlsx` 
+    - `python3 combineExcel.py` 
+    - make sure to delete previously aggregated file
+    - output: `ALL_SP21_COURSES.xlsx` 
 5. Use `cleanData.py` to clean up this aggregated course file 
+    - `python3 cleanData.py ALL_SP21_COURSES.xlsx` 
+    - output: 3 xlsx files: 
+        - `noCompleteDups_ALL_SP21_COURSES.xlsx`: no duplicate classes 
+        - `noTBA_ALL_SP21_COURSES.xlsx` : no duplicate classes and no classes where time or location is TBA 
+        - `noTABnoONLINE_ALL_SP21_COURSES.xlsx`: no duplicate classes and no classes where time or location is TBA or ONLINE 
 6. Use  `createSimData.py` to create class_search.xlsx, an excel file that is better suited for the `simple_setup.py` script 
+    - `./createSimData.py -d noCompleteDups_ALL_SP21_COURSES.xlsx -o class_search.xlsx -b building_names.xlsx` 
+    - output: class_search.xlsx
+    - `building_names.xlsx` is an input to this script, but an output from the `createBuildingsList.py` script in the mapping branch 
 7. Use `simple_setup.py` to create the journey JSON files 
+    - `./simple_setup.py -c class_search.xlsx -d dorms.xlsx -ugrads 8000 -grads 4000 -dir 12000_students` 
+        - you have to run this script for each population size 
+        - dorms.xlsx is a modified version of building_names.xlsx that only contains dorm names (we created this file manually) 
+        - the `-ugrads` and `-grads` flags say how many of each type of student we want to create setup files for 
+        - the `-dir` flag says where we want to save the output JSON files to 
+        - output: 
+            - `12000_students/m_students.txt`: journey JSON file for Monday
+            - `12000_students/t_students.txt`: journey JSON file for Tuesday 
+            - `12000_students/w_students.txt`: journey JSON file for Wednesday
+            - `12000_students/r_students.txt`: journey JSON file for Thursday 
+            - `12000_students/f_students.txt`: journey JSON file for Friday 
+            - `12000_students/time.txt`: text file containing start and end time of simulation based on first and last class time 
+
+
 
 ### Automation/Simulation 
